@@ -35,6 +35,9 @@
         <h2 class="title inline-richtext {{ section.settings.heading_size }}">
           {{ section.settings.title }}
         </h2>
+        <h2 class="subtitle inline-richtext">
+          {{ section.settings.subtitle }}
+        </h2>
         {%- if section.settings.button_label != blank and show_mobile_slider -%}
           <a href="{{ section.settings.button_link }}" class="link underlined-link large-up-hide">
             {{- section.settings.button_label | escape -}}
@@ -125,6 +128,32 @@
                 {%- if block.settings.text != blank -%}
                   <div class="rte">{{ block.settings.text }}</div>
                 {%- endif -%}
+
+                {%- if block.settings.before_image != blank and block.settings.after_image != blank -%}
+                  <div class="flex">
+                    <div class="before">
+                      <div class="flex">
+                        {%- if block.settings.before_label  -%}
+                          <h3>{{ block.settings.before_label }}</h3>
+                        {%- endif -%}
+                      </div>
+                      <div class="img-wrap">
+                        <img width="" height="" alt="" src="{{ block.settings.before_image | image_url }}">
+                      </div>
+                    </div>
+                    <div class="after">
+                      <div class="flex">
+                        {%- if block.settings.after_label  -%}
+                          <h3>{{ block.settings.after_label }}</h3>
+                        {%- endif -%}
+                      </div>
+                      <div class="img-wrap">
+                        <img width=""height="" alt="" src="{{ block.settings.after_image | image_url }}">
+                      </div>
+                    </div>
+                  </div>
+                {%- endif -%}
+
                 {%- if block.settings.link_label != blank -%}
                   <a
                     class="link animate-arrow"
@@ -204,6 +233,11 @@
       "id": "title",
       "default": "t:sections.multicolumn.settings.title.default",
       "label": "t:sections.multicolumn.settings.title.label"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "subtitle",
+      "label": "t:sections.multicolumn.settings.subtitle.label"
     },
     {
       "type": "select",
@@ -417,7 +451,27 @@
           "type": "url",
           "id": "link",
           "label": "t:sections.multicolumn.blocks.column.settings.link.label"
-        }
+        },
+        {
+          "type": "image_picker",
+          "id": "before_image",
+          "label": "Before Image"
+        },
+        {
+          "type": "text",
+          "id": "before_label",
+          "label": "Before label"
+        },
+        {
+          "type": "image_picker",
+          "id": "after_image",
+          "label": "After Image"
+        },
+        {
+          "type": "text",
+          "id": "after_label",
+          "label": "After label"
+        },
       ]
     }
   ],

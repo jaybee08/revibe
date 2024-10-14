@@ -2527,6 +2527,9 @@
           "label": "Heading",
           "default": "Multicolumn"
         },
+        "subtitle": {
+          "label": "Sub Heading",
+        },
         "image_width": {
           "label": "Image width",
           "options__1": {
