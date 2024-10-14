@@ -48,58 +48,6 @@
         "show_text_below": false
       }
     },
-    "multicolumn_MwrUi8": {
-      "type": "multicolumn",
-      "blocks": {
-        "column_nfpaxw": {
-          "type": "column",
-          "settings": {
-            "title": "Nights",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
-            "link_label": "",
-            "link": "",
-            "before_image": "shopify://shop_images/Screenshot_2024-10-14_at_11.54.41_PM.png",
-            "before_label": "Without Revibe",
-            "after_image": "shopify://shop_images/Screenshot_2024-10-14_at_11.55.09_PM.png",
-            "after_label": "With Revibe"
-          }
-        },
-        "column_TYU3VV": {
-          "type": "column",
-          "settings": {
-            "title": "Mornings",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
-            "link_label": "",
-            "link": "",
-            "before_image": "shopify://shop_images/Screenshot_2024-10-15_at_12.41.29_AM.png",
-            "before_label": "Without Revibe",
-            "after_image": "shopify://shop_images/Screenshot_2024-10-15_at_12.41.38_AM.png",
-            "after_label": "With Revibe"
-          }
-        }
-      },
-      "block_order": [
-        "column_nfpaxw",
-        "column_TYU3VV"
-      ],
-      "settings": {
-        "title": "Live It Up & Bounce Back",
-        "subtitle": "Revibe turns hangover mornings into productive starts –  every single time!",
-        "heading_size": "hxl",
-        "image_width": "full",
-        "image_ratio": "adapt",
-        "columns_desktop": 2,
-        "column_alignment": "center",
-        "background_style": "primary",
-        "button_label": "Buy Now",
-        "button_link": "",
-        "color_scheme": "scheme-5",
-        "columns_mobile": "1",
-        "swipe_on_mobile": true,
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
     "multicolumn_qqCye3": {
       "type": "multicolumn",
       "blocks": {
@@ -156,6 +104,58 @@
         "color_scheme": "",
         "columns_mobile": "1",
         "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "multicolumn_MwrUi8": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_nfpaxw": {
+          "type": "column",
+          "settings": {
+            "title": "Nights",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "link_label": "",
+            "link": "",
+            "before_image": "shopify://shop_images/Screenshot_2024-10-14_at_11.54.41_PM.png",
+            "before_label": "Without Revibe",
+            "after_image": "shopify://shop_images/Screenshot_2024-10-14_at_11.55.09_PM.png",
+            "after_label": "With Revibe"
+          }
+        },
+        "column_TYU3VV": {
+          "type": "column",
+          "settings": {
+            "title": "Mornings",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "link_label": "",
+            "link": "",
+            "before_image": "shopify://shop_images/Screenshot_2024-10-15_at_12.41.29_AM.png",
+            "before_label": "Without Revibe",
+            "after_image": "shopify://shop_images/Screenshot_2024-10-15_at_12.41.38_AM.png",
+            "after_label": "With Revibe"
+          }
+        }
+      },
+      "block_order": [
+        "column_nfpaxw",
+        "column_TYU3VV"
+      ],
+      "settings": {
+        "title": "Live It Up & Bounce Back",
+        "subtitle": "Revibe turns hangover mornings into productive starts –  every single time!",
+        "heading_size": "hxl",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 2,
+        "column_alignment": "center",
+        "background_style": "primary",
+        "button_label": "Buy Now",
+        "button_link": "",
+        "color_scheme": "scheme-5",
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
         "padding_top": 36,
         "padding_bottom": 36
       }
@@ -397,8 +397,8 @@
   },
   "order": [
     "image_banner",
-    "multicolumn_MwrUi8",
     "multicolumn_qqCye3",
+    "multicolumn_MwrUi8",
     "featured_product_rmEMPq",
     "image_with_text_yVFDaM",
     "multirow_WQVFqm",
