@@ -54,7 +54,7 @@
         "column_nfpaxw": {
           "type": "column",
           "settings": {
-            "title": "Night",
+            "title": "Nights",
             "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
             "link_label": "",
             "link": "",
@@ -67,12 +67,14 @@
         "column_TYU3VV": {
           "type": "column",
           "settings": {
-            "title": "Morning",
+            "title": "Mornings",
             "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
             "link_label": "",
             "link": "",
-            "before_label": "",
-            "after_label": ""
+            "before_image": "shopify://shop_images/Screenshot_2024-10-15_at_12.41.29_AM.png",
+            "before_label": "Without Revibe",
+            "after_image": "shopify://shop_images/Screenshot_2024-10-15_at_12.41.38_AM.png",
+            "after_label": "With Revibe"
           }
         }
       },
