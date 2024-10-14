@@ -393,11 +393,34 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "rich_text_B8jzdK": {
+      "type": "rich-text",
+      "blocks": {
+        "text_gJUjxR": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Take Revibe 30 minutes <strong>before drinking</strong> and/or <strong>after your last drink</strong>.</p><p>Enjoy your nights and power through your days!</p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_gJUjxR"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-3",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
     }
   },
   "order": [
     "image_banner",
     "multicolumn_qqCye3",
+    "rich_text_B8jzdK",
     "multicolumn_MwrUi8",
     "featured_product_rmEMPq",
     "image_with_text_yVFDaM",
