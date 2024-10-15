@@ -66,7 +66,7 @@
           "type": "column",
           "settings": {
             "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
             "link_label": "",
             "link": "",
             "before_label": "",
@@ -115,12 +115,12 @@
           "type": "column",
           "settings": {
             "title": "Nights",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
             "link_label": "",
             "link": "",
-            "before_image": "shopify://shop_images/Screenshot_2024-10-14_at_11.54.41_PM.png",
+            "before_image": "shopify:\/\/shop_images\/Screenshot_2024-10-14_at_11.54.41_PM.png",
             "before_label": "Without Revibe",
-            "after_image": "shopify://shop_images/Screenshot_2024-10-14_at_11.55.09_PM.png",
+            "after_image": "shopify:\/\/shop_images\/Screenshot_2024-10-14_at_11.55.09_PM.png",
             "after_label": "With Revibe"
           }
         },
@@ -128,12 +128,12 @@
           "type": "column",
           "settings": {
             "title": "Mornings",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
             "link_label": "",
             "link": "",
-            "before_image": "shopify://shop_images/Screenshot_2024-10-15_at_12.41.29_AM.png",
+            "before_image": "shopify:\/\/shop_images\/Screenshot_2024-10-15_at_12.41.29_AM.png",
             "before_label": "Without Revibe",
-            "after_image": "shopify://shop_images/Screenshot_2024-10-15_at_12.41.38_AM.png",
+            "after_image": "shopify:\/\/shop_images\/Screenshot_2024-10-15_at_12.41.38_AM.png",
             "after_label": "With Revibe"
           }
         }
@@ -143,8 +143,8 @@
         "column_TYU3VV"
       ],
       "settings": {
-        "title": "<strong>Live It Up & Bounce Back</strong>",
-        "subtitle": "<strong>Revibe</strong> turns <strong>hangover mornings</strong> into productive starts –  every single time!",
+        "title": "<strong>Live It Up & Bounce Back<\/strong>",
+        "subtitle": "<strong>Revibe<\/strong> turns <strong>hangover mornings<\/strong> into productive starts – \u2028every single time!",
         "heading_size": "hxl",
         "image_width": "full",
         "image_ratio": "adapt",
@@ -400,7 +400,7 @@
         "text_gJUjxR": {
           "type": "text",
           "settings": {
-            "text": "<p>Take Revibe 30 minutes <strong>before drinking</strong> and/or <strong>after your last drink</strong>.</p><p>Enjoy your nights and power through your days!</p>"
+            "text": "<p>Take Revibe 30 minutes <strong>before drinking<\/strong> and\/or <strong>after your last drink<\/strong>.<\/p><p>Enjoy your nights and power through your days!<\/p>"
           }
         }
       },
