@@ -138,8 +138,8 @@
         "column_7DfYpW": {
           "type": "column",
           "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "title": "<strong>GMP</strong>",
+            "text": "<p>Certified</p>",
             "link_label": "",
             "link": "",
             "before_label": "",
@@ -149,8 +149,8 @@
         "column_zkLy3E": {
           "type": "column",
           "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "title": "<strong>HACCP</strong>",
+            "text": "<p>Certified</p>",
             "link_label": "",
             "link": "",
             "before_label": "",
@@ -160,8 +160,8 @@
         "column_7grrNP": {
           "type": "column",
           "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "title": "<strong>US FDA</strong>",
+            "text": "<p>Certified</p>",
             "link_label": "",
             "link": "",
             "before_label": "",
@@ -175,7 +175,7 @@
         "column_7grrNP"
       ],
       "settings": {
-        "title": "YOUR BEST HANGOVER REMEDY",
+        "title": "<strong>Trusted and Certified</strong>",
         "subtitle": "",
         "heading_size": "hxxl",
         "image_width": "full",
