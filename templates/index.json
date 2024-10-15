@@ -39,49 +39,6 @@
         "show_text_below": false
       }
     },
-    "multicolumn_MwrUi8": {
-      "type": "multicolumn",
-      "blocks": {
-        "column_nfpaxw": {
-          "type": "column",
-          "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column_TYU3VV": {
-          "type": "column",
-          "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "link_label": "",
-            "link": ""
-          }
-        }
-      },
-      "block_order": [
-        "column_nfpaxw",
-        "column_TYU3VV"
-      ],
-      "settings": {
-        "title": "Live It Up & Bounce Back",
-        "heading_size": "hxl",
-        "image_width": "full",
-        "image_ratio": "adapt",
-        "columns_desktop": 2,
-        "column_alignment": "left",
-        "background_style": "primary",
-        "button_label": "Button label",
-        "button_link": "",
-        "color_scheme": "scheme-2",
-        "columns_mobile": "1",
-        "swipe_on_mobile": false,
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
     "multicolumn_qqCye3": {
       "type": "multicolumn",
       "blocks": {
@@ -91,7 +48,9 @@
             "title": "Column",
             "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
             "link_label": "",
-            "link": ""
+            "link": "",
+            "before_label": "",
+            "after_label": ""
           }
         },
         "column_zkLy3E": {
@@ -100,7 +59,9 @@
             "title": "Column",
             "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
             "link_label": "",
-            "link": ""
+            "link": "",
+            "before_label": "",
+            "after_label": ""
           }
         },
         "column_7grrNP": {
@@ -109,7 +70,9 @@
             "title": "Column",
             "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
             "link_label": "",
-            "link": ""
+            "link": "",
+            "before_label": "",
+            "after_label": ""
           }
         }
       },
@@ -120,6 +83,7 @@
       ],
       "settings": {
         "title": "YOUR BEST HANGOVER REMEDY",
+        "subtitle": "",
         "heading_size": "hxxl",
         "image_width": "full",
         "image_ratio": "adapt",
@@ -131,6 +95,58 @@
         "color_scheme": "",
         "columns_mobile": "1",
         "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "multicolumn_MwrUi8": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_nfpaxw": {
+          "type": "column",
+          "settings": {
+            "title": "Nights",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "link_label": "",
+            "link": "",
+            "before_image": "shopify:\/\/shop_images\/Screenshot_2024-10-14_at_11.54.41_PM.png",
+            "before_label": "Without Revibe",
+            "after_image": "shopify:\/\/shop_images\/Screenshot_2024-10-14_at_11.55.09_PM.png",
+            "after_label": "With Revibe"
+          }
+        },
+        "column_TYU3VV": {
+          "type": "column",
+          "settings": {
+            "title": "Mornings",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "link_label": "",
+            "link": "",
+            "before_image": "shopify:\/\/shop_images\/Screenshot_2024-10-15_at_12.41.29_AM.png",
+            "before_label": "Without Revibe",
+            "after_image": "shopify:\/\/shop_images\/Screenshot_2024-10-15_at_12.41.38_AM.png",
+            "after_label": "With Revibe"
+          }
+        }
+      },
+      "block_order": [
+        "column_nfpaxw",
+        "column_TYU3VV"
+      ],
+      "settings": {
+        "title": "<strong>Live It Up & Bounce Back<\/strong>",
+        "subtitle": "<strong>Revibe<\/strong> turns <strong>hangover mornings<\/strong> into productive starts – \u2028every single time!",
+        "heading_size": "hxl",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 2,
+        "column_alignment": "center",
+        "background_style": "primary",
+        "button_label": "Buy Now",
+        "button_link": "",
+        "color_scheme": "scheme-5",
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
         "padding_top": 36,
         "padding_bottom": 36
       }
@@ -368,12 +384,35 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "rich_text_B8jzdK": {
+      "type": "rich-text",
+      "blocks": {
+        "text_gJUjxR": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Take Revibe 30 minutes <strong>before drinking<\/strong> and\/or <strong>after your last drink<\/strong>.<\/p><p>Enjoy your nights and power through your days!<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_gJUjxR"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-3",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
     }
   },
   "order": [
     "image_banner",
-    "multicolumn_MwrUi8",
     "multicolumn_qqCye3",
+    "rich_text_B8jzdK",
+    "multicolumn_MwrUi8",
     "featured_product_rmEMPq",
     "image_with_text_yVFDaM",
     "multirow_WQVFqm",
