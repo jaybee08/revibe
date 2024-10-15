@@ -424,13 +424,37 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "rich_text_ybgjRB": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_6x8RAQ": {
+          "type": "heading",
+          "settings": {
+            "heading": "5-STAR RATED<strong> BY OVER 1,000 DRINKERS</strong>",
+            "heading_size": "h2"
+          }
+        }
+      },
+      "block_order": [
+        "heading_6x8RAQ"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-4acb4515-6122-4d3a-9703-724bf26d46c3",
+        "full_width": true,
+        "padding_top": 16,
+        "padding_bottom": 16
+      }
     }
   },
   "order": [
     "image_banner",
+    "rich_text_ybgjRB",
+    "multicolumn_MwrUi8",
     "multicolumn_qqCye3",
     "rich_text_B8jzdK",
-    "multicolumn_MwrUi8",
     "featured_product_rmEMPq",
     "image_with_text_yVFDaM",
     "multirow_WQVFqm",
