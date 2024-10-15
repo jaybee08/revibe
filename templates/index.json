@@ -269,8 +269,9 @@
         "column_z4nB7W": {
           "type": "column",
           "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "image": "shopify://shop_images/Screenshot_2024-10-15_at_7.58.59_PM.png",
+            "title": "<strong>Protects Liver Health</strong>",
+            "text": "<p>Natural ingredients help detoxify and protect your liver fromalcohol’s effects</p>",
             "link_label": "",
             "link": "",
             "before_label": "",
@@ -280,8 +281,9 @@
         "column_JHyUJN": {
           "type": "column",
           "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "image": "shopify://shop_images/Screenshot_2024-10-15_at_7.59.06_PM.png",
+            "title": "<strong>Reduces Negative Side Effects of Alcoho</strong>",
+            "text": "<p>Relieves flush, headache, and nausea while keeping the alcohol high</p>",
             "link_label": "",
             "link": "",
             "before_label": "",
@@ -291,8 +293,9 @@
         "column_7VGRcc": {
           "type": "column",
           "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "image": "shopify://shop_images/Screenshot_2024-10-15_at_7.59.14_PM.png",
+            "title": "<strong>Prevents Hangovers</strong>",
+            "text": "<p>Boosts alcohol metabolism to cut hangover symptoms and help you  wake up refreshed</p>",
             "link_label": "",
             "link": "",
             "before_label": "",
@@ -306,18 +309,18 @@
         "column_7VGRcc"
       ],
       "settings": {
-        "title": "YOUR BEST HANGOVER REMEDY",
+        "title": "<strong>YOUR BEST HANGOVER REMEDY</strong>",
         "title_alignment": "center",
         "subtitle": "Maximum Support for Enjoying Your Night and Recovering Smoothly!",
-        "heading_size": "h1",
+        "heading_size": "h0",
         "image_width": "full",
         "image_ratio": "adapt",
         "columns_desktop": 3,
         "column_alignment": "left",
-        "background_style": "primary",
+        "background_style": "none",
         "button_label": "Button label",
         "button_link": "",
-        "color_scheme": "",
+        "color_scheme": "scheme-1",
         "columns_mobile": "1",
         "swipe_on_mobile": false,
         "padding_top": 36,
