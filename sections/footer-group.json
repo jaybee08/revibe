@@ -14,28 +14,44 @@
     "footer": {
       "type": "footer",
       "blocks": {
-        "link_list_3kVrUz": {
-          "type": "link_list",
-          "settings": {
-            "heading": "Quick links",
-            "menu": "footer"
-          }
-        },
         "link_list_pkdt3m": {
           "type": "link_list",
           "settings": {
             "heading": "Help",
             "menu": "footer"
           }
+        },
+        "link_list_3kVrUz": {
+          "type": "link_list",
+          "settings": {
+            "heading": "About us",
+            "menu": "footer"
+          }
+        },
+        "link_list_6yi87D": {
+          "type": "link_list",
+          "settings": {
+            "heading": "Follow us",
+            "menu": "footer"
+          }
+        },
+        "text_EGxLHB": {
+          "type": "text",
+          "settings": {
+            "heading": "Contact us",
+            "subtext": "<p>Share contact information, store details, and brand content with your customers.</p>"
+          }
         }
       },
       "block_order": [
+        "link_list_pkdt3m",
         "link_list_3kVrUz",
-        "link_list_pkdt3m"
+        "link_list_6yi87D",
+        "text_EGxLHB"
       ],
       "settings": {
-        "color_scheme": "scheme-1",
-        "newsletter_enable": true,
+        "color_scheme": "scheme-01619459-f301-4b37-84ea-ee5cdf46a16b",
+        "newsletter_enable": false,
         "newsletter_heading": "Subscribe to our emails",
         "enable_follow_on_shop": true,
         "show_social": true,
