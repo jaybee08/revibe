@@ -133,6 +133,55 @@
         "padding_bottom": 36
       }
     },
+    "multicolumn_D9b4rj": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_BCigxP": {
+          "type": "column",
+          "settings": {
+            "title": "<strong>Game changer</strong>",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p><p><em><strong>Dave G. Verified buyer</strong></em></p>",
+            "link_label": "",
+            "link": "",
+            "before_label": "",
+            "after_label": ""
+          }
+        },
+        "column_HG6NqN": {
+          "type": "column",
+          "settings": {
+            "title": "<strong>Can't go without it!</strong>",
+            "text": "<p>This is a test review comment</p><p><em><strong>Scott M. Verified buyer</strong></em></p>",
+            "link_label": "",
+            "link": "",
+            "before_label": "",
+            "after_label": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_BCigxP",
+        "column_HG6NqN"
+      ],
+      "settings": {
+        "title": "<strong>Customer</strong> Reviews",
+        "title_alignment": "center",
+        "subtitle": "",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 2,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "button_label": "Read reviews",
+        "button_link": "#",
+        "color_scheme": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "multicolumn_qqCye3": {
       "type": "multicolumn",
       "blocks": {
@@ -326,65 +375,16 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
-    },
-    "multicolumn_D9b4rj": {
-      "type": "multicolumn",
-      "blocks": {
-        "column_BCigxP": {
-          "type": "column",
-          "settings": {
-            "title": "<strong>Game changer</strong>",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p><p><em><strong>Dave G. Verified buyer</strong></em></p>",
-            "link_label": "",
-            "link": "",
-            "before_label": "",
-            "after_label": ""
-          }
-        },
-        "column_HG6NqN": {
-          "type": "column",
-          "settings": {
-            "title": "<strong>Can't go without it!</strong>",
-            "text": "<p>This is a test review comment</p><p><em><strong>Scott M. Verified buyer</strong></em></p>",
-            "link_label": "",
-            "link": "",
-            "before_label": "",
-            "after_label": ""
-          }
-        }
-      },
-      "block_order": [
-        "column_BCigxP",
-        "column_HG6NqN"
-      ],
-      "settings": {
-        "title": "",
-        "title_alignment": "center",
-        "subtitle": "",
-        "heading_size": "h1",
-        "image_width": "full",
-        "image_ratio": "adapt",
-        "columns_desktop": 2,
-        "column_alignment": "left",
-        "background_style": "primary",
-        "button_label": "Read reviews",
-        "button_link": "#",
-        "color_scheme": "",
-        "columns_mobile": "1",
-        "swipe_on_mobile": false,
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
     }
   },
   "order": [
     "image_banner",
     "rich_text_ybgjRB",
     "multicolumn_MwrUi8",
+    "multicolumn_D9b4rj",
     "multicolumn_qqCye3",
     "rich_text_B8jzdK",
     "multicolumn_QdNPTD",
-    "image_with_text_yVFDaM",
-    "multicolumn_D9b4rj"
+    "image_with_text_yVFDaM"
   ]
 }
