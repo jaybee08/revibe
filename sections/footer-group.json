@@ -39,7 +39,7 @@
           "type": "text",
           "settings": {
             "heading": "Contact us",
-            "subtext": "<p>Share contact information, store details, and brand content with your customers.</p>"
+            "subtext": "<p>Share contact information, store details, and brand content with your customers.</p><p><a href=\"https://byrevibe.com/pages/contact\"><strong>hello@byrevibe.com</strong></a></p>"
           }
         }
       },
