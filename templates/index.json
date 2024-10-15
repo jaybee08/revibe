@@ -214,77 +214,6 @@
         "padding_bottom": 52
       }
     },
-    "featured_product_rmEMPq": {
-      "type": "featured-product",
-      "blocks": {
-        "text_eAyQXp": {
-          "type": "text",
-          "settings": {
-            "text": "{{ section.settings.product.vendor }}",
-            "text_style": "uppercase"
-          }
-        },
-        "title_hxwxjB": {
-          "type": "title",
-          "settings": {
-            "heading_size": "h1"
-          }
-        },
-        "price_LRnfqa": {
-          "type": "price",
-          "settings": {
-          }
-        },
-        "variant_picker_3hpPUh": {
-          "type": "variant_picker",
-          "settings": {
-            "picker_type": "button",
-            "swatch_shape": "circle"
-          }
-        },
-        "quantity_selector_nXaa4q": {
-          "type": "quantity_selector",
-          "settings": {
-          }
-        },
-        "buy_buttons_j9bwEH": {
-          "type": "buy_buttons",
-          "settings": {
-            "show_dynamic_checkout": true,
-            "show_gift_card_recipient": true
-          }
-        },
-        "share_wAi3xb": {
-          "type": "share",
-          "settings": {
-            "share_label": "Share"
-          }
-        }
-      },
-      "block_order": [
-        "text_eAyQXp",
-        "title_hxwxjB",
-        "price_LRnfqa",
-        "variant_picker_3hpPUh",
-        "quantity_selector_nXaa4q",
-        "buy_buttons_j9bwEH",
-        "share_wAi3xb"
-      ],
-      "settings": {
-        "product": "",
-        "color_scheme": "",
-        "secondary_background": false,
-        "media_size": "medium",
-        "constrain_to_viewport": true,
-        "media_fit": "contain",
-        "media_position": "left",
-        "image_zoom": "lightbox",
-        "hide_variants": false,
-        "enable_video_looping": false,
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
     "image_with_text_yVFDaM": {
       "type": "image-with-text",
       "blocks": {
@@ -455,7 +384,6 @@
     "multicolumn_MwrUi8",
     "multicolumn_qqCye3",
     "rich_text_B8jzdK",
-    "featured_product_rmEMPq",
     "image_with_text_yVFDaM",
     "multirow_WQVFqm",
     "collapsible_content_KgpVm9"
