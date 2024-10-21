@@ -15,7 +15,7 @@
         "heading": {
           "type": "heading",
           "settings": {
-            "heading": "Enjoy the <strong>alcohol High</strong> and Stay <strong>Hangover-free!</strong>",
+            "heading": "<strong>ENJOY THE ALCOHOL HIGH AND STAY HANGOVER-FREE!</strong>",
             "heading_size": "hxxl"
           }
         },
@@ -24,6 +24,12 @@
           "settings": {
             "text": "<strong>Just 2 Pills to Crush Hangovers, Beat Headaches, and Support Your Liver.</strong>",
             "text_style": "body"
+          }
+        },
+        "overlay_tKD9pQ": {
+          "type": "overlay",
+          "settings": {
+            "overlay_image": "shopify://shop_images/20240904_-_Revibe_Packaging_Sachet_MU_Front_Bigger_Text.png"
           }
         },
         "button": {
@@ -41,10 +47,11 @@
       "block_order": [
         "heading",
         "text_zrqaFm",
+        "overlay_tKD9pQ",
         "button"
       ],
       "settings": {
-        "image": "shopify://shop_images/yoga-in-nature.jpg",
+        "image": "shopify://shop_images/pizza-and-wine-dinner.jpg",
         "image_overlay_opacity": 30,
         "image_height": "large",
         "desktop_content_position": "middle-center",
