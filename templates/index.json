@@ -51,8 +51,8 @@
         "button"
       ],
       "settings": {
-        "image": "shopify://shop_images/pizza-and-wine-dinner.jpg",
-        "image_overlay_opacity": 30,
+        "image": "shopify://shop_images/0606f7d8c47620e4b647d6d89b03e558.png",
+        "image_overlay_opacity": 0,
         "image_height": "large",
         "desktop_content_position": "middle-center",
         "show_text_box": false,
