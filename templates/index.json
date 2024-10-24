@@ -428,6 +428,9 @@
       "block_order": [
         "slide_j6kcyL"
       ],
+      "custom_css": [
+        ".slideshow__text.banner__box {display: none;}"
+      ],
       "settings": {
         "layout": "grid",
         "slide_height": "adapt_image",
