@@ -385,25 +385,58 @@
     },
     "1729751303886dac42": {
       "type": "apps",
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "video_C33yBm": {
+      "type": "video",
+      "settings": {
+        "heading": "Video",
+        "heading_size": "h1",
+        "enable_video_looping": false,
+        "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+        "description": "",
+        "full_width": false,
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "slideshow_ePwymm": {
+      "type": "slideshow",
       "blocks": {
-        "instafeed_app_block_ifNTiX": {
-          "type": "shopify://apps/instafeed/blocks/app-block/5c329ba9-407e-40ec-a145-431c886f5df9",
+        "slide_j6kcyL": {
+          "type": "slide",
           "settings": {
-            "heading_font": "helvetica_n4",
-            "heading_size": 20,
-            "heading_alignment": "center",
-            "feed_width": 100,
-            "section_top_padding": 0,
-            "section_bottom_padding": 0,
-            "html_area": ""
+            "image": "shopify://shop_images/Screenshot_2024-10-24_at_3.01.19_PM.png",
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": true,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "",
+            "text_alignment_mobile": "center"
           }
         }
       },
       "block_order": [
-        "instafeed_app_block_ifNTiX"
+        "slide_j6kcyL"
       ],
       "settings": {
-        "include_margins": true
+        "layout": "full_bleed",
+        "slide_height": "medium",
+        "slider_visual": "counter",
+        "auto_rotate": false,
+        "change_slides_speed": 5,
+        "image_behavior": "none",
+        "show_text_below": true,
+        "accessibility_info": "Slideshow about our brand"
       }
     }
   },
@@ -416,6 +449,8 @@
     "rich_text_B8jzdK",
     "multicolumn_QdNPTD",
     "image_with_text_yVFDaM",
-    "1729751303886dac42"
+    "1729751303886dac42",
+    "video_C33yBm",
+    "slideshow_ePwymm"
   ]
 }
