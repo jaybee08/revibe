@@ -20,7 +20,7 @@
   .section-{{ section.id }}-multicolumn-gradient {
     {% if section.settings.background_image %}
       background-image: url("{{ section.settings.background_image | image_url }}");
-      object-fit: cover;
+      background-size: cover;
       background-repeat: no-repeat;
     {% else %}
       background: #FFF;
@@ -30,6 +30,58 @@
   .multicolumn-card__info .inline-richtext * {
     color: {{ section.settings.cards_title_color }};
     font-size: 23px;
+  }
+  .customer-review .user-info {
+    color: #4c2fff;
+    font-weight: bold;
+    font-size: 1em;
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  .customer-review .user-info svg {
+    width: 16px;
+    height: 16px;
+  }
+  .customer-review .user-status {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  .customer-review .content-container {
+    border-radius: 12px;
+    background-color: #FDE6E6;
+  }
+  .customer-review .button {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 2rem;
+    background: #3A3CDA;
+    border-radius: 6.25rem;
+    box-shadow: none;
+  }
+  .customer-review .comments,
+  .customer-review .comments * {
+    /* font-family: 'Sofia Pro'; */
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.5296rem;
+    line-height: 2.0625rem;
+    color: #14154C;
+  }
+  .customer-review .button::after {
+    box-shadow: none;
+  }
+  .card-review-header {
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+  .card-review-header .star-icon {
+    right: 0;
+    position: absolute;
   }
   @media screen and (min-width: 750px) {
     .section-{{ section.id }}-padding {
@@ -47,7 +99,7 @@
   endif
 -%}
 
-<div class="multicolumn section-{{ section.id }}-multicolumn-gradient{% unless section.settings.background_style == 'none' and settings.text_boxes_border_thickness > 0 or settings.text_boxes_shadow_opacity > 0 %} background-{{ section.settings.background_style }}{% endunless %}{% if section.settings.title == blank %} no-heading{% endif %}">
+<div class="customer-review multicolumn section-{{ section.id }}-multicolumn-gradient{% unless section.settings.background_style == 'none' and settings.text_boxes_border_thickness > 0 or settings.text_boxes_shadow_opacity > 0 %} background-{{ section.settings.background_style }}{% endunless %}{% if section.settings.title == blank %} no-heading{% endif %}">
   <div
     class="page-width section-{{ section.id }}-padding isolate{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
     {% if settings.animations_reveal_on_scroll %}
@@ -75,27 +127,10 @@
         id="Slider-{{ section.id }}"
         role="list"
       >
-        {%- liquid
-          assign highest_ratio = 0
-          for block in section.blocks
-            if block.settings.image.aspect_ratio > highest_ratio
-              assign highest_ratio = block.settings.image.aspect_ratio
-            endif
-          endfor
-        -%}
         {%- for block in section.blocks -%}
-          {%- assign empty_column = '' -%}
-          {%- if block.settings.image == blank
-            and block.settings.title == blank
-            and block.settings.text == blank
-            and block.settings.link_label == blank
-          -%}
-            {%- assign empty_column = ' multicolumn-list__item--empty' -%}
-          {%- endif -%}
-
           <li
             id="Slide-{{ section.id }}-{{ forloop.index }}"
-            class="multicolumn-list__item grid__item{% if section.settings.swipe_on_mobile %} slider__slide{% endif %}{% if section.settings.column_alignment == 'center' %} center{% endif %}{{ empty_column }}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+            class="multicolumn-list__item grid__item{% if section.settings.swipe_on_mobile %} slider__slide{% endif %}{% if section.settings.column_alignment == 'center' %} center{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
             {{ block.shopify_attributes }}
             {% if settings.animations_reveal_on_scroll %}
               data-cascade
@@ -103,81 +138,41 @@
             {% endif %}
           >
             <div class="multicolumn-card content-container">
-              {%- if block.settings.image != blank -%}
-                {% if section.settings.image_ratio == 'adapt' or section.settings.image_ratio == 'circle' %}
-                  {% assign spaced_image = true %}
-                {% endif %}
-                <div class="multicolumn-card__image-wrapper multicolumn-card__image-wrapper--{{ section.settings.image_width }}-width{% if section.settings.image_width != 'full' or spaced_image %} multicolumn-card-spacing{% endif %}">
-                  <div
-                    class="media media--transparent media--{{ section.settings.image_ratio }}"
-                    {% if section.settings.image_ratio == 'adapt' %}
-                      style="padding-bottom: {{ 1 | divided_by: highest_ratio | times: 100 }}%;"
-                    {% endif %}
-                  >
-                    {%- liquid
-                      assign number_of_columns = section.settings.columns_desktop
-                      assign number_of_columns_mobile = section.settings.columns_mobile
-                      assign grid_space_desktop = number_of_columns | minus: 1 | times: settings.spacing_grid_horizontal | plus: 100 | append: 'px'
-                      assign grid_space_tablet = number_of_columns_mobile | minus: 1 | times: settings.spacing_grid_horizontal | plus: 100 | append: 'px'
-                      assign grid_space_mobile = number_of_columns_mobile | minus: 1 | times: settings.spacing_grid_horizontal | divided_by: 2 | plus: 30 | append: 'px'
-                      if section.settings.image_width == 'half'
-                        assign image_width = 0.5
-                      elsif section.settings.image_width == 'third'
-                        assign image_width = 0.33
-                      else
-                        assign image_width = 1
-                      endif
-                    -%}
-                    {% capture sizes %}
-                      (min-width: {{ settings.page_width }}px) calc(({{ settings.page_width }}px - {{ grid_space_desktop }}) * {{ image_width }} /  {{ number_of_columns }}),
-                      (min-width: 990px) calc((100vw - {{ grid_space_desktop }}) * {{ image_width }} / {{ number_of_columns }}),
-                      (min-width: 750px) calc((100vw - {{ grid_space_tablet }}) * {{ image_width }} / {{ number_of_columns_mobile }}),
-                      calc((100vw - {{ grid_space_mobile }}) * {{ image_width }} / {{ number_of_columns_mobile }})
-                    {% endcapture %}
-                    {{
-                      block.settings.image
-                      | image_url: width: 3200
-                      | image_tag:
-                        widths: '50, 75, 100, 150, 200, 300, 400, 500, 750, 1000, 1250, 1500, 1750, 2000, 2250, 2500, 2750, 3000, 3200',
-                        sizes: sizes,
-                        class: 'multicolumn-card__image'
-                    }}
-                  </div>
-                </div>
-              {%- endif -%}
               <div class="multicolumn-card__info">
                 {%- if block.settings.title != blank -%}
-                  <h3 class="inline-richtext">{{ block.settings.title }}</h3>
+                  <div class="card-review-header">
+                    <h3 class="inline-richtext">{{ block.settings.title }}</h3>
+                    <svg class="star-icon" xmlns="http://www.w3.org/2000/svg" width="171" height="31" viewBox="0 0 171 31" fill="none">
+                      <g clip-path="url(#clip0_16_175)">
+                      <path d="M29.9098 14.8887L25.6435 13.6817C21.7344 12.5925 18.6786 9.57022 17.5773 5.70404L16.3569 1.48462C16.1882 1.07249 15.712 0.876234 15.2953 1.04305C15.0969 1.12155 14.9381 1.27855 14.8488 1.48462L13.6285 5.70404C12.5272 9.57022 9.47132 12.5925 5.5622 13.6817L1.29591 14.8887C0.8792 15.0064 0.641081 15.4382 0.76014 15.8405C0.829592 16.0956 1.03795 16.3017 1.29591 16.3704L5.5622 17.5773C9.47132 18.6665 12.5272 21.6888 13.6285 25.555L14.8488 29.7744C14.9679 30.1865 15.4044 30.422 15.8112 30.3043C16.0692 30.2356 16.2775 30.0295 16.347 29.7744L17.5674 25.555C18.6686 21.6888 21.7245 18.6665 25.6336 17.5773L29.8999 16.3704C30.3166 16.2526 30.5547 15.8209 30.4357 15.4185C30.3662 15.1634 30.1579 14.9573 29.8999 14.8887H29.9098Z" fill="#F56C43"/>
+                      <path d="M66.2633 14.8887L61.9971 13.6817C58.0879 12.5925 55.0321 9.57022 53.9308 5.70404L52.7104 1.48462C52.5418 1.07249 52.0655 0.876234 51.6488 1.04305C51.4504 1.12155 51.2916 1.27855 51.2023 1.48462L49.982 5.70404C48.8807 9.57022 45.8248 12.5925 41.9157 13.6817L37.6494 14.8887C37.2327 15.0064 36.9946 15.4382 37.1137 15.8405C37.1831 16.0956 37.3915 16.3017 37.6494 16.3704L41.9157 17.5773C45.8248 18.6665 48.8807 21.6888 49.982 25.555L51.2023 29.7744C51.3214 30.1865 51.758 30.422 52.1647 30.3043C52.4227 30.2356 52.6311 30.0295 52.7005 29.7744L53.9209 25.555C55.0222 21.6888 58.078 18.6665 61.9871 17.5773L66.2534 16.3704C66.6701 16.2526 66.9082 15.8209 66.7892 15.4185C66.7197 15.1634 66.5114 14.9573 66.2534 14.8887H66.2633Z" fill="#F56C43"/>
+                      <path d="M100.999 14.8887L96.7324 13.6817C92.8233 12.5925 89.7674 9.57022 88.6661 5.70404L87.4458 1.48462C87.2771 1.07249 86.8009 0.876234 86.3842 1.04305C86.1857 1.12155 86.027 1.27855 85.9377 1.48462L84.7173 5.70404C83.616 9.57022 80.5602 12.5925 76.6511 13.6817L72.3848 14.8887C71.9681 15.0064 71.7299 15.4382 71.849 15.8405C71.9185 16.0956 72.1268 16.3017 72.3848 16.3704L76.6511 17.5773C80.5602 18.6665 83.616 21.6888 84.7173 25.555L85.9377 29.7744C86.0568 30.1865 86.4933 30.422 86.9001 30.3043C87.1581 30.2356 87.3664 30.0295 87.4359 29.7744L88.6562 25.555C89.7575 21.6888 92.8134 18.6665 96.7225 17.5773L100.989 16.3704C101.405 16.2526 101.644 15.8209 101.525 15.4185C101.455 15.1634 101.247 14.9573 100.989 14.8887H100.999Z" fill="#F56C43"/>
+                      <path d="M135.783 14.8887L131.517 13.6817C127.608 12.5925 124.552 9.57022 123.451 5.70404L122.23 1.48462C122.062 1.07249 121.586 0.876234 121.169 1.04305C120.97 1.12155 120.812 1.27855 120.722 1.48462L119.502 5.70404C118.401 9.57022 115.345 12.5925 111.436 13.6817L107.169 14.8887C106.753 15.0064 106.515 15.4382 106.634 15.8405C106.703 16.0956 106.911 16.3017 107.169 16.3704L111.436 17.5773C115.345 18.6665 118.401 21.6888 119.502 25.555L120.722 29.7744C120.841 30.1865 121.278 30.422 121.685 30.3043C121.943 30.2356 122.151 30.0295 122.221 29.7744L123.441 25.555C124.542 21.6888 127.598 18.6665 131.507 17.5773L135.773 16.3704C136.19 16.2526 136.428 15.8209 136.309 15.4185C136.24 15.1634 136.031 14.9573 135.773 14.8887H135.783Z" fill="#F56C43"/>
+                      <path d="M170.321 14.8887L166.055 13.6817C162.146 12.5925 159.09 9.57022 157.988 5.70404L156.768 1.48462C156.599 1.07249 156.123 0.876234 155.706 1.04305C155.508 1.12155 155.349 1.27855 155.26 1.48462L154.04 5.70404C152.938 9.57022 149.882 12.5925 145.973 13.6817L141.707 14.8887C141.29 15.0064 141.052 15.4382 141.171 15.8405C141.241 16.0956 141.449 16.3017 141.707 16.3704L145.973 17.5773C149.882 18.6665 152.938 21.6888 154.04 25.555L155.26 29.7744C155.379 30.1865 155.816 30.422 156.222 30.3043C156.48 30.2356 156.689 30.0295 156.758 29.7744L157.978 25.555C159.08 21.6888 162.136 18.6665 166.045 17.5773L170.311 16.3704C170.728 16.2526 170.966 15.8209 170.847 15.4185C170.777 15.1634 170.569 14.9573 170.311 14.8887H170.321Z" fill="#F56C43"/>
+                      </g>
+                      <defs>
+                      <clipPath id="clip0_16_175">
+                      <rect x="0.720703" y="0.984497" width="170.166" height="29.3692" rx="14.6846" fill="white"/>
+                      </clipPath>
+                      </defs>
+                    </svg>
+                  </div>
                 {%- endif -%}
-                {%- if block.settings.text != blank -%}
-                  <div class="rte">{{ block.settings.text }}</div>
+                {%- if block.settings.comments != blank -%}
+                  <div class="comments">{{ block.settings.comments }}</div>
                 {%- endif -%}
-
-                {%- if block.settings.before_image != blank and block.settings.after_image != blank -%}
-                  <div class="flex">
-                    <div class="before">
-                      <div class="flex">
-                        {%- if block.settings.before_label  -%}
-                          <h3>{{ block.settings.before_label }}</h3>
-                        {%- endif -%}
-                      </div>
-                      <div class="img-wrap">
-                        <img width="" height="" alt="" src="{{ block.settings.before_image | image_url }}">
-                      </div>
-                    </div>
-                    <div class="after">
-                      <div class="flex">
-                        {%- if block.settings.after_label  -%}
-                          <h3>{{ block.settings.after_label }}</h3>
-                        {%- endif -%}
-                      </div>
-                      <div class="img-wrap">
-                        <img width=""height="" alt="" src="{{ block.settings.after_image | image_url }}">
-                      </div>
+                {%- if block.settings.customer_name != blank -%}
+                  <div class="user-info">
+                    <span class="user-name">{{- block.settings.customer_name | escape -}}</span>
+                    <div class="user-status">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 31" fill="none">
+                        <path d="M0.65058 4.70362C0.65058 4.70362 7.46323 7.21324 12.9844 0.84314C17.2197 6.43874 24.3989 5.18994 24.3989 5.18994C24.3989 5.18994 26.6068 26.8969 12.5262 30.3701C-1.5573 26.8969 0.65058 4.70362 0.65058 4.70362Z" fill="#3A3BDA"/>
+                        <path d="M8.6333 17.4079L12.3131 21.0342L18.9425 11.2329" stroke="#FDE6E6" stroke-width="3.71235" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                      <span>Verified Buyer</span>
                     </div>
                   </div>
                 {%- endif -%}
-
                 {%- if block.settings.link_label != blank -%}
                   <a
                     class="link animate-arrow"
@@ -245,7 +240,7 @@
 
 {% schema %}
 {
-  "name": "t:sections.multicolumn.name",
+  "name": "Customer Reviews",
   "class": "section",
   "tag": "section",
   "disabled_on": {
@@ -268,6 +263,12 @@
       "id": "title",
       "default": "t:sections.multicolumn.settings.title.default",
       "label": "t:sections.multicolumn.settings.title.label"
+    },
+    {
+      "type": "color",
+      "id": "title_color",
+      "default": "#F56C43",
+      "label": "Title color"
     },
     {
       "type": "select",
@@ -372,7 +373,7 @@
       "min": 1,
       "max": 6,
       "step": 1,
-      "default": 3,
+      "default": 2,
       "label": "t:sections.multicolumn.settings.columns_desktop.label"
     },
     {
@@ -486,21 +487,21 @@
       "name": "t:sections.multicolumn.blocks.column.name",
       "settings": [
         {
-          "type": "image_picker",
-          "id": "image",
-          "label": "t:sections.multicolumn.blocks.column.settings.image.label"
-        },
-        {
           "type": "inline_richtext",
           "id": "title",
           "default": "t:sections.multicolumn.blocks.column.settings.title.default",
-          "label": "t:sections.multicolumn.blocks.column.settings.title.label"
+          "label": "Title"
         },
         {
           "type": "richtext",
-          "id": "text",
+          "id": "comments",
           "default": "t:sections.multicolumn.blocks.column.settings.text.default",
-          "label": "t:sections.multicolumn.blocks.column.settings.text.label"
+          "label": "Comments"
+        },
+        {
+          "type": "text",
+          "id": "customer_name",
+          "label": "Customer Name"
         },
         {
           "type": "text",
@@ -511,37 +512,14 @@
           "type": "url",
           "id": "link",
           "label": "t:sections.multicolumn.blocks.column.settings.link.label"
-        },
-        {
-          "type": "image_picker",
-          "id": "before_image",
-          "label": "Before Image"
-        },
-        {
-          "type": "text",
-          "id": "before_label",
-          "label": "Before label"
-        },
-        {
-          "type": "image_picker",
-          "id": "after_image",
-          "label": "After Image"
-        },
-        {
-          "type": "text",
-          "id": "after_label",
-          "label": "After label"
-        },
+        }
       ]
     }
   ],
   "presets": [
     {
-      "name": "t:sections.multicolumn.presets.name",
+      "name": "Customer Reviews",
       "blocks": [
-        {
-          "type": "column"
-        },
         {
           "type": "column"
         },
