@@ -160,7 +160,21 @@
                 </a>
               {%- endif -%}
             </div>
-        {%- endcase -%}
+            {%- when 'overlay' -%}
+            <div class="overlay__image">
+             <div class="image_wrap">
+              {{ block.settings.overlay_image | image_url: width: 1200 
+                | image_tag:
+                width: block.settings.image.width,
+                height: image_height,
+                class: image_class,
+                sizes: sizes,
+                widths: widths,
+                fetchpriority: fetch_priority
+              }}
+             </div>
+            </div>
+          {%- endcase -%}
       {%- endfor -%}
     </div>
   </div>
@@ -404,6 +418,18 @@
       ]
     },
     {
+      "type": "overlay",
+      "name": "Overlay",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "overlay_image",
+          "label": "Overlay Image"
+        }
+      ]
+    },
+    {
       "type": "text",
       "name": "t:sections.image-banner.blocks.text.name",
       "limit": 1,
@@ -489,6 +515,9 @@
         },
         {
           "type": "text"
+        },
+        {
+          "type": "overlay"
         },
         {
           "type": "buttons"

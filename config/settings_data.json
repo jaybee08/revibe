@@ -9,8 +9,8 @@
  */
 {
   "current": {
-    "logo": "shopify:\/\/shop_images\/revibelogo.png",
-    "logo_width": 120,
+    "logo": "shopify://shop_images/revibelogo.png",
+    "logo_width": 150,
     "type_header_font": "assistant_n4",
     "heading_scale": 100,
     "type_body_font": "assistant_n4",
@@ -144,6 +144,14 @@
     "content_for_index": [
 
     ],
+    "blocks": {
+      "14060646107696862457": {
+        "type": "shopify://apps/judge-me-reviews/blocks/judgeme_core/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+        "disabled": false,
+        "settings": {
+        }
+      }
+    },
     "color_schemes": {
       "scheme-1": {
         "settings": {
@@ -197,6 +205,28 @@
           "button": "#ffffff",
           "button_label": "#334fb4",
           "secondary_button_label": "#ffffff",
+          "shadow": "#121212"
+        }
+      },
+      "scheme-4acb4515-6122-4d3a-9703-724bf26d46c3": {
+        "settings": {
+          "background": "#f56c43",
+          "background_gradient": "",
+          "text": "#ffffff",
+          "button": "#121212",
+          "button_label": "#ffffff",
+          "secondary_button_label": "#121212",
+          "shadow": "#121212"
+        }
+      },
+      "scheme-01619459-f301-4b37-84ea-ee5cdf46a16b": {
+        "settings": {
+          "background": "#f9ff88",
+          "background_gradient": "",
+          "text": "#242833",
+          "button": "#121212",
+          "button_label": "#ffffff",
+          "secondary_button_label": "#121212",
           "shadow": "#121212"
         }
       }
