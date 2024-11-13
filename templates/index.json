@@ -70,8 +70,7 @@
         "heading_6x8RAQ": {
           "type": "heading",
           "settings": {
-            "heading": "5-STAR RATED<strong> BY OVER 1,000 DRINKERS</strong>",
-            "heading_size": "h2"
+            "heading": "5-STAR RATED<strong> BY OVER 1,000 DRINKERS</strong>"
           }
         }
       },
@@ -81,7 +80,8 @@
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "center",
-        "color_scheme": "scheme-4acb4515-6122-4d3a-9703-724bf26d46c3",
+        "color": "#FFFFFF",
+        "background_color": "#2A77D0",
         "full_width": true,
         "padding_top": 16,
         "padding_bottom": 16
@@ -122,6 +122,7 @@
         "column_TYU3VV"
       ],
       "settings": {
+        "bg_color": "#FFFFFF",
         "title": "<strong>Live It Up & Bounce Back</strong>",
         "title_alignment": "center",
         "subtitle": "<strong>Revibe</strong> turns <strong>hangover mornings</strong> into productive starts –  every single time!",
@@ -129,6 +130,7 @@
         "image_width": "full",
         "image_ratio": "adapt",
         "columns_desktop": 2,
+        "cards_title_color": "",
         "column_alignment": "center",
         "background_style": "primary",
         "button_label": "Buy Now",
@@ -136,6 +138,57 @@
         "color_scheme": "scheme-01619459-f301-4b37-84ea-ee5cdf46a16b",
         "columns_mobile": "1",
         "swipe_on_mobile": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "customer_reviews_8k9EJR": {
+      "type": "customer-reviews",
+      "blocks": {
+        "column_RMgm49": {
+          "type": "column",
+          "settings": {
+            "title": "CANT'GO WITHOUT IT",
+            "comments": "<p>Took 2 Revibe pills before and after partying, and I couldn’t believe how well they worked. I was up the next morning with no headache—efficient and effective! 😎💪</p>",
+            "customer_name": "Dave G.",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_6Fp7hB": {
+          "type": "column",
+          "settings": {
+            "title": "GAME CHANGER",
+            "comments": "<p>Revibe has become a party essential for me, plus it’s affordable and actually works. I felt perfectly fine the next morning—  no headaches or dizziness, nothing.  Great value for money!  🙌🔥</p>",
+            "customer_name": "Dianne K.",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_RMgm49",
+        "column_6Fp7hB"
+      ],
+      "settings": {
+        "background_image": "shopify://shop_images/Reviews_BG.jpg",
+        "bg_color": "#FFFFFF",
+        "title": "",
+        "title_color": "#F56C43",
+        "title_alignment": "center",
+        "subtitle": "",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 2,
+        "cards_title_color": "",
+        "column_alignment": "left",
+        "background_style": "primary",
+        "button_label": "READ REVIEWS",
+        "button_link": "#",
+        "color_scheme": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
         "padding_top": 36,
         "padding_bottom": 36
       }
@@ -170,7 +223,9 @@
         "column_BCigxP",
         "column_HG6NqN"
       ],
+      "disabled": true,
       "settings": {
+        "bg_color": "#FFFFFF",
         "title": "<strong>Customer</strong> Reviews",
         "title_alignment": "center",
         "subtitle": "",
@@ -178,6 +233,7 @@
         "image_width": "full",
         "image_ratio": "adapt",
         "columns_desktop": 2,
+        "cards_title_color": "",
         "column_alignment": "left",
         "background_style": "primary",
         "button_label": "Read reviews",
@@ -231,7 +287,9 @@
         "column_zkLy3E",
         "column_7grrNP"
       ],
+      "disabled": true,
       "settings": {
+        "bg_color": "#FFFFFF",
         "title": "<strong>Trusted and Certified</strong>",
         "title_alignment": "center",
         "subtitle": "",
@@ -239,6 +297,7 @@
         "image_width": "full",
         "image_ratio": "adapt",
         "columns_desktop": 3,
+        "cards_title_color": "",
         "column_alignment": "center",
         "background_style": "primary",
         "button_label": "Button label",
@@ -266,7 +325,8 @@
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "center",
-        "color_scheme": "scheme-3",
+        "color": "#FFFFFF",
+        "background_color": "#2A77D0",
         "full_width": true,
         "padding_top": 40,
         "padding_bottom": 52
@@ -317,7 +377,9 @@
         "column_JHyUJN",
         "column_7VGRcc"
       ],
+      "disabled": true,
       "settings": {
+        "bg_color": "#FFFFFF",
         "title": "<strong>YOUR BEST HANGOVER REMEDY</strong>",
         "title_alignment": "center",
         "subtitle": "Maximum Support for Enjoying Your Night and Recovering Smoothly!",
@@ -325,6 +387,7 @@
         "image_width": "third",
         "image_ratio": "adapt",
         "columns_desktop": 3,
+        "cards_title_color": "",
         "column_alignment": "center",
         "background_style": "none",
         "button_label": "Buy Now",
@@ -367,6 +430,7 @@
         "text_8EhJdt",
         "button_c4fpPE"
       ],
+      "disabled": true,
       "settings": {
         "image": "shopify://shop_images/20240904_-_Revibe_Packaging_Sachet_MU_Front_Bigger_Text.png",
         "height": "adapt",
@@ -391,6 +455,7 @@
     },
     "video_C33yBm": {
       "type": "video",
+      "disabled": true,
       "settings": {
         "heading": "Video",
         "heading_size": "h1",
@@ -472,6 +537,7 @@
     "image_banner",
     "rich_text_ybgjRB",
     "multicolumn_MwrUi8",
+    "customer_reviews_8k9EJR",
     "multicolumn_D9b4rj",
     "multicolumn_qqCye3",
     "rich_text_B8jzdK",
