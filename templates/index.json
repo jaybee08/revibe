@@ -80,8 +80,8 @@
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "center",
-        "color": "#FFFFFF",
-        "background_color": "#2A77D0",
+        "color": "#ffffff",
+        "background_color": "#2a77d0",
         "full_width": true,
         "padding_top": 16,
         "padding_bottom": 16
@@ -123,7 +123,7 @@
       ],
       "settings": {
         "background_image": "shopify://shop_images/Group.png",
-        "bg_color": "#FFFFFF",
+        "bg_color": "#ffffff",
         "title": "<strong>Live It Up & Bounce Back</strong>",
         "title_alignment": "center",
         "subtitle": "<strong>Revibe</strong> turns <strong>hangover mornings</strong> into productive starts –  every single time!",
@@ -134,7 +134,7 @@
         "cards_title_color": "",
         "column_alignment": "center",
         "background_style": "primary",
-        "button_label": "Buy Now",
+        "button_label": "",
         "button_link": "shopify://products/hangover-recovery-pills-box-of-10",
         "color_scheme": "scheme-01619459-f301-4b37-84ea-ee5cdf46a16b",
         "columns_mobile": "1",
@@ -173,9 +173,9 @@
       ],
       "settings": {
         "background_image": "shopify://shop_images/Reviews_BG.jpg",
-        "bg_color": "#FFFFFF",
+        "bg_color": "#ffffff",
         "title": "",
-        "title_color": "#F56C43",
+        "title_color": "#f56c43",
         "title_alignment": "center",
         "subtitle": "",
         "heading_size": "h1",
@@ -200,22 +200,25 @@
         "column_nWwCD9": {
           "type": "column",
           "settings": {
+            "item_image": "shopify://shop_images/liver.png",
             "title": "Protects Liver Health",
-            "description": "<p>Item description...</p>"
+            "description": "<p>Natural ingredients help detoxify and protect your liver from alcohol’s effects.</p>"
           }
         },
         "column_WUt4Ec": {
           "type": "column",
           "settings": {
-            "title": "Protects Liver Health",
-            "description": "<p>Item description...</p>"
+            "item_image": "shopify://shop_images/drinks.png",
+            "title": "Reduces Negative Side Effects of Alcohol",
+            "description": "<p>Relieves flush, headache, and nausea while keeping the alcohol high.</p>"
           }
         },
         "column_VhG9KE": {
           "type": "column",
           "settings": {
-            "title": "Protects Liver Health",
-            "description": "<p>Item description...</p>"
+            "item_image": "shopify://shop_images/person.png",
+            "title": "Prevents Hangovers",
+            "description": "<p>Boosts alcohol metabolism to cut hangover symptoms and help you  wake up refreshed.</p>"
           }
         }
       },
@@ -226,15 +229,15 @@
       ],
       "settings": {
         "background_image": "shopify://shop_images/yellow-pastel-bg.jpg",
-        "bg_color": "#FFFFFF",
+        "bg_color": "#ffffff",
         "title": "YOUR BEST HANGOVER REMEDY",
-        "title_color": "#F56C43",
+        "title_color": "#f56c43",
         "subtitle": "Maximum Support for Enjoying Your Night and Recovering Smoothly!",
-        "subtitle_color": "#F56C43",
+        "subtitle_color": "#f56c43",
         "columns_desktop": 2,
         "button_label": "GET HANGOVER-FREE NOW!",
         "button_link": "shopify://products/hangover-recovery-pills-box-of-10",
-        "button_color": "#F56C43",
+        "button_color": "#f56c43",
         "padding_top": 36,
         "padding_bottom": 36
       }
@@ -271,11 +274,11 @@
       ],
       "settings": {
         "image": "shopify://shop_images/tested-and-proven-image.png",
-        "bg_color": "#FFFFFF",
+        "bg_color": "#ffffff",
         "title": "TESTED AND APPROVED",
-        "title_color": "#F9FF88",
+        "title_color": "#f9ff88",
         "subtitle": "Revibe Delivers Hangover-Free Mornings!",
-        "subtitle_color": "#F9FF88",
+        "subtitle_color": "#f9ff88",
         "columns_desktop": 2,
         "button_label": "GET HANGOVER-FREE NOW!",
         "button_link": "",
@@ -315,7 +318,7 @@
       ],
       "disabled": true,
       "settings": {
-        "bg_color": "#FFFFFF",
+        "bg_color": "#ffffff",
         "title": "<strong>Customer</strong> Reviews",
         "title_alignment": "center",
         "subtitle": "",
@@ -379,7 +382,7 @@
       ],
       "disabled": true,
       "settings": {
-        "bg_color": "#FFFFFF",
+        "bg_color": "#ffffff",
         "title": "<strong>Trusted and Certified</strong>",
         "title_alignment": "center",
         "subtitle": "",
@@ -415,8 +418,8 @@
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "center",
-        "color": "#FFFFFF",
-        "background_color": "#2A77D0",
+        "color": "#ffffff",
+        "background_color": "#2a77d0",
         "full_width": true,
         "padding_top": 40,
         "padding_bottom": 52
@@ -469,7 +472,7 @@
       ],
       "disabled": true,
       "settings": {
-        "bg_color": "#FFFFFF",
+        "bg_color": "#ffffff",
         "title": "<strong>YOUR BEST HANGOVER REMEDY</strong>",
         "title_alignment": "center",
         "subtitle": "Maximum Support for Enjoying Your Night and Recovering Smoothly!",
