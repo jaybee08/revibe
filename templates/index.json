@@ -35,7 +35,7 @@
         "button": {
           "type": "buttons",
           "settings": {
-            "button_label_1": "Buy Now",
+            "button_label_1": "SHOP NOW",
             "button_link_1": "shopify://collections/all",
             "button_style_secondary_1": true,
             "button_label_2": "",
@@ -241,6 +241,50 @@
         "padding_bottom": 36
       }
     },
+    "tested_and_approved_BDq4Tz": {
+      "type": "tested-and-approved",
+      "blocks": {
+        "column_Vif9ef": {
+          "type": "column",
+          "settings": {
+            "title": "92.8%",
+            "description": "<p>reported feeling less intoxicated while still enjoying the alcohol high.</p>"
+          }
+        },
+        "column_L4D9JL": {
+          "type": "column",
+          "settings": {
+            "title": "88%",
+            "description": "<p>experienced reduced hangover symptoms like headaches, fatigue, and nausea.</p>"
+          }
+        },
+        "column_FFEgbq": {
+          "type": "column",
+          "settings": {
+            "title": "100%",
+            "description": "<p>noticed improved overall drinking experience and satisfaction.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "column_Vif9ef",
+        "column_L4D9JL",
+        "column_FFEgbq"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/tested-and-proven-image.png",
+        "bg_color": "#FFFFFF",
+        "title": "TESTED AND APPROVED",
+        "title_color": "#F9FF88",
+        "subtitle": "Revibe Delivers Hangover-Free Mornings!",
+        "subtitle_color": "#F9FF88",
+        "columns_desktop": 2,
+        "button_label": "GET HANGOVER-FREE NOW!",
+        "button_link": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "custom_rich_text_Ly7qmc": {
       "type": "custom-rich-text",
       "settings": {
@@ -359,6 +403,7 @@
     "multicolumn_MwrUi8",
     "customer_reviews_8k9EJR",
     "hangover_remedy_Gecy6T",
+    "tested_and_approved_BDq4Tz",
     "custom_rich_text_Ly7qmc",
     "text_and_large_image_JdUxEA",
     "1729751303886dac42",
