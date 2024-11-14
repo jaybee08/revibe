@@ -252,6 +252,21 @@
         "background_image": "shopify://shop_images/richtext-bg.png"
       }
     },
+    "text_and_large_image_JdUxEA": {
+      "type": "text-and-large-image",
+      "settings": {
+        "image": "shopify://shop_images/dr-img.png",
+        "bg_color": "#FFFFFF",
+        "title": "THE DOCTOR-APPROVED PARTY HACK!",
+        "title_color": "#FFFFFF",
+        "description": "Description...",
+        "description_color": "#FFFFFF",
+        "author": "Author Name",
+        "author_title": "Author Title",
+        "author_details_color": "#FFFFFF",
+        "background_image": "shopify://shop_images/gradient-bg-blue.png"
+      }
+    },
     "1729751303886dac42": {
       "type": "apps",
       "settings": {
@@ -345,6 +360,7 @@
     "customer_reviews_8k9EJR",
     "hangover_remedy_Gecy6T",
     "custom_rich_text_Ly7qmc",
+    "text_and_large_image_JdUxEA",
     "1729751303886dac42",
     "video_C33yBm",
     "slideshow_ePwymm",
