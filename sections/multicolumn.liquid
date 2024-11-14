@@ -15,9 +15,11 @@
     color: #14154C;
     font-size: 2rem;
     width: 100%;
-    
   }
-  .section-{{ section.id }}-multicolumn-gradient {
+  .section-{{ section.id }} .multicolumn-card {
+    background-color: #F9FF88; 
+  }
+  .section-{{ section.id }} {
     {% if section.settings.background_image %}
       background-image: url("{{ section.settings.background_image | image_url }}");
       object-fit: cover;
@@ -26,16 +28,57 @@
       background: #FFF;
     {% endif %}
   }
-  .multicolumn-card__info .inline-richtext,
-  .multicolumn-card__info .inline-richtext * {
+  .section-{{ section.id }} .multicolumn-card__info .inline-richtext,
+  .section-{{ section.id }} .multicolumn-card__info .inline-richtext * {
     color: {{ section.settings.cards_title_color }};
     font-size: 23px;
+  }
+  .section-{{ section.id }} .multicolumn .title,
+  .section-{{ section.id }} .multicolumn .title * {
+    color: {{ section.settings.title_color }};
+    text-align: center;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+  .section-{{ section.id }} .multicolumn-card__info .flex .before .img-wrap {
+    height: 350px;
   }
   @media screen and (min-width: 750px) {
     .section-{{ section.id }}-padding {
       padding-top: {{ section.settings.padding_top }}px;
       padding-bottom: {{ section.settings.padding_bottom }}px;
     }
+  }
+  @media screen and (max-width: 989px) {
+    .section-{{ section.id }} .multicolumn-card__info .flex .before .img-wrap {
+      height: 100%;
+    }
+  }
+  @media screen and (max-width: 749px) {
+    .section-{{ section.id }} .title,
+    .section-{{ section.id }} .title * {
+      font-size: 24px;
+      line-height: 28.8px;
+    }
+    .section-align-{{ section.id }} .subtitle,
+    .section-align-{{ section.id }} .subtitle * {
+      color: #14154C;
+      font-size: 16px;
+      width: 100%;
+      line-height: 22px;
+    }
+    .section-{{ section.id }} .multicolumn-card__info .inline-richtext,
+    .section-{{ section.id }} .multicolumn-card__info .inline-richtext * {
+      display: none;
+    }
+    .section-{{ section.id }} .multicolumn-card__info .flex .before .img-wrap {
+      height: 100%;
+    }
+    /* div ul:not(:last-child) {
+      background-color: #900;
+    } */
   }
 {%- endstyle -%}
 
@@ -47,7 +90,7 @@
   endif
 -%}
 
-<div class="multicolumn section-{{ section.id }}-multicolumn-gradient{% unless section.settings.background_style == 'none' and settings.text_boxes_border_thickness > 0 or settings.text_boxes_shadow_opacity > 0 %} background-{{ section.settings.background_style }}{% endunless %}{% if section.settings.title == blank %} no-heading{% endif %}">
+<div class="multicolumn section-{{ section.id }} multicolumn-gradient{% unless section.settings.background_style == 'none' and settings.text_boxes_border_thickness > 0 or settings.text_boxes_shadow_opacity > 0 %} background-{{ section.settings.background_style }}{% endunless %}{% if section.settings.title == blank %} no-heading{% endif %}">
   <div
     class="page-width section-{{ section.id }}-padding isolate{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
     {% if settings.animations_reveal_on_scroll %}
@@ -56,12 +99,12 @@
   >
     {%- unless section.settings.title == blank -%}
       <div class="title-wrapper-with-link title-wrapper--self-padded-mobile title-wrapper--no-top-margin multicolumn__title section-align-{{ section.id }}">
-        <h2 class="title inline-richtext {{ section.settings.heading_size }}">
+        <h2 class="title inline-richtext">
           {{ section.settings.title }}
         </h2>
-        <h2 class="subtitle inline-richtext">
+        <div class="subtitle inline-richtext">
           {{ section.settings.subtitle }}
-        </h2>
+        </div>
         {%- if section.settings.button_label != blank and show_mobile_slider -%}
           <a href="{{ section.settings.button_link }}" class="link underlined-link large-up-hide">
             {{- section.settings.button_label | escape -}}
@@ -102,7 +145,7 @@
               style="--animation-order: {{ forloop.index }};"
             {% endif %}
           >
-            <div class="multicolumn-card content-container">
+            <div class="multicolumn-card">
               {%- if block.settings.image != blank -%}
                 {% if section.settings.image_ratio == 'adapt' or section.settings.image_ratio == 'circle' %}
                   {% assign spaced_image = true %}
@@ -162,7 +205,7 @@
                         {%- endif -%}
                       </div>
                       <div class="img-wrap">
-                        <img width="" height="" alt="" src="{{ block.settings.before_image | image_url }}">
+                        <img width="" height="350" alt="" src="{{ block.settings.before_image | image_url }}">
                       </div>
                     </div>
                     <div class="after">
@@ -172,7 +215,7 @@
                         {%- endif -%}
                       </div>
                       <div class="img-wrap">
-                        <img width=""height="" alt="" src="{{ block.settings.after_image | image_url }}">
+                        <img width=""height="350" alt="" src="{{ block.settings.after_image | image_url }}">
                       </div>
                     </div>
                   </div>
@@ -226,7 +269,7 @@
         </div>
       {%- endif -%}
     </slider-component>
-    <div class="center{% if show_mobile_slider %} small-hide medium-hide{% endif %}">
+    <div class="cta-button center{% if show_mobile_slider %} small-hide medium-hide{% endif %}">
       {%- if section.settings.button_label != blank -%}
         <a
           class="button button--primary"
@@ -259,12 +302,12 @@
     },
     {
       "type": "color",
-      "id": "bg_color",
-      "default": "#FFFFFF",
+      "id": "title_color",
+      "default": "#F56C43",
       "label": "Title color"
     },
     {
-      "type": "inline_richtext",
+      "type": "text",
       "id": "title",
       "default": "t:sections.multicolumn.settings.title.default",
       "label": "t:sections.multicolumn.settings.title.label"
@@ -272,6 +315,7 @@
     {
       "type": "select",
       "id": "title_alignment",
+      "label": "Heading alignment",
       "options": [
         {
           "value": "left",
@@ -286,41 +330,12 @@
           "label": "Right"
         }
       ],
-      "default": "center",
-      "label": "Center"
+      "default": "center"
     },
     {
       "type": "inline_richtext",
       "id": "subtitle",
-      "label": "Heading alignment"
-    },
-    {
-      "type": "select",
-      "id": "heading_size",
-      "options": [
-        {
-          "value": "h2",
-          "label": "t:sections.all.heading_size.options__1.label"
-        },
-        {
-          "value": "h1",
-          "label": "t:sections.all.heading_size.options__2.label"
-        },
-        {
-          "value": "h0",
-          "label": "t:sections.all.heading_size.options__3.label"
-        },
-        {
-          "value": "hxl",
-          "label": "t:sections.all.heading_size.options__4.label"
-        },
-        {
-          "value": "hxxl",
-          "label": "t:sections.all.heading_size.options__5.label"
-        }
-      ],
-      "default": "h1",
-      "label": "t:sections.all.heading_size.label"
+      "label": "Subtitle"
     },
     {
       "type": "select",
@@ -378,7 +393,8 @@
     {
       "type": "color",
       "id": "cards_title_color",
-      "label": "Cards title color"
+      "label": "Cards title color",
+      "default": "#F9FF88"
     },
     {
       "type": "select",

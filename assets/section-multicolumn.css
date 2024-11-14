@@ -70,13 +70,7 @@
 }
 
 .multicolumn:not(.background-none) .multicolumn-card {
-  background: rgb(var(--color-background));
   height: 100%;
-}
-
-.multicolumn.background-primary .multicolumn-card {
-  background: rgb(var(--color-background))
-    linear-gradient(rgba(var(--color-foreground), 0.04), rgba(var(--color-foreground), 0.04));
 }
 
 .multicolumn-list h3 {
@@ -148,13 +142,13 @@
 }
 
 .multicolumn-card__info {
-  padding: 2.5rem;
+  padding-top: 16px;
 }
 
 .multicolumn-card__info .flex {
   display: flex;
-  gap: 6px;
-  margin: 12px 0;
+  gap: 16px;
+  margin: 12px 0 0;
 }
 
 .multicolumn-card__info .flex .before {
@@ -251,6 +245,15 @@
 
   .multicolumn.background-none .slider.slider--mobile {
     margin-bottom: 0rem;
+  }
+  .multicolumn-card__info .flex {
+    gap: 4px;
+  }
+  .multicolumn-card__info {
+    padding-top: 0px;
+  }
+  .multicolumn:not(.background-none) .multicolumn-card {
+    height: auto;
   }
 }
 

@@ -140,6 +140,149 @@
         "padding_bottom": 36
       }
     },
+    "customer_reviews_8k9EJR": {
+      "type": "customer-reviews",
+      "blocks": {
+        "column_RMgm49": {
+          "type": "column",
+          "settings": {
+            "title": "CANT'GO WITHOUT IT",
+            "comments": "<p>Took 2 Revibe pills before and after partying, and I couldn’t believe how well they worked. I was up the next morning with no headache—efficient and effective! 😎💪</p>",
+            "customer_name": "Dave G.",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_6Fp7hB": {
+          "type": "column",
+          "settings": {
+            "title": "GAME CHANGER",
+            "comments": "<p>Revibe has become a party essential for me, plus it’s affordable and actually works. I felt perfectly fine the next morning—  no headaches or dizziness, nothing.  Great value for money!  🙌🔥</p>",
+            "customer_name": "Dianne K.",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_RMgm49",
+        "column_6Fp7hB"
+      ],
+      "settings": {
+        "background_image": "shopify://shop_images/Reviews_BG.jpg",
+        "bg_color": "#ffffff",
+        "title": "",
+        "title_color": "#f56c43",
+        "title_alignment": "center",
+        "subtitle": "",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 2,
+        "cards_title_color": "",
+        "column_alignment": "left",
+        "background_style": "primary",
+        "button_label": "READ REVIEWS",
+        "button_link": "#",
+        "color_scheme": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "hangover_remedy_Gecy6T": {
+      "type": "hangover-remedy",
+      "blocks": {
+        "column_nWwCD9": {
+          "type": "column",
+          "settings": {
+            "item_image": "shopify://shop_images/liver.png",
+            "title": "Protects Liver Health",
+            "description": "<p>Natural ingredients help detoxify and protect your liver from alcohol’s effects.</p>"
+          }
+        },
+        "column_WUt4Ec": {
+          "type": "column",
+          "settings": {
+            "item_image": "shopify://shop_images/drinks.png",
+            "title": "Reduces Negative Side Effects of Alcohol",
+            "description": "<p>Relieves flush, headache, and nausea while keeping the alcohol high.</p>"
+          }
+        },
+        "column_VhG9KE": {
+          "type": "column",
+          "settings": {
+            "item_image": "shopify://shop_images/person.png",
+            "title": "Prevents Hangovers",
+            "description": "<p>Boosts alcohol metabolism to cut hangover symptoms and help you  wake up refreshed.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "column_nWwCD9",
+        "column_WUt4Ec",
+        "column_VhG9KE"
+      ],
+      "settings": {
+        "background_image": "shopify://shop_images/yellow-pastel-bg.jpg",
+        "bg_color": "#ffffff",
+        "title": "YOUR BEST HANGOVER REMEDY",
+        "title_color": "#f56c43",
+        "subtitle": "<p>Maximum Support for Enjoying Your Night and Recovering Smoothly!</p>",
+        "subtitle_color": "#f56c43",
+        "columns_desktop": 2,
+        "button_label": "GET HANGOVER-FREE NOW!",
+        "button_link": "shopify://products/hangover-recovery-pills-box-of-10",
+        "button_color": "#f56c43",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "tested_and_approved_QAHTKJ": {
+      "type": "tested-and-approved",
+      "blocks": {
+        "column_8HMdjp": {
+          "type": "column",
+          "settings": {
+            "title": "92.8%",
+            "description": "<p>reported feeling less intoxicated while still enjoying the alcohol high.</p>"
+          }
+        },
+        "column_86VctX": {
+          "type": "column",
+          "settings": {
+            "title": "88%",
+            "description": "<p>experienced reduced hangover symptoms like headaches, fatigue, and nausea.</p>"
+          }
+        },
+        "column_mB8kfm": {
+          "type": "column",
+          "settings": {
+            "title": "100%",
+            "description": "<p>noticed improved overall drinking experience and satisfaction.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "column_8HMdjp",
+        "column_86VctX",
+        "column_mB8kfm"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/tested-and-proven-image.png",
+        "bg_color": "#ffffff",
+        "title": "TESTED AND APPROVED",
+        "title_color": "#f9ff88",
+        "subtitle": "Revibe Delivers Hangover-Free Mornings!",
+        "subtitle_color": "#f9ff88",
+        "columns_desktop": 2,
+        "button_label": "GET HANGOVER-FREE NOW!",
+        "button_link": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "multicolumn_D9b4rj": {
       "type": "multicolumn",
       "blocks": {
@@ -472,6 +615,9 @@
     "image_banner",
     "rich_text_ybgjRB",
     "multicolumn_MwrUi8",
+    "customer_reviews_8k9EJR",
+    "hangover_remedy_Gecy6T",
+    "tested_and_approved_QAHTKJ",
     "multicolumn_D9b4rj",
     "multicolumn_qqCye3",
     "rich_text_B8jzdK",
