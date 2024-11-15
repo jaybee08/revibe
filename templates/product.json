@@ -114,11 +114,73 @@
       "settings": {
         "include_margins": true
       }
+    },
+    "collapsible_content_RBkRFa": {
+      "type": "collapsible-content",
+      "blocks": {
+        "collapsible_row_HrhCGi": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Collapsible row",
+            "icon": "check_mark",
+            "row_content": "",
+            "page": ""
+          }
+        },
+        "collapsible_row_7hzYxU": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Collapsible row",
+            "icon": "check_mark",
+            "row_content": "",
+            "page": ""
+          }
+        },
+        "collapsible_row_tPHXFL": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Collapsible row",
+            "icon": "check_mark",
+            "row_content": "",
+            "page": ""
+          }
+        },
+        "collapsible_row_XmykVg": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Collapsible row",
+            "icon": "check_mark",
+            "row_content": "",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "collapsible_row_HrhCGi",
+        "collapsible_row_7hzYxU",
+        "collapsible_row_tPHXFL",
+        "collapsible_row_XmykVg"
+      ],
+      "settings": {
+        "caption": "",
+        "heading": "🌿 What are Revibe Party Recovery Pills?",
+        "heading_size": "h1",
+        "heading_alignment": "center",
+        "layout": "none",
+        "color_scheme": "",
+        "container_color_scheme": "",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
     "main",
     "related-products",
-    "1730958876110f0493"
+    "1730958876110f0493",
+    "collapsible_content_RBkRFa"
   ]
 }
