@@ -107,6 +107,7 @@
       ],
       "settings": {
         "title": "<strong>Live It Up & Bounce Back<\/strong>",
+        "title_alignment": "center",
         "subtitle": "<strong>Revibe<\/strong> turns <strong>hangover mornings<\/strong> into productive starts – \u2028every single time!",
         "heading_size": "hxl",
         "image_width": "full",
@@ -119,6 +120,55 @@
         "color_scheme": "scheme-01619459-f301-4b37-84ea-ee5cdf46a16b",
         "columns_mobile": "1",
         "swipe_on_mobile": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "multicolumn_D9b4rj": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_BCigxP": {
+          "type": "column",
+          "settings": {
+            "title": "<strong>Game changer<\/strong>",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p><p><em><strong>Dave G. Verified buyer<\/strong><\/em><\/p>",
+            "link_label": "",
+            "link": "",
+            "before_label": "",
+            "after_label": ""
+          }
+        },
+        "column_HG6NqN": {
+          "type": "column",
+          "settings": {
+            "title": "<strong>Can't go without it!<\/strong>",
+            "text": "<p>This is a test review comment<\/p><p><em><strong>Scott M. Verified buyer<\/strong><\/em><\/p>",
+            "link_label": "",
+            "link": "",
+            "before_label": "",
+            "after_label": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_BCigxP",
+        "column_HG6NqN"
+      ],
+      "settings": {
+        "title": "<strong>Customer<\/strong> Reviews",
+        "title_alignment": "center",
+        "subtitle": "",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 2,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "button_label": "Read reviews",
+        "button_link": "#",
+        "color_scheme": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
         "padding_top": 36,
         "padding_bottom": 36
       }
@@ -167,6 +217,7 @@
       ],
       "settings": {
         "title": "<strong>Trusted and Certified<\/strong>",
+        "title_alignment": "center",
         "subtitle": "",
         "heading_size": "hxxl",
         "image_width": "full",
@@ -175,7 +226,7 @@
         "column_alignment": "center",
         "background_style": "primary",
         "button_label": "Button label",
-        "button_link": "",
+        "button_link": "shopify:\/\/products\/hangover-recovery-pills-box-of-10",
         "color_scheme": "",
         "columns_mobile": "1",
         "swipe_on_mobile": false,
@@ -205,21 +256,85 @@
         "padding_bottom": 52
       }
     },
+    "multicolumn_QdNPTD": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_z4nB7W": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Screenshot_2024-10-15_at_7.58.59_PM.png",
+            "title": "<strong>Protects Liver Health<\/strong>",
+            "text": "<p>Natural ingredients help detoxify and protect your liver fromalcohol’s effects<\/p>",
+            "link_label": "",
+            "link": "",
+            "before_label": "",
+            "after_label": ""
+          }
+        },
+        "column_JHyUJN": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Screenshot_2024-10-15_at_7.59.06_PM.png",
+            "title": "<strong>Reduces Negative Side Effects of Alcoho<\/strong>",
+            "text": "<p>Relieves flush, headache, and nausea while keeping the alcohol high<\/p>",
+            "link_label": "",
+            "link": "",
+            "before_label": "",
+            "after_label": ""
+          }
+        },
+        "column_7VGRcc": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Screenshot_2024-10-15_at_7.59.14_PM.png",
+            "title": "<strong>Prevents Hangovers<\/strong>",
+            "text": "<p>Boosts alcohol metabolism to cut hangover symptoms and help you \u2028wake up refreshed<\/p>",
+            "link_label": "",
+            "link": "",
+            "before_label": "",
+            "after_label": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_z4nB7W",
+        "column_JHyUJN",
+        "column_7VGRcc"
+      ],
+      "settings": {
+        "title": "<strong>YOUR BEST HANGOVER REMEDY<\/strong>",
+        "title_alignment": "center",
+        "subtitle": "Maximum Support for Enjoying Your Night and Recovering Smoothly!",
+        "heading_size": "h0",
+        "image_width": "third",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "center",
+        "background_style": "none",
+        "button_label": "Buy Now",
+        "button_link": "shopify:\/\/collections\/all",
+        "color_scheme": "scheme-1",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "image_with_text_yVFDaM": {
       "type": "image-with-text",
       "blocks": {
         "heading_tLrpMe": {
           "type": "heading",
           "settings": {
-            "heading": "Tested and Approved:",
+            "heading": "<strong>Tested and Approved:<\/strong>",
             "heading_size": "h1"
           }
         },
         "text_8EhJdt": {
           "type": "text",
           "settings": {
-            "text": "<p>Get rapid hangover relief with Revibe Anti-Hangover Pills, reducing alcohol flush, headaches, and nausea, and supporting liver health!<\/p>",
-            "text_style": "body"
+            "text": "<p><strong>92.8%<\/strong> - reported feeling less intoxicated while still enjoying the alcohol high.<\/p><p><strong>88% <\/strong>- experienced reduce hangover symptoms like headache, fatique, and nausea<\/p><p><strong>100%<\/strong> - noticed improved overall drinking experience and satisfaction<\/p>",
+            "text_style": "subtitle"
           }
         },
         "button_c4fpPE": {
@@ -241,129 +356,13 @@
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "image_first",
-        "desktop_content_position": "top",
+        "desktop_content_position": "middle",
         "desktop_content_alignment": "left",
         "content_layout": "no-overlap",
         "section_color_scheme": "",
-        "color_scheme": "",
+        "color_scheme": "scheme-2",
         "image_behavior": "none",
         "mobile_content_alignment": "left",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
-    "multirow_WQVFqm": {
-      "type": "multirow",
-      "blocks": {
-        "row_nAWdwB": {
-          "type": "row",
-          "settings": {
-            "caption": "Caption",
-            "heading": "Row",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "button_label": "Button label",
-            "button_link": ""
-          }
-        },
-        "row_99YLpk": {
-          "type": "row",
-          "settings": {
-            "caption": "Caption",
-            "heading": "Row",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "button_label": "Button label",
-            "button_link": ""
-          }
-        },
-        "row_wQ3bxe": {
-          "type": "row",
-          "settings": {
-            "caption": "Caption",
-            "heading": "Row",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "button_label": "Button label",
-            "button_link": ""
-          }
-        }
-      },
-      "block_order": [
-        "row_nAWdwB",
-        "row_99YLpk",
-        "row_wQ3bxe"
-      ],
-      "settings": {
-        "image_height": "medium",
-        "desktop_image_width": "medium",
-        "heading_size": "h1",
-        "text_style": "body",
-        "button_style": "secondary",
-        "desktop_content_position": "middle",
-        "desktop_content_alignment": "left",
-        "image_layout": "alternate-left",
-        "section_color_scheme": "",
-        "row_color_scheme": "",
-        "mobile_content_alignment": "left",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
-    "collapsible_content_KgpVm9": {
-      "type": "collapsible-content",
-      "blocks": {
-        "collapsible_row_hn7tY7": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "Collapsible row",
-            "icon": "check_mark",
-            "row_content": "",
-            "page": ""
-          }
-        },
-        "collapsible_row_Ytfbet": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "Collapsible row",
-            "icon": "check_mark",
-            "row_content": "",
-            "page": ""
-          }
-        },
-        "collapsible_row_GQkr4h": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "Collapsible row",
-            "icon": "check_mark",
-            "row_content": "",
-            "page": ""
-          }
-        },
-        "collapsible_row_LwyLNU": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "Collapsible row",
-            "icon": "check_mark",
-            "row_content": "",
-            "page": ""
-          }
-        }
-      },
-      "block_order": [
-        "collapsible_row_hn7tY7",
-        "collapsible_row_Ytfbet",
-        "collapsible_row_GQkr4h",
-        "collapsible_row_LwyLNU"
-      ],
-      "settings": {
-        "caption": "",
-        "heading": "Collapsible content",
-        "heading_size": "h1",
-        "heading_alignment": "center",
-        "layout": "none",
-        "color_scheme": "",
-        "container_color_scheme": "",
-        "open_first_collapsible_row": false,
-        "image_ratio": "adapt",
-        "desktop_layout": "image_second",
         "padding_top": 36,
         "padding_bottom": 36
       }
@@ -373,10 +372,10 @@
     "image_banner",
     "rich_text_ybgjRB",
     "multicolumn_MwrUi8",
+    "multicolumn_D9b4rj",
     "multicolumn_qqCye3",
     "rich_text_B8jzdK",
-    "image_with_text_yVFDaM",
-    "multirow_WQVFqm",
-    "collapsible_content_KgpVm9"
+    "multicolumn_QdNPTD",
+    "image_with_text_yVFDaM"
   ]
 }

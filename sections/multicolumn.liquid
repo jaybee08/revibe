@@ -7,8 +7,13 @@
     padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
   }
 
-  .section-align-{{ section.id }} {
+  .section-align-{{ section.id }} .title {
     text-align: {{ section.settings.title_alignment }}
+  }
+
+  .section-align-{{ section.id }} .subtitle {
+    text-align: {{ section.settings.title_alignment }};
+    width: 100%;
   }
 
   @media screen and (min-width: 750px) {
