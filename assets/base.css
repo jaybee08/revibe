@@ -258,7 +258,6 @@ h5,
 .h3,
 .h4,
 .h5 {
-  font-family: var(--font-heading-family);
   font-style: var(--font-heading-style);
   font-weight: var(--font-heading-weight);
   letter-spacing: calc(var(--font-heading-scale) * 0.06rem);
@@ -491,7 +490,7 @@ h6:empty {
   text-underline-offset: 0.3rem;
   color: rgb(var(--color-link));
   background-color: transparent;
-  font-size: 1.4rem;
+  font-size: 16px;
   font-family: inherit;
 }
 
@@ -1241,24 +1240,6 @@ button.shopify-payment-button__button--unbranded {
   border-radius: var(--buttons-radius-outset);
   box-shadow: var(--shadow-horizontal-offset) var(--shadow-vertical-offset) var(--shadow-blur-radius)
     rgba(var(--color-shadow), var(--shadow-opacity));
-}
-
-.button:after,
-.shopify-challenge__button:after,
-.customer button:after,
-.shopify-payment-button__button--unbranded:after {
-  content: '';
-  position: absolute;
-  top: var(--buttons-border-width);
-  right: var(--buttons-border-width);
-  bottom: var(--buttons-border-width);
-  left: var(--buttons-border-width);
-  z-index: 1;
-  border-radius: var(--buttons-radius);
-  box-shadow: 0 0 0 calc(var(--buttons-border-width) + var(--border-offset))
-      rgba(var(--color-button-text), var(--border-opacity)),
-    0 0 0 var(--buttons-border-width) rgba(var(--color-button), var(--alpha-button-background));
-  transition: box-shadow var(--duration-short) ease;
 }
 
 .button:not([disabled]):hover::after,
@@ -2436,7 +2417,6 @@ input[type='checkbox'] {
 
 .header__heading-link {
   display: inline-block;
-  padding: 0.75rem;
   text-decoration: none;
   word-break: break-word;
 }
@@ -2515,8 +2495,10 @@ input[type='checkbox'] {
   max-height: 4.4rem;
   overflow: hidden;
 }
-
-.header__icon:not(.header__icon--summary),
+.header__icon--account {
+  display: none;
+}
+.header__icon:not(.header__icon--summary, .header__icon--account),
 .header__icon span {
   display: flex;
   align-items: center;
@@ -2550,13 +2532,6 @@ input[type='checkbox'] {
   width: 2rem;
   fill: none;
   vertical-align: middle;
-}
-
-.header__icon,
-.header__icon--cart .icon {
-  height: 4.4rem;
-  width: 4.4rem;
-  padding: 0;
 }
 
 .header__icon--cart {
@@ -2771,7 +2746,8 @@ details[open] > .header__submenu {
 
 @media screen and (min-width: 990px) {
   .header__inline-menu {
-    display: block;
+    display: flex;
+    justify-content: end;
   }
 
   .header--top-center .header__inline-menu {
@@ -2792,9 +2768,12 @@ details[open] > .header__submenu {
 }
 
 .header__menu-item {
-  padding: 1.2rem;
+  padding: 4px 8px;
   text-decoration: none;
-  color: rgba(var(--color-foreground), 0.75);
+  color: #14154C;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.5rem;
 }
 
 .header__menu-item:hover {
@@ -2879,6 +2858,13 @@ details[open] > .header__menu-item .icon-caret {
   flex-shrink: 0;
   margin-left: 1rem;
   position: static;
+}
+
+.header__container {
+  gap: 1.5rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
 
 header-menu > details,
@@ -3582,6 +3568,29 @@ details-disclosure > details {
 
 .progress-bar .progress-bar-value {
   display: block;
+}
+
+.cta-button a {
+  display: flex;
+  padding: 16px 32px;
+  justify-content: center;
+  align-items: center;
+  gap: 0.625rem;
+  border-radius: 100px;
+  background: #3A3CDA;
+  color: #F9FF88;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  width: fit-content;
+  justify-self: center;
+}
+
+@media screen and (max-width: 749px) {
+  .cta-button a {
+    padding: 0.625rem 1.5rem;
+    font-size: 14px;
+  }
 }
 
 @keyframes indeterminateAnimation {

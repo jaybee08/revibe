@@ -1,0 +1,334 @@
+
+{% assign section_title = "product-benefits" %}
+{%- style -%}
+  .section-{{ section.id }} {
+    display: flex;
+    padding: 60px 120px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 56px;
+    align-self: stretch;
+    {% if section.settings.background_image %}
+      background-image: url("{{ section.settings.background_image | image_url }}");
+      background-size: cover;
+      background-repeat: no-repeat;
+    {% else %}
+      background: #FFF;
+    {% endif %}
+  }
+  .{{ section_title }} .header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    align-self: stretch;
+    padding: 0;
+  }
+  .{{ section_title }} .section-title {
+    color: #3A3BDA;
+    text-align: center;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin: 0;
+  }
+  .{{ section_title }} .subtitle,
+  .{{ section_title }} .subtitle * {
+    color: #14154C;
+    text-align: center;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin: 0;
+  }
+  .{{ section_title }} .items-container {
+    display: flex;
+    align-items: flex-start;
+    gap: 24px;
+    align-self: stretch;
+  }
+  .{{ section_title }} .item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    flex: 1 0 0;
+  }
+  .{{ section_title }} .item-title {
+    color: #3A3BDA;
+    text-align: center;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 40px;
+    margin: 0;
+    font-family: "Sofia Pro Regular"
+  }
+  .{{ section_title }} .item-description,
+  .{{ section_title }} .item-description * {
+    color: #14154C;
+    text-align: center;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 30px;
+    margin: 0;
+    font-family: "Sofia Pro Regular"
+  }
+  .{{ section_title }} .button-section {
+    display: flex;
+    padding: 16px 32px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 100px;
+    background: #3A3CDA;
+    color: #F9FF88;
+    text-align: center;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-decoration: none; 
+  }
+  .{{ section_title }} .item-image {
+    object-fit: contain;
+    width: 212px;
+    height: 170px;
+  }
+  @media screen and (max-width: 856px) {
+    .section-{{ section.id }} {
+      padding: 1.75rem 2.5rem;
+      gap: 24px;
+    }
+    .{{ section_title }} .items-container {
+      flex-direction: column;
+      align-items: center;
+    }
+    .{{ section_title }} .section-title {
+      font-size: 24px;
+    }
+    .{{ section_title }} .subtitle,
+    .{{ section_title }} .subtitle * {
+      font-size: 16px;
+      line-height: 20px; 
+    }
+    .{{ section_title }} .item-title {
+      font-size: 20px;
+      font-weight: 600;
+      line-height: 30px;
+    }
+    .{{ section_title }} .item-description,
+    .{{ section_title }} .item-description * {
+      color: #14154C;
+      font-size: 16px;
+      line-height: 20px;
+    }
+    .{{ section_title }} .button-section {
+      display: flex;
+      height: 40px;
+      padding: 10px 24px;
+      gap: 10px;
+      font-size: 14px;
+    }
+    .{{ section_title }} .item-image {
+      width: 86.8221px;
+      height: 87.451px;
+    }
+    .{{ section_title }} .item {
+      gap: 8px;
+    }
+  }
+{%- endstyle -%}
+
+<section class="section-{{ section.id }} {{ section_title }}">
+  {%- unless section.settings.title == blank -%}
+    <div class="header">
+      <h2 class="section-title">
+        {{ section.settings.title }}
+      </h2>
+      <div class="subtitle">
+        {{ section.settings.subtitle }}
+      </div>
+    </div>
+  {%- endunless -%}
+  {% if section.blocks.size %}
+    <div class="items-container">
+      {%- for block in section.blocks -%}
+        <div class="item">
+          {%- if block.settings.item_image != blank -%}
+            {{
+              block.settings.item_image
+              | image_url: width: 250
+              | image_tag:
+                class: 'item-image',
+                widths: '250, 300, 400, 500',
+                width: 212,
+                height: 170,
+                alt: block.settings.title
+            }}
+          {%- endif -%}
+          {%- if block.settings.title != blank -%}
+            <h3 class="item-title">{{ block.settings.title }}</h3>
+          {%- endif -%}
+          {%- if block.settings.description != blank -%}
+            <div class="item-description">{{ block.settings.description }}</div>
+          {%- endif -%}
+        </div>
+      {%- endfor -%}
+    </div>
+  {% endif %}
+
+  <div class="center">
+    {%- if section.settings.button_label != blank -%}
+      <a
+        class="button-section"
+        {% if section.settings.button_link == blank %}
+          role="link" aria-disabled="true"
+        {% else %}
+          href="{{ section.settings.button_link }}"
+        {% endif %}
+      >
+        {{ section.settings.button_label | escape }}
+      </a>
+    {%- endif -%}
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Product Benefits",
+  "class": "section",
+  "tag": "section",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "background_image",
+      "label": "Set background image",
+    },
+    {
+      "type": "color",
+      "id": "bg_color",
+      "default": "#FFFFFF",
+      "label": "Title color"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "default": "YOUR BEST HANGOVER REMEDY",
+      "label": "Title"
+    },
+    {
+      "type": "color",
+      "id": "title_color",
+      "default": "#F56C43",
+      "label": "Title color"
+    },
+    {
+      "type": "richtext",
+      "id": "subtitle",
+      "default": "<p>Maximum Support for Enjoying Your Night and Recovering Smoothly!</p>",
+      "label": "Subtitle"
+    },
+    {
+      "type": "color",
+      "id": "subtitle_color",
+      "default": "#F56C43",
+      "label": "Subtitle color"
+    },
+    {
+      "type": "range",
+      "id": "columns_desktop",
+      "min": 1,
+      "max": 6,
+      "step": 1,
+      "default": 2,
+      "label": "t:sections.multicolumn.settings.columns_desktop.label"
+    },
+    {
+      "type": "text",
+      "id": "button_label",
+      "default": "GET HANGOVER-FREE NOW!",
+      "label": "Button label"
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "Button Link"
+    },
+    {
+      "type": "color",
+      "id": "button_color",
+      "default": "#F56C43",
+      "label": "Button color"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_top",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_bottom",
+      "default": 36
+    }
+  ],
+  "blocks": [
+    {
+      "type": "column",
+      "name": "t:sections.multicolumn.blocks.column.name",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "item_image",
+          "label": "Select Image"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "default": "Protects Liver Health",
+          "label": "Title"
+        },
+        {
+          "type": "richtext",
+          "id": "description",
+          "default": "<p>Item description...</p>",
+          "label": "Description"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Product Benefits",
+      "blocks": [
+        {
+          "type": "column"
+        },
+        {
+          "type": "column"
+        },
+        {
+          "type": "column"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
