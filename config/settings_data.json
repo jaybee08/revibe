@@ -141,15 +141,12 @@
         }
       }
     },
-    "content_for_index": [
-
-    ],
+    "content_for_index": [],
     "blocks": {
       "14060646107696862457": {
         "type": "shopify://apps/judge-me-reviews/blocks/judgeme_core/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
         "disabled": false,
-        "settings": {
-        }
+        "settings": {}
       }
     },
     "color_schemes": {
@@ -224,6 +221,17 @@
           "background": "#f9ff88",
           "background_gradient": "",
           "text": "#242833",
+          "button": "#121212",
+          "button_label": "#ffffff",
+          "secondary_button_label": "#121212",
+          "shadow": "#121212"
+        }
+      },
+      "scheme-35972c4a-3260-4d1f-9cc0-e53537caa882": {
+        "settings": {
+          "background": "#334fb4",
+          "background_gradient": "",
+          "text": "#f9ff88",
           "button": "#121212",
           "button_label": "#ffffff",
           "secondary_button_label": "#121212",
