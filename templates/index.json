@@ -424,6 +424,22 @@
         "items_text_color": "#3A3BDA"
       }
     },
+    "product_box_cjeAga": {
+      "type": "product-box",
+      "settings": {
+        "background_image": "shopify://shop_images/product-in-box-bg.png",
+        "bg_color": "#FFFFFF",
+        "title": "Handy Sachets to Grab & Go with the Whole Squad",
+        "small_title": "Hangover recovery pills",
+        "title_color": "#3A3BDA",
+        "details": "10 sachets / 20 pills per box",
+        "details_color": "#3A3BDA",
+        "button_label": "ADD TO CART",
+        "button_link": "",
+        "large_image": "shopify://shop_images/product-large-image.png",
+        "product_image": "shopify://shop_images/product-box-img.png"
+      }
+    },
     "1729751303886dac42": {
       "type": "apps",
       "settings": {
@@ -521,6 +537,7 @@
     "text_and_large_image_JdUxEA",
     "natural_relief_zebmGy",
     "trusted_certified_wjkFg4",
+    "product_box_cjeAga",
     "1729751303886dac42",
     "video_C33yBm",
     "slideshow_ePwymm",
