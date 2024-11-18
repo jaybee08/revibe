@@ -1,0 +1,210 @@
+
+{% assign section_title = "certified" %}
+{%- style -%}
+  .section-{{ section.id }} {
+    display: flex;
+    padding: 90px 120px;
+    gap: 56px;
+    align-self: stretch;
+    justify-content: center;
+    {% if section.settings.background_image %}
+      background-image: url("{{ section.settings.background_image | image_url }}");
+      background-size: cover;
+      background-repeat: no-repeat;
+    {% else %}
+      background: #FFF;
+    {% endif %}
+  }
+  .{{ section_title }} * {
+    margin: 0;
+  }
+  .{{ section_title }} .container {
+    display: flex;
+    padding: 0px 113px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 33px;
+    align-self: stretch;
+  }
+  .{{ section_title }} .section-title {
+    color: {{  section.settings.title_color }};
+    text-align: center;
+    text-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+  .{{ section_title }} .subtitle,
+  .{{ section_title }} .subtitle * {
+    color: {{ section.settings.subtitle_color }};
+    text-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 29.444px;
+    text-align: center;
+  }
+  .{{ section_title }} .items-container {
+    display: flex;
+    flex-direction: row;
+    gap: 28px;
+  }
+  .{{ section_title }} .item {
+    width: 180px;
+    height: 180px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    border-radius: 100%;
+    background: {{ section.settings.items_bg_color }};
+    color: {{ section.settings.items_text_color }};
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-align: center;
+  }
+  @media screen and (max-width: 856px) {
+    .section-{{ section.id }} {
+      padding: 50px 24px;
+    }
+    .{{ section_title }} .container {
+      gap: 24px;
+      padding: 0;
+    }
+    .{{ section_title }} .section-title {
+      font-size: 22px;
+    }
+    .{{ section_title }} .subtitle,
+    .{{ section_title }} .subtitle * {
+      font-size: 15px;
+      line-height: 20px;
+    }
+    .{{ section_title }} .items-container {
+      gap: 20px;
+    }
+    .{{ section_title }} .item {
+      width: 97px;
+      height: 97px;
+      font-size: 16px;
+    }
+  }
+{%- endstyle -%}
+
+<div class="section-{{ section.id }} {{ section_title }}">
+  <div class="container">
+    {%- unless section.settings.title == blank -%}
+      <h2 class="section-title">
+        {{ section.settings.title }}
+      </h2>
+    {%- endunless -%}
+    {%- unless section.settings.subtitle == blank -%}
+      <div class="subtitle">
+        {{ section.settings.subtitle }}
+      </div>
+    {%- endunless -%}
+    {% if section.blocks.size %}
+      <div class="items-container">
+        {%- for block in section.blocks -%}
+          {%- if block.settings.title != blank -%}
+            <div class="item">
+              {{ block.settings.title }}
+            </div>
+          {%- endif -%}
+        {%- endfor -%}
+      </div>
+    {% endif %}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Certified Section",
+  "class": "section",
+  "tag": "section",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "background_image",
+      "label": "Set background image",
+    },
+    {
+      "type": "color",
+      "id": "bg_color",
+      "default": "#FFFFFF",
+      "label": "Title color"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "default": "TRUSTED AND CERTIFIED",
+      "label": "Title"
+    },
+    {
+      "type": "color",
+      "id": "title_color",
+      "default": "#FEFFED",
+      "label": "Title color"
+    },
+    {
+      "type": "richtext",
+      "id": "subtitle",
+      "default": "<p>Revibe Meets Top Industry Standards for Quality and Safety.</p>",
+      "label": "Subtitle"
+    },
+    {
+      "type": "color",
+      "id": "subtitle_color",
+      "default": "#FFF",
+      "label": "Subtitle color"
+    },
+    {
+      "type": "color",
+      "id": "items_bg_color",
+      "default": "#F9FF88",
+      "label": "Items background color"
+    },
+    {
+      "type": "color",
+      "id": "items_text_color",
+      "default": "#3A3BDA",
+      "label": "Items text color"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "column",
+      "name": "t:sections.multicolumn.blocks.column.name",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "default": "CERTIFIED",
+          "label": "Title"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Certified Section",
+      "blocks": [
+        {
+          "type": "column"
+        },
+        {
+          "type": "column"
+        },
+        {
+          "type": "column"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
