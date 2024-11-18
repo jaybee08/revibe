@@ -34,10 +34,6 @@
             "swatch_shape": "circle"
           }
         },
-        "quantity_selector": {
-          "type": "quantity_selector",
-          "settings": {}
-        },
         "buy_buttons": {
           "type": "buy_buttons",
           "settings": {
@@ -45,8 +41,17 @@
             "show_gift_card_recipient": true
           }
         },
+        "quantity_selector": {
+          "type": "quantity_selector",
+          "settings": {}
+        },
+        "vitals_ub_volume_discounts_WEz4PW": {
+          "type": "shopify://apps/vitals/blocks/ub-volume-discounts/aeb48102-2a5a-4f39-bdbd-d8d49f4e20b8",
+          "settings": {}
+        },
         "description": {
           "type": "description",
+          "disabled": true,
           "settings": {}
         },
         "share": {
@@ -61,8 +66,9 @@
         "title",
         "price",
         "variant_picker",
-        "quantity_selector",
         "buy_buttons",
+        "quantity_selector",
+        "vitals_ub_volume_discounts_WEz4PW",
         "description",
         "share"
       ],
@@ -98,82 +104,6 @@
         "columns_mobile": "2",
         "padding_top": 36,
         "padding_bottom": 28
-      }
-    },
-    "collapsible_content_RBkRFa": {
-      "type": "collapsible-content",
-      "blocks": {
-        "collapsible_row_HrhCGi": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "Collapsible row",
-            "icon": "check_mark",
-            "row_content": "",
-            "page": ""
-          }
-        },
-        "collapsible_row_7hzYxU": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "Collapsible row",
-            "icon": "check_mark",
-            "row_content": "",
-            "page": ""
-          }
-        },
-        "collapsible_row_tPHXFL": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "Collapsible row",
-            "icon": "check_mark",
-            "row_content": "",
-            "page": ""
-          }
-        },
-        "collapsible_row_XmykVg": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "Collapsible row",
-            "icon": "check_mark",
-            "row_content": "",
-            "page": ""
-          }
-        }
-      },
-      "block_order": [
-        "collapsible_row_HrhCGi",
-        "collapsible_row_7hzYxU",
-        "collapsible_row_tPHXFL",
-        "collapsible_row_XmykVg"
-      ],
-      "settings": {
-        "caption": "",
-        "heading": "🌿 What are Revibe Party Recovery Pills?",
-        "heading_size": "h1",
-        "heading_alignment": "center",
-        "layout": "none",
-        "color_scheme": "",
-        "container_color_scheme": "",
-        "open_first_collapsible_row": false,
-        "image_ratio": "adapt",
-        "desktop_layout": "image_second",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
-    "1730958876110f0493": {
-      "type": "apps",
-      "blocks": {
-        "judge_me_reviews_review_widget_t8dEar": {
-          "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
-          "settings": {}
-        }
-      },
-      "block_order": [
-        "judge_me_reviews_review_widget_t8dEar"
-      ],
-      "settings": {
-        "include_margins": true
       }
     },
     "collapsible_content_L6aMmm": {
@@ -236,13 +166,27 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "1730958876110f0493": {
+      "type": "apps",
+      "blocks": {
+        "judge_me_reviews_review_widget_t8dEar": {
+          "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "judge_me_reviews_review_widget_t8dEar"
+      ],
+      "settings": {
+        "include_margins": true
+      }
     }
   },
   "order": [
     "main",
     "related-products",
-
-    "collapsible_content_RBkRFa",
+    "collapsible_content_L6aMmm",
     "1730958876110f0493"
   ]
 }
