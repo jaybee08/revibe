@@ -172,7 +172,7 @@ product-info {
   flex: 0 0 100%;
   padding: 0;
   margin: 0 0 1.2rem 0;
-  max-width: 44rem;
+  max-width: 23rem;
   min-width: fit-content;
   border: none;
 }
@@ -363,6 +363,7 @@ a.product__text {
 
 .product-form__quantity .form__label {
   margin-bottom: 0.6rem;
+  visibility: hidden;
 }
 
 .price-per-item__label.form__label {
@@ -1510,13 +1511,10 @@ a.product__text {
 /* new style start here */
 .flexi {
   display: flex;
-  gap: 22px;
 }
-.flexi .product-form__input {
-  flex: 1 1 0%;
-}
+
 .flexi .buy-buttons {
-  flex: 1 1 0%;
+  flex: 100%;
 }
 .flexi .quantity_label {
   visibility: hidden;
@@ -1526,6 +1524,8 @@ a.product__text {
   border-radius: 20px;
 }
 .flexi .product-form__submit {
-  background-color: #5A5BA8;
-  color: #F9FF88;
+  background-color: #5a5ba8;
+  color: #f9ff88;
+  border-radius: 50px;
+  min-height: calc((var(--inputs-border-width)* 2) + 5.7rem);
 }

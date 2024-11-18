@@ -1858,10 +1858,12 @@ input[type='checkbox'] {
 .quantity {
   color: rgba(var(--color-foreground));
   position: relative;
-  width: calc(14rem / var(--font-body-scale) + var(--inputs-border-width) * 2);
+  width: calc(21rem / var(--font-body-scale) + var(--inputs-border-width) * 2);
   display: flex;
-  border-radius: var(--inputs-radius);
-  min-height: calc((var(--inputs-border-width) * 2) + 4.5rem);
+  border-radius: 50px;
+  min-height: calc((var(--inputs-border-width) * 2) + 5.7rem);
+  background-color: #F3F3F3;
+  overflow: hidden;
 }
 
 .quantity:after {
