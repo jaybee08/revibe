@@ -123,7 +123,7 @@
       ],
       "settings": {
         "background_image": "shopify://shop_images/Group.png",
-        "title_color": "#F56C43",
+        "title_color": "#f56c43",
         "title": "<strong>Live It Up & Bounce Back</strong>",
         "title_alignment": "center",
         "subtitle": "<strong>Revibe</strong> turns <strong>hangover mornings</strong> into productive starts –  every single time!",
@@ -273,11 +273,11 @@
       ],
       "settings": {
         "image": "shopify://shop_images/tested-and-proven-image.png",
-        "bg_color": "#FFFFFF",
+        "bg_color": "#ffffff",
         "title": "TESTED AND APPROVED",
-        "title_color": "#F9FF88",
+        "title_color": "#f9ff88",
         "subtitle": "Revibe Delivers Hangover-Free Mornings!",
-        "subtitle_color": "#F9FF88",
+        "subtitle_color": "#f9ff88",
         "columns_desktop": 2,
         "button_label": "GET HANGOVER-FREE NOW!",
         "button_link": "",
@@ -289,9 +289,9 @@
       "type": "custom-rich-text",
       "settings": {
         "title": "<p>Take Revibe 30 minutes <strong>before drinking</strong> and/or <strong>after your last drink</strong>.</p>",
-        "title_color": "#3A3BDA",
+        "title_color": "#3a3bda",
         "subtitle": "<p>Enjoy your nights and power through your days!</p>",
-        "subtitle_color": "#3A3BDA",
+        "subtitle_color": "#3a3bda",
         "background_color": "#ffffff",
         "background_image": "shopify://shop_images/richtext-bg.png"
       }
@@ -300,15 +300,90 @@
       "type": "text-and-large-image",
       "settings": {
         "image": "shopify://shop_images/dr-img.png",
-        "bg_color": "#FFFFFF",
+        "bg_color": "#ffffff",
         "title": "THE DOCTOR-APPROVED PARTY HACK!",
-        "title_color": "#FFFFFF",
+        "title_color": "#ffffff",
         "description": "Description...",
-        "description_color": "#FFFFFF",
+        "description_color": "#ffffff",
         "author": "Author Name",
         "author_title": "Author Title",
-        "author_details_color": "#FFFFFF",
+        "author_details_color": "#ffffff",
         "background_image": "shopify://shop_images/gradient-bg-blue.png"
+      }
+    },
+    "natural_relief_zebmGy": {
+      "type": "natural-relief",
+      "blocks": {
+        "column_Y8QDR6": {
+          "type": "column",
+          "settings": {
+            "title": "DIHYDROMYRICETIN",
+            "column_option": "first"
+          }
+        },
+        "column_9twNhk": {
+          "type": "column",
+          "settings": {
+            "title": "QUERCETIN",
+            "column_option": "first"
+          }
+        },
+        "column_wRxc6J": {
+          "type": "column",
+          "settings": {
+            "title": "MAGNESIUM",
+            "column_option": "first"
+          }
+        },
+        "column_kciGB7": {
+          "type": "column",
+          "settings": {
+            "title": "MILK THISTLE",
+            "column_option": "first"
+          }
+        },
+        "column_CEy7r9": {
+          "type": "column",
+          "settings": {
+            "title": "CACTUS PRICKLY PEAR",
+            "column_option": "second"
+          }
+        },
+        "column_tp9nCe": {
+          "type": "column",
+          "settings": {
+            "title": "WHITE WILLOW",
+            "column_option": "second"
+          }
+        },
+        "column_V8dbBp": {
+          "type": "column",
+          "settings": {
+            "title": "ZINC",
+            "column_option": "second"
+          }
+        }
+      },
+      "block_order": [
+        "column_Y8QDR6",
+        "column_9twNhk",
+        "column_wRxc6J",
+        "column_kciGB7",
+        "column_CEy7r9",
+        "column_tp9nCe",
+        "column_V8dbBp"
+      ],
+      "settings": {
+        "background_image": "shopify://shop_images/natures-relief-bg.png",
+        "bg_color": "#FFFFFF",
+        "title": "NATURE'S BEST FOR HANGOVER RELIEF!",
+        "title_color": "#429221",
+        "description": "<p>Revibe only uses 100% natural ingredients to fight alcohol symptoms, prevent hangover, support liver health, and replenishes vital nutrients, making sure you feel your best during and after every night out. <br/><br/>Enjoy your evenings worry-free, knowing Revibe has got you covered!</p>",
+        "description_color": "#F9FF88",
+        "button_label": "SHOP NATURAL RELIEF",
+        "button_link": "",
+        "container_background_image": "shopify://shop_images/image-container-bg.png",
+        "image": "shopify://shop_images/revibe-product-with-herbal.png"
       }
     },
     "1729751303886dac42": {
@@ -406,6 +481,7 @@
     "tested_and_approved_BDq4Tz",
     "custom_rich_text_Ly7qmc",
     "text_and_large_image_JdUxEA",
+    "natural_relief_zebmGy",
     "1729751303886dac42",
     "video_C33yBm",
     "slideshow_ePwymm",
