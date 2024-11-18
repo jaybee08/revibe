@@ -3588,8 +3588,11 @@ details-disclosure > details {
 
 @media screen and (max-width: 749px) {
   .cta-button a {
-    padding: 0.625rem 1.5rem;
+    padding: 10px 24px;
     font-size: 14px;
+  }
+  .cta-button {
+    justify-content: center;
   }
 }
 

@@ -1,0 +1,366 @@
+{% assign section_title = "natural" %}
+{%- style -%}
+
+  .section-{{ section.id }} {
+    display: flex;
+    align-items: flex-start;
+    gap: 3.5rem;
+    align-self: stretch;
+    justify-content: center;
+    {% if section.settings.background_image %}
+      background-image: url("{{ section.settings.background_image | image_url }}");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+    {% else %}
+      background: #FFF;
+    {% endif %}
+  }
+  .{{ section_title }} .container {
+    max-width: 1440px;
+    width: 100%;
+    display: flex;
+    gap: 48px;
+  }
+  .{{ section_title }} * {
+    margin: 0;
+  }
+  .{{ section_title }} .text-container {
+    max-width: 55%;
+    padding: 140px 0px 140px 120px;
+  }
+  .{{ section_title }} .image-container {
+    width: 45%;
+    width: auto;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    {% if section.settings.container_background_image %}
+      background-image: url("{{ section.settings.container_background_image | image_url }}");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+    {% endif %}
+  }
+  .{{ section_title }} .flex-container {
+    gap: 40px;
+    display: flex;
+    flex-direction: column;
+  }
+  .{{ section_title }} .image-banner {
+    width: auto;
+    height: auto;
+    overflow: hidden;
+  }
+  .{{ section_title }} .header-container {
+    gap: 40px;
+    display: flex;
+    flex-direction: column;
+  }
+  .{{ section_title }} .header-title {
+    color: #429221;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    font-family: "Nord Regular";
+  }
+  .{{ section_title }} .header-description,
+  .{{ section_title }} .header-description * {
+    color: #14154C;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 32px;
+    letter-spacing: -0.18px;
+  }
+  .{{ section_title }} .line-separator {
+    margin: 0;
+  }
+  .{{ section_title }} .items-container {
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+  }
+  .{{ section_title }} .column-items {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+  .{{ section_title }} .item {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    align-self: stretch;
+  }
+  
+  .{{ section_title }} .item-title,
+  .{{ section_title }} .item-title * {
+    color: #14154C;
+    font-size: 22.3701px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 27.697px; 
+  }
+  .{{ section_title }} .cta-button {
+    display: flex;
+  }
+  @media screen and (max-width: 1165px) {
+    .{{ section_title }}  .text-container {
+      padding: 100px 0px 100px 85px;
+    }
+    .{{ section_title }} .item-title,
+    .{{ section_title }} .item-title * {
+      font-size: 20px;
+      line-height: 100%; 
+    }
+  }
+  @media screen and (max-width: 856px) {
+    .{{ section_title }} .container {
+      flex-direction: column;
+    }
+    .{{ section_title }} .image-container {
+      width: 100%;
+    }
+    .{{ section_title }} .text-container {
+      padding: 50px 32px;
+      max-width: 100%;
+    }
+    .{{ section_title }} .header-container,
+    .{{ section_title }} .flex-container {
+      gap: 24px;
+    }
+    .{{ section_title }} .header-title {
+      font-size: 24px;
+      line-height: normal;
+    }
+    .{{ section_title }} .header-description,
+    .{{ section_title }} .header-description * {
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 20px; 
+    }
+    .{{ section_title }} .item-title,
+    .{{ section_title }} .item-title * {
+      font-size: 16px;
+    }
+  }
+  @media screen and (max-width: 589px) {
+    .{{ section_title }} .items-container {
+      flex-direction: column;
+      gap: 16px;
+    }
+  }
+{%- endstyle -%}
+<div class="section-{{ section.id }} {{ section_title }}"> 
+  <div class="container">
+    <div class="text-container">
+      <div class="flex-container">
+        <div class="header-container">
+          <div class="header-title">{{ section.settings.title }}</div>
+          <div class="header-description">{{ section.settings.description }}</div>
+        </div>
+        <hr class="line-separator">
+        <div class="items-container">
+          {%- capture leaf_icon -%}
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
+              <path d="M15.0008 1.19699C10.8303 -1.00178 6.50845 0.72529 3.75008 3.48366C1.23781 5.9964 0.313975 10.8642 1.75882 13.3027L0 15.0615L1.13624 16.1973L2.89506 14.4389C5.33358 15.8833 10.2014 14.9599 12.7136 12.4477C15.4725 9.68935 17.1996 5.36698 15.0008 1.19699ZM13.178 7.30402L9.8137 7.22539L7.26237 9.77673L11.1072 9.90123L11.0686 11.0907L6.10853 10.9311L4.10262 12.9365L3.26129 12.0952L5.2667 10.0892L5.10704 5.12916L6.29654 5.0906L6.42057 8.9354L8.9719 6.38406L8.89378 3.01974L10.0837 2.9924L10.1355 5.22048L12.3499 3.00609L13.1917 3.84742L10.9773 6.06231L13.2059 6.11406L13.178 7.30402Z" fill="#429221"/>
+            </svg>
+          {%- endcapture -%}
+          <div class="column-items">
+            {% for item in section.blocks %}
+              {%- if item.settings.column_option == 'first' -%}
+                <div class="item">
+                  <div class="icon-container">
+                    {{ leaf_icon }}
+                  </div>
+                  <div class="item-title" >{{ item.settings.title }}</div>
+                </div>
+              {%- endif -%}
+            {% endfor %}
+          </div>
+          <div class="column-items">
+            {% for item in section.blocks %}
+              {%- if item.settings.column_option == 'second' -%}
+                <div class="item">
+                  <div class="icon-container">
+                    {{ leaf_icon }}
+                  </div>
+                  <div class="item-title" >{{ item.settings.title }}</div>
+                </div>
+              {%- endif -%}
+            {% endfor %}
+          </div>
+        </div>
+        <hr class="line-separator">
+        <div class="cta-button">
+          {%- if section.settings.button_label != blank -%}
+            <a
+              class="button-section"
+              {% if section.settings.button_link == blank %}
+                role="link" aria-disabled="true"
+              {% else %}
+                href="{{ section.settings.button_link }}"
+              {% endif %}
+            >
+              {{ section.settings.button_label | escape }}
+            </a>
+          {%- endif -%}
+        </div>
+      </div>
+    </div>
+    <div class="image-container">
+      {%- if section.settings.image != blank -%}
+        <img
+          srcset="
+            {%- if section.settings.image.width >= 375 -%}{{ section.settings.image | image_url: width: 375 }} 375w,{%- endif -%}
+            {%- if section.settings.image.width >= 750 -%}{{ section.settings.image | image_url: width: 750 }} 750w,{%- endif -%}
+            {%- if section.settings.image.width >= 1100 -%}{{ section.settings.image | image_url: width: 1100 }} 1100w,{%- endif -%}
+            {%- if section.settings.image.width >= 1500 -%}{{ section.settings.image | image_url: width: 1500 }} 1500w,{%- endif -%}
+            {%- if section.settings.image.width >= 1780 -%}{{ section.settings.image | image_url: width: 1780 }} 1780w,{%- endif -%}
+            {%- if section.settings.image.width >= 2000 -%}{{ section.settings.image | image_url: width: 2000 }} 2000w,{%- endif -%}
+            {%- if section.settings.image.width >= 3000 -%}{{ section.settings.image | image_url: width: 3000 }} 3000w,{%- endif -%}
+            {%- if section.settings.image.width >= 3840 -%}{{ section.settings.image | image_url: width: 3840 }} 3840w,{%- endif -%}
+            {{ section.settings.image | image_url }} {{ section.settings.image.width }}w
+          "
+          sizes="100vw"
+          src="{{ section.settings.image | image_url: width: 1500 }}"
+          loading="lazy"
+          alt="{{ section.settings.image.alt | escape }}"
+          width="{{ section.settings.image.width }}"
+          height="{{ section.settings.image.width | divided_by: section.settings.image.aspect_ratio }}"
+          class="image-banner"
+        >
+      {%- endif -%}
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Natural Relief",
+  "class": "section",
+  "tag": "section",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "background_image",
+      "label": "Set section background"
+    },
+    {
+      "type": "color",
+      "id": "bg_color",
+      "default": "#FFFFFF",
+      "label": "Title color"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "default": "NATURE'S BEST FOR HANGOVER RELIEF!",
+      "label": "Title"
+    },
+    {
+      "type": "color",
+      "id": "title_color",
+      "default": "#429221",
+      "label": "Title color"
+    },
+    {
+      "type": "richtext",
+      "id": "description",
+      "default": "<p>Text Description</p>",
+      "label": "description"
+    },
+    {
+      "type": "color",
+      "id": "description_color",
+      "default": "#F9FF88",
+      "label": "description color"
+    },
+    {
+      "type": "text",
+      "id": "button_label",
+      "default": "Shop Natural relief",
+      "label": "Button label"
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "Button Link"
+    },
+    {
+      "type": "image_picker",
+      "id": "container_background_image",
+      "label": "Set container background image "
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Add section image",
+    },
+  ],
+  "blocks": [
+    {
+      "type": "column",
+      "name": "t:sections.multicolumn.blocks.column.name",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "default": "MAGNESIUM",
+          "label": "Title"
+        },
+        {
+          "type": "select",
+          "id": "column_option",
+          "options": [
+            {
+              "value": "first",
+              "label": "First Column"
+            },
+            {
+              "value": "second",
+              "label": "Second Column"
+            },
+          ],
+          "default": "first",
+          "label": "Select column to display"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Natural Relief",
+      "blocks": [
+        {
+          "type": "column"
+        },
+        {
+          "type": "column"
+        },
+        {
+          "type": "column"
+        },
+        {
+          "type": "column"
+        },
+        {
+          "type": "column"
+        },
+        {
+          "type": "column"
+        },
+        {
+          "type": "column"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

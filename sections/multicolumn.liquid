@@ -3,12 +3,16 @@
 
 {%- style -%}
   .section-{{ section.id }}-padding {
-    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
-    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+    padding: 60px 120px;
   }
-  .section-align-{{ section.id }} .title {
-    text-align: {{ section.settings.title_alignment }};
+  .section-align-{{ section.id }} .title,
+  .section-{{ section.id }} .title * {
     color: {{ section.settings.title_color }};
+    text-align: center;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
   }
   .section-align-{{ section.id }} .subtitle {
     text-align: {{ section.settings.title_alignment }};
@@ -24,6 +28,7 @@
       background-image: url("{{ section.settings.background_image | image_url }}");
       object-fit: cover;
       background-repeat: no-repeat;
+      background-size: 100%;
     {% else %}
       background: #FFF;
     {% endif %}
@@ -33,22 +38,12 @@
     color: {{ section.settings.cards_title_color }};
     font-size: 23px;
   }
-  .section-{{ section.id }} .multicolumn .title,
-  .section-{{ section.id }} .multicolumn .title * {
-    color: {{ section.settings.title_color }};
-    text-align: center;
-    font-size: 40px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-  }
   .section-{{ section.id }} .multicolumn-card__info .flex .before .img-wrap {
     height: 350px;
   }
   @media screen and (min-width: 750px) {
     .section-{{ section.id }}-padding {
-      padding-top: {{ section.settings.padding_top }}px;
-      padding-bottom: {{ section.settings.padding_bottom }}px;
+      padding: 50px 32px;
     }
   }
   @media screen and (max-width: 989px) {
