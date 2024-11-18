@@ -66,6 +66,7 @@
     line-height: 40px;
     margin: 0;
     font-family: "Sofia Pro Regular"
+    max-width: 340px;
   }
   .{{ section_title }} .item-description,
   .{{ section_title }} .item-description * {
@@ -77,6 +78,7 @@
     line-height: 30px;
     margin: 0;
     font-family: "Sofia Pro Regular"
+    max-width: 400px;
   }
   .{{ section_title }} .button-section {
     display: flex;
@@ -101,7 +103,7 @@
   }
   @media screen and (max-width: 856px) {
     .section-{{ section.id }} {
-      padding: 1.75rem 2.5rem;
+      padding: 50px 32px;
       gap: 24px;
     }
     .{{ section_title }} .items-container {
@@ -110,6 +112,7 @@
     }
     .{{ section_title }} .section-title {
       font-size: 24px;
+      max-width: 300px;
     }
     .{{ section_title }} .subtitle,
     .{{ section_title }} .subtitle * {
@@ -120,6 +123,7 @@
       font-size: 20px;
       font-weight: 600;
       line-height: 30px;
+      max-width: 300px;
     }
     .{{ section_title }} .item-description,
     .{{ section_title }} .item-description * {
