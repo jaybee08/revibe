@@ -1,0 +1,333 @@
+{% assign section_title = "product-box" %}
+{%- style -%}
+  .section-{{ section.id }} {
+    display: flex;
+    align-items: flex-start;
+    gap: 3.5rem;
+    align-self: stretch;
+    justify-content: center;
+    {% if section.settings.background_image %}
+      background-image: url("{{ section.settings.background_image | image_url }}");
+      background-size: cover;
+      background-repeat: no-repeat;
+    {% else %}
+      background: #FFF;
+    {% endif %}
+  }
+  .{{ section_title }} .container {
+    max-width: 1440px;
+    width: 100%;
+    padding: 90px 120px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    display: inline-flex;
+    height: auto:
+  }
+  .{{ section_title }} .flex-container {
+    align-self: stretch;
+    height: auto;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 56px;
+    display: flex;
+  }
+  .{{ section_title }} .section-title {
+    max-width: 949px;
+    text-align: center;
+    color: #3A3BDA;
+    font-size: 48px;
+    font-weight: 700;
+    word-wrap: break-word;
+    margin: 0;
+    color: {{ section.settings.title_color }};
+  }
+  .{{ section_title }} .product-container {
+    align-self: stretch;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    display: flex;
+  }
+  .{{ section_title }} .large-image {
+    width: 590px;
+    height: 773px;
+    object-fit: contain;
+  }
+  .{{ section_title }} .product-details-container {
+    flex: 1 1 0;
+    align-self: stretch;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 48px;
+    display: inline-flex;
+  }
+  .{{ section_title }} .product-image {
+    width: 386px;
+    height: 433px;
+    object-fit: contain;
+  }
+  .{{ section_title }} .text-container {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 24px;
+    display: flex
+  }
+  .{{ section_title }} .small-title {
+    align-self: stretch;
+    text-align: center;
+    color: #3A3BDA;
+    font-size: 32px;
+    font-weight: 700;
+    word-wrap: break-word;
+    max-width: 386px;
+    margin: 0;
+    color: {{ section.settings.title_color }};
+  }
+  .{{ section_title }} .details {
+    text-align: center;
+    color: #14154C;
+    font-size: 24px;
+    font-weight: 500;
+    word-wrap: break-word;
+    max-width: 356px;
+    margin: 0;
+    line-height: normal;
+    font-family: "Nord Regular" !important;
+    color: {{ section.settings.details_color }};
+  }
+  .{{ section_title }} . {
+  }
+  
+  @media screen and (max-width: 1056px) {
+    .{{ section_title }} .product-container {
+      flex-direction: column;
+    }
+  }
+  @media screen and (max-width: 856px) {
+    .{{ section_title }} .details {
+
+    }
+    .{{ section_title }} .container {
+      padding: 50px 32px;
+    }
+    .{{ section_title }} .section-title {
+      font-size: 24px;
+      font-style: normal;
+      line-height: normal;
+    }
+    .{{ section_title }} .product-details-container {
+      order: 1;
+    }
+    .{{ section_title }} .large-image {
+      order: 2;
+      height: 100%;
+      width: 100%;
+    }
+    .{{ section_title }} .product-image {
+      width: 100%;
+      height: 100%;
+      max-width: 178px;
+    }
+    .{{ section_title }} .flex-container {
+      gap: 40px;
+    }
+    .{{ section_title }} .small-title {
+      font-size: 24px;
+    }
+    .{{ section_title }} .details {
+      font-size: 16px;
+      font-weight: 400;
+      line-height: normal;
+    }
+  }
+{%- endstyle -%}
+<div class="section-{{ section.id }} {{ section_title }}"> 
+  <div class="container">
+    <div class="flex-container">
+      <h2 class="section-title">
+        {{ section.settings.title }}
+      </h2>
+      <div class="product-container">
+        {%- if section.settings.large_image != blank -%}
+          <img
+            srcset="
+              {%- if section.settings.large_image.width >= 375 -%}{{ section.settings.large_image | image_url: width: 375 }} 375w,{%- endif -%}
+              {%- if section.settings.large_image.width >= 750 -%}{{ section.settings.large_image | image_url: width: 750 }} 750w,{%- endif -%}
+              {%- if section.settings.large_image.width >= 1100 -%}{{ section.settings.large_image | image_url: width: 1100 }} 1100w,{%- endif -%}
+              {%- if section.settings.large_image.width >= 1500 -%}{{ section.settings.large_image | image_url: width: 1500 }} 1500w,{%- endif -%}
+              {%- if section.settings.large_image.width >= 1780 -%}{{ section.settings.large_image | image_url: width: 1780 }} 1780w,{%- endif -%}
+              {%- if section.settings.large_image.width >= 2000 -%}{{ section.settings.large_image | image_url: width: 2000 }} 2000w,{%- endif -%}
+              {{ section.settings.large_image | image_url }} {{ section.settings.large_image.width }}w
+            "
+            sizes="100vw"
+            src="{{ section.settings.large_image | image_url: width: 1500 }}"
+            loading="lazy"
+            alt="{{ section.settings.large_image.alt | escape }}"
+            width="590"
+            height="773"
+            class="large-image"
+          >
+        {%- endif -%}
+        <div class="product-details-container">
+          {%- if section.settings.product_image != blank -%}
+            <img
+              srcset="
+                {%- if section.settings.product_image.width >= 375 -%}{{ section.settings.product_image | image_url: width: 375 }} 375w,{%- endif -%}
+                {%- if section.settings.product_image.width >= 750 -%}{{ section.settings.product_image | image_url: width: 750 }} 750w,{%- endif -%}
+                {%- if section.settings.product_image.width >= 1100 -%}{{ section.settings.product_image | image_url: width: 1100 }} 1100w,{%- endif -%}
+                {%- if section.settings.product_image.width >= 1500 -%}{{ section.settings.product_image | image_url: width: 1500 }} 1500w,{%- endif -%}
+                {%- if section.settings.product_image.width >= 1780 -%}{{ section.settings.product_image | image_url: width: 1780 }} 1780w,{%- endif -%}
+                {%- if section.settings.product_image.width >= 2000 -%}{{ section.settings.product_image | image_url: width: 2000 }} 2000w,{%- endif -%}
+                {{ section.settings.product_image | image_url }} {{ section.settings.product_image.width }}w
+              "
+              sizes="100vw"
+              src="{{ section.settings.product_image | image_url: width: 1500 }}"
+              loading="lazy"
+              alt="{{ section.settings.product_image.alt | escape }}"
+              width="386"
+              height="433"
+              class="product-image"
+            >
+          {%- endif -%}
+          <div class="text-container">
+            <h3 class="small-title">
+              {{ section.settings.small_title }}
+            </h3>
+            <p class="details">
+              {{ section.settings.details }}
+            </p>
+          </div>
+          <div class="cta-button">
+            {%- if section.settings.button_label != blank -%}
+              <a
+                class="button-section"
+                {% if section.settings.button_link == blank %}
+                  role="link" aria-disabled="true"
+                {% else %}
+                  href="{{ section.settings.button_link }}"
+                {% endif %}
+              >
+                {{ section.settings.button_label | escape }}
+              </a>
+            {%- endif -%}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Product Box",
+  "class": "section",
+  "tag": "section",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "background_image",
+      "label": "Set section background"
+    },
+    {
+      "type": "color",
+      "id": "bg_color",
+      "default": "#FFFFFF",
+      "label": "Title color"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "default": "Handy Sachets to Grab & Go with the Whole Squad",
+      "label": "Title"
+    },
+    {
+      "type": "text",
+      "id": "small_title",
+      "default": "Hangover recovery pills",
+      "label": "description"
+    },
+    {
+      "type": "color",
+      "id": "title_color",
+      "default": "#3A3BDA",
+      "label": "Title color"
+    },
+    {
+      "type": "text",
+      "id": "details",
+      "default": "10 sachets / 20 pills per box",
+      "label": "details"
+    },
+    {
+      "type": "color",
+      "id": "details_color",
+      "default": "#3A3BDA",
+      "label": "details color"
+    },
+    {
+      "type": "text",
+      "id": "button_label",
+      "default": "ADD TO CART",
+      "label": "Button label"
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "Button Link"
+    },
+    {
+      "type": "image_picker",
+      "id": "large_image",
+      "label": "Set image banner "
+    },
+    {
+      "type": "image_picker",
+      "id": "product_image",
+      "label": "Set product image",
+    },
+  ],
+  "blocks": [
+    {
+      "type": "column",
+      "name": "t:sections.multicolumn.blocks.column.name",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "default": "MAGNESIUM",
+          "label": "Title"
+        },
+        {
+          "type": "select",
+          "id": "column_option",
+          "options": [
+            {
+              "value": "first",
+              "label": "First Column"
+            },
+            {
+              "value": "second",
+              "label": "Second Column"
+            },
+          ],
+          "default": "first",
+          "label": "Select column to display"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Product Box"
+    }
+  ]
+}
+{% endschema %}
