@@ -440,6 +440,16 @@
         "product_image": "shopify://shop_images/product-box-img.png"
       }
     },
+    "custom_rich_text_Ge3Vy7": {
+      "type": "custom-rich-text",
+      "settings": {
+        "title": "<p>Life's best adventures start after dark!</p>",
+        "title_color": "#3A3BDA",
+        "subtitle": "<p>Bring Revibe along for limitless fun and zero hangovers— anytime, anywhere.</p>",
+        "subtitle_color": "#3A3BDA",
+        "background_color": "#f9ff88"
+      }
+    },
     "1729751303886dac42": {
       "type": "apps",
       "settings": {
@@ -538,6 +548,7 @@
     "natural_relief_zebmGy",
     "trusted_certified_wjkFg4",
     "product_box_cjeAga",
+    "custom_rich_text_Ge3Vy7",
     "1729751303886dac42",
     "video_C33yBm",
     "slideshow_ePwymm",
