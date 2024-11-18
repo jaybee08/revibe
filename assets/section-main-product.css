@@ -1529,3 +1529,13 @@ a.product__text {
   border-radius: 50px;
   min-height: calc((var(--inputs-border-width)* 2) + 5.7rem);
 }
+.short-description {
+  border-top: 1px solid #ececec;
+}
+.short-description h2 {
+  font-size: 2.4rem;
+  color: #2C2CA4;
+  text-transform: capitalize;
+  font-weight: 700;
+  font-family: 'Sofia Pro Bold';
+}
