@@ -45,20 +45,10 @@
           "type": "quantity_selector",
           "settings": {}
         },
-        "vitals_ub_volume_discounts_WEz4PW": {
-          "type": "shopify://apps/vitals/blocks/ub-volume-discounts/aeb48102-2a5a-4f39-bdbd-d8d49f4e20b8",
-          "settings": {}
-        },
         "description": {
           "type": "description",
           "disabled": true,
           "settings": {}
-        },
-        "share": {
-          "type": "share",
-          "settings": {
-            "share_label": "Share"
-          }
         }
       },
       "block_order": [
@@ -68,9 +58,7 @@
         "variant_picker",
         "buy_buttons",
         "quantity_selector",
-        "vitals_ub_volume_discounts_WEz4PW",
-        "description",
-        "share"
+        "description"
       ],
       "settings": {
         "enable_sticky_info": true,
