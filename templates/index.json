@@ -386,6 +386,44 @@
         "image": "shopify://shop_images/revibe-product-with-herbal.png"
       }
     },
+    "trusted_certified_wjkFg4": {
+      "type": "trusted-certified",
+      "blocks": {
+        "column_FmYyAL": {
+          "type": "column",
+          "settings": {
+            "title": "GMP CERTIFIED"
+          }
+        },
+        "column_hk8M3B": {
+          "type": "column",
+          "settings": {
+            "title": "HACCP CERTIFIED"
+          }
+        },
+        "column_e4GYEi": {
+          "type": "column",
+          "settings": {
+            "title": "US FDA CERTIFIED"
+          }
+        }
+      },
+      "block_order": [
+        "column_FmYyAL",
+        "column_hk8M3B",
+        "column_e4GYEi"
+      ],
+      "settings": {
+        "background_image": "shopify://shop_images/20240605_-_Revibe_Ecomm_Posters_2.png",
+        "bg_color": "#FFFFFF",
+        "title": "TRUSTED AND CERTIFIED",
+        "title_color": "#FEFFED",
+        "subtitle": "<p>Revibe Meets Top Industry Standards for Quality and Safety.</p>",
+        "subtitle_color": "#FFF",
+        "items_bg_color": "#F9FF88",
+        "items_text_color": "#3A3BDA"
+      }
+    },
     "1729751303886dac42": {
       "type": "apps",
       "settings": {
@@ -482,6 +520,7 @@
     "custom_rich_text_Ly7qmc",
     "text_and_large_image_JdUxEA",
     "natural_relief_zebmGy",
+    "trusted_certified_wjkFg4",
     "1729751303886dac42",
     "video_C33yBm",
     "slideshow_ePwymm",
