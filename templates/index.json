@@ -507,12 +507,12 @@
         "instafeed_app_block_cjrgDn": {
           "type": "shopify://apps/instafeed/blocks/app-block/c447db20-095d-4a10-9725-b5977662c9d5",
           "settings": {
-            "title": "SHOP THE FEED",
+            "title": "",
             "title_color": "",
             "alignment": "left",
             "margin_top": 0,
-            "margin_bottom": 20,
-            "margin_sides": 20,
+            "margin_bottom": 0,
+            "margin_sides": 0,
             "background_color": "",
             "html_area": ""
           }
@@ -522,7 +522,7 @@
         "instafeed_app_block_cjrgDn"
       ],
       "settings": {
-        "include_margins": true
+        "include_margins": false
       }
     }
   },
