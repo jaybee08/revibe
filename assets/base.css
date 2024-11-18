@@ -3586,6 +3586,7 @@ details-disclosure > details {
   font-weight: 700;
   width: fit-content;
   justify-self: center;
+  text-decoration: none;
 }
 
 @media screen and (max-width: 749px) {
