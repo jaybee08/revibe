@@ -381,7 +381,7 @@
         "description": "<p>Revibe only uses 100% natural ingredients to fight alcohol symptoms, prevent hangover, support liver health, and replenishes vital nutrients, making sure you feel your best during and after every night out. <br/><br/>Enjoy your evenings worry-free, knowing Revibe has got you covered!</p>",
         "description_color": "#F9FF88",
         "button_label": "SHOP NATURAL RELIEF",
-        "button_link": "",
+        "button_link": "shopify://products/hangover-recovery-pills-box-of-10",
         "container_background_image": "shopify://shop_images/image-container-bg.png",
         "image": "shopify://shop_images/revibe-product-with-herbal.png"
       }
@@ -435,7 +435,7 @@
         "details": "10 sachets / 20 pills per box",
         "details_color": "#3A3BDA",
         "button_label": "ADD TO CART",
-        "button_link": "",
+        "button_link": "https://byrevibe.com/products/hangover-recovery-pills-box-of-10?variant=42540702892143",
         "large_image": "shopify://shop_images/product-large-image.png",
         "product_image": "shopify://shop_images/product-box-img.png"
       }
