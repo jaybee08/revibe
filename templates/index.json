@@ -36,7 +36,7 @@
           "type": "buttons",
           "settings": {
             "button_label_1": "SHOP NOW",
-            "button_link_1": "shopify://collections/all",
+            "button_link_1": "shopify://products/hangover-recovery-pills-box-of-10",
             "button_style_secondary_1": true,
             "button_label_2": "",
             "button_link_2": "",
@@ -301,7 +301,7 @@
       "settings": {
         "image": "shopify://shop_images/dr-img.png",
         "bg_color": "#ffffff",
-        "title": "Dr. Jamie Alejan",
+        "title": "Nutritionist",
         "title_color": "#ffffff",
         "description": "Description...",
         "description_color": "#ffffff",
@@ -375,11 +375,11 @@
       ],
       "settings": {
         "background_image": "shopify://shop_images/natures-relief-bg.png",
-        "bg_color": "#FFFFFF",
+        "bg_color": "#ffffff",
         "title": "NATURE'S BEST FOR HANGOVER RELIEF!",
         "title_color": "#429221",
         "description": "<p>Revibe only uses 100% natural ingredients to fight alcohol symptoms, prevent hangover, support liver health, and replenishes vital nutrients, making sure you feel your best during and after every night out. <br/><br/>Enjoy your evenings worry-free, knowing Revibe has got you covered!</p>",
-        "description_color": "#F9FF88",
+        "description_color": "#f9ff88",
         "button_label": "SHOP NATURAL RELIEF",
         "button_link": "shopify://products/hangover-recovery-pills-box-of-10",
         "container_background_image": "shopify://shop_images/image-container-bg.png",
@@ -415,27 +415,27 @@
       ],
       "settings": {
         "background_image": "shopify://shop_images/20240605_-_Revibe_Ecomm_Posters_2.png",
-        "bg_color": "#FFFFFF",
+        "bg_color": "#ffffff",
         "title": "TRUSTED AND CERTIFIED",
-        "title_color": "#FEFFED",
+        "title_color": "#feffed",
         "subtitle": "<p>Revibe Meets Top Industry Standards for Quality and Safety.</p>",
-        "subtitle_color": "#FFF",
-        "items_bg_color": "#F9FF88",
-        "items_text_color": "#3A3BDA"
+        "subtitle_color": "#ffffff",
+        "items_bg_color": "#f9ff88",
+        "items_text_color": "#3a3bda"
       }
     },
     "product_box_cjeAga": {
       "type": "product-box",
       "settings": {
         "background_image": "shopify://shop_images/product-in-box-bg.png",
-        "bg_color": "#FFFFFF",
+        "bg_color": "#ffffff",
         "title": "Handy Sachets to Grab & Go with the Whole Squad",
         "small_title": "Hangover recovery pills",
-        "title_color": "#3A3BDA",
+        "title_color": "#3a3bda",
         "details": "10 sachets / 20 pills per box",
-        "details_color": "#3A3BDA",
+        "details_color": "#3a3bda",
         "button_label": "ADD TO CART",
-        "button_link": "https://byrevibe.com/products/hangover-recovery-pills-box-of-10?variant=42540702892143",
+        "button_link": "shopify://products/hangover-recovery-pills-box-of-10",
         "large_image": "shopify://shop_images/product-large-image.png",
         "product_image": "shopify://shop_images/product-box-img.png"
       }
@@ -444,9 +444,9 @@
       "type": "custom-rich-text",
       "settings": {
         "title": "<p>Life's best adventures start after dark!</p>",
-        "title_color": "#3A3BDA",
+        "title_color": "#3a3bda",
         "subtitle": "<p>Bring Revibe along for limitless fun and zero hangovers— anytime, anywhere.</p>",
-        "subtitle_color": "#3A3BDA",
+        "subtitle_color": "#3a3bda",
         "background_color": "#f9ff88"
       }
     },
