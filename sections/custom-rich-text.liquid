@@ -9,7 +9,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 32px;
+    gap: 64px;
     display: flex;
     {% if section.settings.background_image %}
       background-image: url("{{ section.settings.background_image | image_url }}");
@@ -21,6 +21,18 @@
   }
   .section-{{ section.id }} .{{ prefix }}__title {
     max-width: 952px;
+  }
+  .section-{{ section.id }} .title-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+  }
+  .section-{{ section.id }} .text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
   }
   .section-{{ section.id }} .{{ prefix }}__title,
   .section-{{ section.id }} .{{ prefix }}__title * {
@@ -43,9 +55,19 @@
     line-height: 26px;
     margin: 0;
   }
+  .section-{{ section.id }} .text-content,
+  .section-{{ section.id }} .text-content * {
+    color: #3A3BDA;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0;
+  }
   @media screen and (max-width: 749px) {
     .section-{{ section.id }} {
       padding: 50px 32px;
+      gap: 24px;
     }
     .section-{{ section.id }} .{{ prefix }}__title,
     .section-{{ section.id }} .{{ prefix }}__title * {
@@ -58,16 +80,40 @@
       font-size: 18px;
       line-height: 24px;
     }
+    .section-{{ section.id }} .text-content,
+    .section-{{ section.id }} .text-content * {
+      color: #3A3BDA;
+      font-size: 22px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      margin: 0;
+    }
+    .section-{{ section.id }} .title-container,
+    .section-{{ section.id }} .text-container {
+      gap: 16px;
+    }
   }
 {%- endstyle -%}
 
 <div class="section-{{ section.id }}">
-  <div class="{{ prefix }}__title">
-    {{ section.settings.title }}
+  <div class="title-container">
+    <div class="{{ prefix }}__title">
+      {{ section.settings.title }}
+    </div>
+    <div class="{{ prefix }}__subtitle">
+      {{ section.settings.subtitle }}
+    </div>
   </div>
-  <div class="{{ prefix }}__subtitle">
-    {{ section.settings.subtitle }}
-  </div>
+  {% if section.blocks != blank %}
+    <div class="text-container">
+      {% for block in section.blocks %}
+        <div class="text-content">
+          {{ block.settings.text }}
+        </div>
+      {% endfor %}
+    </div>
+  {% endif %}
 </div>
 {% schema %}
 {
@@ -110,6 +156,20 @@
       "id": "background_image",
       "label": "Background image",
       "info": "If set, the background color will be overwritten."
+    }
+  ],
+  "blocks": [
+    {
+      "type": "column",
+      "name": "Text",
+      "settings": [
+        {
+          "type": "richtext",
+          "id": "text",
+          "default": "<p>Defaut text</p>",
+          "label": "Text"
+        }
+      ]
     }
   ],
   "presets": [

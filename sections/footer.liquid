@@ -5,21 +5,6 @@
 {{ 'component-list-payment.css' | asset_url | stylesheet_tag }}
 {{ 'component-list-social.css' | asset_url | stylesheet_tag }}
 
-{%- style -%}
-
-  .section-{{ section.id }}-padding {
-    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
-    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
-  }
-
-  @media screen and (min-width: 750px) {
-    .section-{{ section.id }}-padding {
-      padding-top: 0;
-      padding-bottom: {{ section.settings.padding_bottom }}px;
-    }
-  }
-{%- endstyle -%}
-
 <footer class="footer color-{{ section.settings.color_scheme }} gradient section-{{ section.id }}-padding">
   {%- liquid
     assign has_social_icons = true
@@ -290,7 +275,7 @@
         {%- endif -%}
       </div>
     </div> {% endcomment %}
-    <div class="footer__content-bottom-wrapper page-width{% if section.settings.enable_country_selector == false and section.settings.enable_language_selector == false %} footer__content-bottom-wrapper--center{% endif %}">
+    <div class="footer__content-bottom-wrapper{% if section.settings.enable_country_selector == false and section.settings.enable_language_selector == false %} footer__content-bottom-wrapper--center{% endif %}">
       <div class="footer__copyright caption">
         <a href="{{ routes.root_url }}" class="header__heading-link link link--text focus-inset">
           {%- if settings.logo != blank -%}
@@ -313,8 +298,12 @@
             <span class="h2">{{ shop.name }}</span>
           {%- endif -%}
         </a>
-        <small class="copyright__content"
-          >&copy; {{ 'now' | date: '%Y' }}, {{ shop.name | link_to: routes.root_url -}}
+        <hr class="vertical-line">
+        {% capture copyright %}
+          Copyright &copy; {{ 'now' | date: '%Y' }}, {{ shop.name | link_to: routes.root_url -}}
+        {% endcapture %}
+        <small class="copyright__content">
+         {{ copyright }}
         </small>
         {%- if section.settings.show_policy -%}
           <ul class="policies list-unstyled">
@@ -343,6 +332,9 @@
           {%- endif -%}
         </div>
       </div>
+      <small class="copyright__content mobile">
+        {{ copyright }}
+      </small>
     </div>
   </div>
 </footer>
