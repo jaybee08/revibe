@@ -442,6 +442,17 @@
     },
     "custom_rich_text_Ge3Vy7": {
       "type": "custom-rich-text",
+      "blocks": {
+        "column_kMgtw3": {
+          "type": "column",
+          "settings": {
+            "text": "<p><strong>TAG US</strong> @byRevibe</p>"
+          }
+        }
+      },
+      "block_order": [
+        "column_kMgtw3"
+      ],
       "settings": {
         "title": "<p>Life's best adventures start after dark!</p>",
         "title_color": "#3a3bda",
