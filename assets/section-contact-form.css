@@ -23,6 +23,13 @@
 .contact__button {
   margin-top: 3rem;
 }
+.contact__button button {
+  display: inline;
+  background: #5A5BA8;
+}
+.main-page-title {
+  margin: 0;
+}
 
 @media screen and (min-width: 750px) {
   .contact__button {

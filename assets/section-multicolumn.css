@@ -11,12 +11,6 @@
   margin-top: 0;
 }
 
-@media screen and (max-width: 749px) {
-  .multicolumn .title-wrapper-with-link {
-    margin-bottom: 3rem;
-  }
-}
-
 @media screen and (min-width: 750px) and (max-width: 989px) {
   .multicolumn__title {
     padding-left: 5rem;
