@@ -17,11 +17,16 @@
   .section-align-{{ section.id }} .subtitle {
     text-align: {{ section.settings.title_alignment }};
     color: #14154C;
-    font-size: 2rem;
+    font-size: 32px;
+    max-width: 896px;
     width: 100%;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 38px;
   }
   .section-{{ section.id }} .title-wrapper-with-link {
     justify-content: center;
+    gap: 24px
   }
   .section-{{ section.id }} h3 {
     color: #3A3BDA;
@@ -69,12 +74,21 @@
       font-size: 24px;
       line-height: 28.8px;
     }
+    .section-align-{{ section.id }} .subtitle {
+      max-width: 326.4px
+    }
     .section-align-{{ section.id }} .subtitle,
     .section-align-{{ section.id }} .subtitle * {
       color: #14154C;
       font-size: 16px;
       width: 100%;
       line-height: 22px;
+    }
+    .section-{{ section.id }} .title-wrapper-with-link {
+      gap: 16px;
+      align-items: center;
+      flex-direction: column;
+      margin: 0;
     }
     .section-{{ section.id }} .multicolumn-card__info .inline-richtext,
     .section-{{ section.id }} .multicolumn-card__info .inline-richtext * {

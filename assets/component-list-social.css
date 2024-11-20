@@ -1,7 +1,5 @@
 .list-social {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-end;
 }
 
 @media only screen and (max-width: 749px) {

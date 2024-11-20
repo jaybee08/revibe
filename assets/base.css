@@ -1559,7 +1559,7 @@ details[open] > .share-button__fallback {
   width: 100%;
   box-sizing: border-box;
   transition: box-shadow var(--duration-short) ease;
-  border-radius: var(--inputs-radius);
+  border-radius: 8px;
   height: 4.5rem;
   min-height: calc(var(--inputs-border-width) * 2);
   min-width: calc(7rem + (var(--inputs-border-width) * 2));
@@ -1585,7 +1585,6 @@ details[open] > .share-button__fallback {
   z-index: -1;
 }
 
-.field:after,
 .select:after,
 .customer .field:after,
 .customer select:after,
@@ -1621,7 +1620,7 @@ details[open] > .share-button__fallback {
   box-shadow: 0 0 0 calc(0.1rem + var(--inputs-border-width))
     rgba(var(--color-foreground), var(--inputs-border-opacity));
   outline: 0;
-  border-radius: var(--inputs-radius);
+  border-radius: 8px;
 }
 
 .field__input:focus-visible,
@@ -1641,7 +1640,7 @@ details[open] > .share-button__fallback {
 .localization-form__select:focus.localization-form__select:after {
   box-shadow: 0 0 0 calc(0.1rem + var(--inputs-border-width)) rgba(var(--color-foreground));
   outline: 0;
-  border-radius: var(--inputs-radius);
+  border-radius: 8px;
 }
 
 .localization-form__select:focus {
@@ -1698,9 +1697,12 @@ details[open] > .share-button__fallback {
 .customer .field input {
   flex-grow: 1;
   text-align: left;
-  padding: 1.5rem;
+  padding: 24px;
   margin: var(--inputs-border-width);
   transition: box-shadow var(--duration-short) ease;
+  border-radius: 8px;
+  border: 1px solid var(--Stroke, #D9DAE4);
+  background: var(--White, #FFF);
 }
 
 .field__label,
@@ -3572,6 +3574,7 @@ details-disclosure > details {
   display: block;
 }
 
+.cta-button button,
 .cta-button a {
   display: flex;
   padding: 16px 32px;

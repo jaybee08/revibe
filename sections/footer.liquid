@@ -320,11 +320,29 @@
         {%- endif -%}
       </div>
       <div class="footer-links">
-          <ul class="links">
-            <li>Footer link</li>
-            <li>Footer link</li>
-            <li>Footer link</li>
-            <li>Footer link</li>
+        <ul class="links">
+          {%- for block in section.blocks -%}
+            {%- for link in block.settings.menu.links -%}
+              <li>
+                <a
+                  id="HeaderMenu-{{ link.handle }}"
+                  href="{{ link.url }}"
+                  class="header__menu-item list-menu__item link link--text focus-inset"
+                  {% if link.current %}
+                    aria-current="page"
+                  {% endif %}
+                >
+                  <span
+                    {%- if link.current %}
+                      class="header__active-menu-item"
+                    {% endif %}
+                  >
+                    {{- link.title | escape -}}
+                  </span>
+                </a>
+              </li>
+            {% endfor %}
+          {%-  endfor -%}
           </ul>
         <div class="sm">
           {%- if section.settings.show_social and has_social_icons -%}
