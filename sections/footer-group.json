@@ -28,13 +28,6 @@
             "menu": "about-us"
           }
         },
-        "link_list_6yi87D": {
-          "type": "link_list",
-          "settings": {
-            "heading": "Follow us",
-            "menu": "footer"
-          }
-        },
         "text_EGxLHB": {
           "type": "text",
           "settings": {
@@ -46,7 +39,6 @@
       "block_order": [
         "link_list_pkdt3m",
         "link_list_3kVrUz",
-        "link_list_6yi87D",
         "text_EGxLHB"
       ],
       "settings": {
