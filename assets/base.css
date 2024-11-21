@@ -3613,3 +3613,23 @@ details-disclosure > details {
     transform: translateX(100%) scaleX(0);
   }
 }
+
+#bundle-smart_bar {
+  padding: 1.8rem;
+  background-color: #5A5BA8!important;
+}
+#bundle-smart_bar_container {
+  color: #F9FF88;
+  text-align: center;
+  font-family: "Nord Regular"!important;
+  font-size: 16px!important;
+  font-style: normal;
+  font-weight: 700!important;
+  line-height: normal;
+  text-transform: uppercase;
+}
+#bundle-smart_bar span:not(.vttooltiptext) {
+  background-color: transparent!important;
+  color: #F9FF88!important;
+  padding: 0!important;
+}
