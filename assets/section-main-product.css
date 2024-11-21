@@ -62,7 +62,7 @@ product-info {
 
 @media screen and (min-width: 990px) {
   .product--large:not(.product--no-media) .product__media-wrapper {
-    max-width: 53%;
+    max-width: 50%;
     width: calc(65% - var(--grid-desktop-horizontal-spacing) / 2);
   }
 
@@ -1523,12 +1523,6 @@ a.product__text {
   border-color: none;
   border-radius: 20px;
 }
-.flexi .product-form__submit {
-  background-color: #5a5ba8;
-  color: #f9ff88;
-  border-radius: 50px;
-  min-height: calc((var(--inputs-border-width)* 2) + 5.7rem);
-}
 .short-description {
   border-top: 1px solid #ececec;
 }
@@ -1557,4 +1551,113 @@ a.product__text {
   width: 100%;
   height: 100;
   object-fit: contain;
+}
+
+.product__info-container .Vtl-VolumeDiscountRadio__TotalSave {
+  top: 0.5rem;
+  left: 55%;
+  max-height: 20px;
+  border-radius: 4px;
+  background: #4361ff1a;
+  color: #3758f9;
+  font-family: Sofia Pro Bold;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  padding: 3px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.product__info-container .Vtl-VolumeDiscountRadio__TierItem--Highlighted {
+  border-radius: 14px;
+}
+.product__info-container .Vtl-VolumeDiscountRadio__TierItem {
+  border-radius: 14px;
+}
+.product__info-container .Vtl-VolumeDiscountRadio__Name {
+  color: var(--Foundation-Blue-Dark, #2C2CA4);
+  font-family: "Sofia Pro Bold";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.product__info-container .Vtl-VolumeDiscountRadio__LabelValue {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.product__info-container .Vtl-VolumeDiscountRadio__LabelHeader {
+  color: #1D364D;
+  font-family: "Sofia Pro Bold";
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.product__info-container .Vtl-VolumeDiscountRadio__TierItem--Selected {
+  border-radius: 14px;
+  border: 1px solid #B8C7FF;
+  background: #E7ECFF;
+}
+.product__info-container .Vtl-VolumeDiscountRadio__TierItem--Selected .Vtl-VolumeDiscountRadio__Radio {
+  border-color: #3758F9;
+}
+.product__info-container .Vtl-VolumeDiscountRadio__TierItem--Selected .Vtl-VolumeDiscountRadio__Radio::before {
+  color: #3758F9;
+  box-shadow: inset 1em 1em #3758F9;
+}
+.product__info-container  .Vtl-VolumeDiscountRadio .Vtl-VolumeDiscountRadio__Radio {
+  color: #cecece;
+}
+.product__info-container .Vtl-VolumeDiscountRadio__TierHighlight {
+  color: #3758F9;
+}
+.product__info-container .VolumeDiscountRadio__TierList {
+  margin-bottom: 19px;
+}
+.product__info-container .Vtl-VolumeDiscountRadio__LabelName {
+  color: var(--Foundation-Blue-Darker, #14154C);
+  font-family: "Sofia Pro Regular";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.product__info-container .Vtl-VolumeDiscountRadio__ItemPriceWithoutDiscount {
+  font-family: "Sofia Pro Regular";
+}
+.product__info-container .Vtl-VolumeDiscountRadio__TotalPrice, .product__info-container .Vtl-VolumeDiscountRadio__ItemPriceWithDiscount {
+  color: var(--Foundation-Blue-Darker, #14154C);
+  font-family: "Sofia Pro Bold";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.product__info-container .product-form__buttons {
+  width: 100%;
+  max-width: unset;
+}
+.product__info-container .button {
+  background-color: #5a5ba8;
+  color: #f9ff88;
+  border-radius: 50px;
+  min-height: calc((var(--inputs-border-width)* 2) + 5.7rem);
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  font-family: 'Nord Regular';
+  font-weight: 700;
+}
+.product__info-container .button .key-icon {
+  margin: 0 0.5rem;
+  position: relative;
+  top: -1px;
+}
+.product__info-container .vtl-ub-vd-widget__content {
+  border-top: 1px solid #ececec;
+}
+.buy-buttons:not(.flexi).product-form {
+  margin-top: 0;
 }
