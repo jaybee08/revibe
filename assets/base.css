@@ -3610,6 +3610,7 @@ details-disclosure > details {
 #bundle-smart_bar {
   padding: 1.8rem;
   background-color: #5A5BA8!important;
+  z-index: 10!important; 
 }
 #bundle-smart_bar_container {
   color: #F9FF88;
