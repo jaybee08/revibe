@@ -89,32 +89,6 @@
             {%- if cart != empty -%}
               <div class="drawer__cart-items-wrapper">
                 <table class="cart-items" role="table">
-                  <thead role="rowgroup">
-                    <tr role="row">
-                      <th id="CartDrawer-ColumnProductImage" role="columnheader">
-                        <span class="visually-hidden">{{ 'sections.cart.headings.image' | t }}</span>
-                      </th>
-                      <th
-                        id="CartDrawer-ColumnProduct"
-                        class="caption-with-letter-spacing"
-                        scope="col"
-                        role="columnheader"
-                      >
-                        {{ 'sections.cart.headings.product' | t }}
-                      </th>
-                      <th
-                        id="CartDrawer-ColumnTotal"
-                        class="right caption-with-letter-spacing"
-                        scope="col"
-                        role="columnheader"
-                      >
-                        {{ 'sections.cart.headings.total' | t }}
-                      </th>
-                      <th id="CartDrawer-ColumnQuantity" role="columnheader">
-                        <span class="visually-hidden">{{ 'sections.cart.headings.quantity' | t }}</span>
-                      </th>
-                    </tr>
-                  </thead>
 
                   <tbody role="rowgroup">
                     {%- for item in cart.items -%}
@@ -224,43 +198,6 @@
 
                         <td class="cart-item__totals right" role="cell" headers="CartDrawer-ColumnTotal">
                           {%- render 'loading-spinner' -%}
-                          <div class="cart-item__price-wrapper">
-                            {%- if item.original_line_price != item.final_line_price -%}
-                              <div class="cart-item__discounted-prices">
-                                <span class="visually-hidden">
-                                  {{ 'products.product.price.regular_price' | t }}
-                                </span>
-                                <s class="cart-item__old-price price price--end">
-                                  {{ item.original_line_price | money }}
-                                </s>
-                                <span class="visually-hidden">
-                                  {{ 'products.product.price.sale_price' | t }}
-                                </span>
-                                <span class="price price--end">
-                                  {{ item.final_line_price | money }}
-                                </span>
-                              </div>
-                            {%- else -%}
-                              <span class="price price--end">
-                                {{ item.original_line_price | money }}
-                              </span>
-                            {%- endif -%}
-
-                            {%- if item.variant.available and item.unit_price_measurement -%}
-                              <div class="unit-price caption">
-                                <span class="visually-hidden">{{ 'products.product.price.unit_price' | t }}</span>
-                                {{ item.unit_price | money }}
-                                <span aria-hidden="true">/</span>
-                                <span class="visually-hidden"
-                                  >&nbsp;{{ 'accessibility.unit_price_separator' | t }}&nbsp;</span
-                                >
-                                {%- if item.unit_price_measurement.reference_value != 1 -%}
-                                  {{- item.unit_price_measurement.reference_value -}}
-                                {%- endif -%}
-                                {{ item.unit_price_measurement.reference_unit }}
-                              </div>
-                            {%- endif -%}
-                          </div>
                         </td>
                         {%- liquid
                           assign has_qty_rules = false
@@ -552,9 +489,19 @@
               disabled
             {% endif %}
           >
-            {{ 'sections.cart.checkout' | t }}
+            <svg xmlns="http://www.w3.org/2000/svg" width="21" height="22" viewBox="0 0 21 22" fill="none">
+              <path d="M13.7813 9.26752V5.33002C13.7813 4.45978 13.4356 3.62518 12.8203 3.00982C12.2049 2.39447 11.3703 2.04877 10.5001 2.04877C9.62984 2.04877 8.79524 2.39447 8.17988 3.00982C7.56453 3.62518 7.21883 4.45978 7.21883 5.33002V9.26752M17.1553 7.52364L18.2605 18.0236C18.3217 18.6055 17.8667 19.1113 17.2813 19.1113H3.71883C3.58076 19.1114 3.44421 19.0825 3.31803 19.0264C3.19186 18.9704 3.0789 18.8884 2.98647 18.7858C2.89405 18.6833 2.82424 18.5624 2.78158 18.4311C2.73891 18.2998 2.72435 18.1609 2.73883 18.0236L3.84483 7.52364C3.87034 7.28176 3.9845 7.05788 4.1653 6.89518C4.34609 6.73248 4.58073 6.64247 4.82395 6.64252H16.1762C16.6802 6.64252 17.1028 7.02314 17.1553 7.52364ZM7.54695 9.26752C7.54695 9.35454 7.51238 9.438 7.45085 9.49954C7.38931 9.56107 7.30585 9.59564 7.21883 9.59564C7.1318 9.59564 7.04834 9.56107 6.98681 9.49954C6.92527 9.438 6.8907 9.35454 6.8907 9.26752C6.8907 9.18049 6.92527 9.09703 6.98681 9.0355C7.04834 8.97396 7.1318 8.93939 7.21883 8.93939C7.30585 8.93939 7.38931 8.97396 7.45085 9.0355C7.51238 9.09703 7.54695 9.18049 7.54695 9.26752ZM14.1095 9.26752C14.1095 9.35454 14.0749 9.438 14.0133 9.49954C13.9518 9.56107 13.8684 9.59564 13.7813 9.59564C13.6943 9.59564 13.6108 9.56107 13.5493 9.49954C13.4878 9.438 13.4532 9.35454 13.4532 9.26752C13.4532 9.18049 13.4878 9.09703 13.5493 9.0355C13.6108 8.97396 13.6943 8.93939 13.7813 8.93939C13.8684 8.93939 13.9518 8.97396 14.0133 9.0355C14.0749 9.09703 14.1095 9.18049 14.1095 9.26752Z" stroke="#F9FF88" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg> {{ 'sections.cart.checkout' | t }}
           </button>
         </div>
+
+        <div class="payment-info">
+          <div class="payment-icons">
+            <img alt="payment-icons" src="https://cdn.shopify.com/s/files/1/0597/0545/8799/files/trustbag.png_2x_d9eb699d-301e-4bb3-b082-bdeed3bab62f.png?v=1731915397">
+          </div>
+          Your payment information is processed securely. We do not store credit card details nor have access to your credit card information. 
+        </div>
+
       </div>
     </div>
   </div>

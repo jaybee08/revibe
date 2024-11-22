@@ -141,7 +141,7 @@ quantity-popover .quantity__rules span:first-of-type {
 
   .quantity-popover-container {
     width: auto;
-    max-width: 20rem;
+    max-width: 17rem;
   }
 
   .quantity-popover__info.global-settings-popup {
@@ -151,7 +151,8 @@ quantity-popover .quantity__rules span:first-of-type {
 }
 
 quantity-popover .quantity {
-  background: rgb(var(--color-background));
+  border-radius: 29.5px;
+  background: #F3F3F3;
 }
 
 quantity-popover .quantity__rules {
