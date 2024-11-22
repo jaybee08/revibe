@@ -23,6 +23,12 @@
 
 .totals__total {
   margin-top: .5rem;
+  color: var(--Light-Colors-Black---Light, #000);
+  font-family: "Sofia Pro Bold";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 27px;
 }
 
 .totals__total-value {
