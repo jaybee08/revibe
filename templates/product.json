@@ -100,36 +100,36 @@
         "collapsible_row_98TxfF": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "Collapsible row",
-            "icon": "check_mark",
-            "row_content": "",
+            "heading": "🌿 What are Revibe Party Recovery Pills?",
+            "icon": "none",
+            "row_content": "<p>Revibe Party Recovery Pills are a blend of carefully selected natural ingredients formulated to support your body during social events. Take Revibe before or after a fun night out to help you wake up feeling refreshed and ready to go!</p>",
             "page": ""
           }
         },
         "collapsible_row_wxUbUX": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "Collapsible row",
-            "icon": "check_mark",
-            "row_content": "",
+            "heading": "⭐ Key Benefits",
+            "icon": "none",
+            "row_content": "<p>Revibe Party Recovery Pills are a blend of carefully selected natural ingredients formulated to support your body during social events. Take Revibe before or after a fun night out to help you wake up feeling refreshed and ready to go!</p>",
             "page": ""
           }
         },
         "collapsible_row_rPRUkh": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "Collapsible row",
-            "icon": "check_mark",
-            "row_content": "",
+            "heading": "✨ How to use",
+            "icon": "none",
+            "row_content": "<p>Revibe Party Recovery Pills are a blend of carefully selected natural ingredients formulated to support your body during social events. Take Revibe before or after a fun night out to help you wake up feeling refreshed and ready to go!</p>",
             "page": ""
           }
         },
         "collapsible_row_9twzgR": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "Collapsible row",
-            "icon": "check_mark",
-            "row_content": "",
+            "heading": "💯 Why choose Revibe?",
+            "icon": "none",
+            "row_content": "<p>Revibe Party Recovery Pills are a blend of carefully selected natural ingredients formulated to support your body during social events. Take Revibe before or after a fun night out to help you wake up feeling refreshed and ready to go!</p>",
             "page": ""
           }
         }
@@ -142,7 +142,7 @@
       ],
       "settings": {
         "caption": "",
-        "heading": "🌿 What are Revibe Party Recovery Pills?",
+        "heading": "",
         "heading_size": "h1",
         "heading_alignment": "center",
         "layout": "none",
