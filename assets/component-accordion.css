@@ -5,6 +5,10 @@
   padding: 1.5rem 0;
 }
 
+.accordion summary h3 {
+  font-size: 2.4rem;
+}
+
 .accordion .summary__title {
   display: flex;
   flex: 1;
@@ -32,6 +36,8 @@
   min-height: 1.6rem;
   margin: 0;
   word-break: break-word;
+  font-weight: 600;
+  font-family: "Sofia Pro Bold";
 }
 
 .accordion .svg-wrapper {
@@ -52,6 +58,12 @@
   overflow-x: auto;
   padding: 0 0.6rem;
 }
+
+.accordion__content p {
+  font-family: "DM Sans", sans-serif!important;
+  font-size: 1.8rem;
+}
+
 
 .accordion__content img {
   max-width: 100%;
