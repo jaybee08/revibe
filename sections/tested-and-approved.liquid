@@ -1,6 +1,5 @@
 {% assign section_title = "tested" %}
 {%- style -%}
-  
   .section-{{ section.id }} {
     height: auto;
     background: linear-gradient(180deg, #354199 32%, #232A5F 100%);
@@ -67,15 +66,16 @@
   }
   .{{ section_title }} .item {
     display: flex;
+    flex-direction: column;
     align-items: flex-start;
     gap: 1.5rem;
-    align-self: stretch;
+    text-align: left;
   }
   .{{ section_title }} .icon-container {
     display: flex;
     width: 32px;
-    padding: 0.625rem 0rem;
     align-items: center;
+    justify-content: center; /* Center icon horizontally */
     gap: 0.625rem;
   }
   .{{ section_title }} .icon-container svg {
@@ -84,19 +84,15 @@
     flex-shrink: 0;
     fill: #F9FF88;
   }
-  
   .{{ section_title }} .details-container {
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 1rem;
-    flex: 1 0 0;
+    gap: 24px; /* Add spacing between the icon and percentage */
   }
-  
+
   .{{ section_title }} .item-title,
   .{{ section_title }} .item-title * {
     color: #F9FF88;
-    text-align: center;
+    text-align: left; /* Align percentage to the left for desktop */
     font-size: 40px;
     font-style: normal;
     font-weight: 700;
@@ -126,6 +122,28 @@
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+  }
+  @media screen and (max-width: 768px) {
+    .{{ section_title }} .item {
+        flex-direction: column; /* Stack rows vertically for mobile */
+        align-items: center; /* Center all content horizontally */
+        text-align: center; /* Center-align text for mobile */
+        gap: 1rem; /* Space between rows */
+    }
+    .{{ section_title }} .details-container {
+        flex-direction: row; /* Keep icon and percentage side by side */
+        align-items: center; /* Center them vertically */
+        justify-content: center; /* Center them horizontally */
+        gap: 0.5rem; /* Space between checkbox and percentage */
+    }
+    .{{ section_title }} .item-title {
+        font-size: 1.5rem; /* Adjust font size for mobile */
+        text-align: center; /* Center-align percentage for mobile */
+    }
+    .{{ section_title }} .item-description {
+        text-align: center; /* Center-align description for mobile */
+        margin-top: 0.5rem; /* Space between icon-title and description */
+    }
   }
   @media screen and (max-width: 1305px) {
     .{{ section_title }} .image-banner {
@@ -175,7 +193,7 @@
     }
     .{{ section_title }} .subtitle {
       font-size: 1rem;
-      line-height: 1.25rem; 
+      line-height: 1.25rem;
     }
     .{{ section_title }} .item-title {
       font-size: 24px;
@@ -196,6 +214,7 @@
     }
   }
 {%- endstyle -%}
+
 <section class="section-{{ section.id }} {{ section_title }}">
   <div class="container">
     <div class="flex-container">
@@ -206,16 +225,16 @@
       <div class="items-container">
         {% for item in section.blocks %}
           <div class="item">
-            <div class="icon-container">
-              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="33" viewBox="0 0 32 33" fill="none">
-                <rect y="0.813477" width="32" height="32" rx="16" fill="#F9FF88"/>
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M22.7948 10.6667L13.2482 19.88L10.7148 17.1734C10.2482 16.7334 9.51485 16.7067 8.98152 17.08C8.46152 17.4667 8.31485 18.1467 8.63485 18.6934L11.6348 23.5734C11.9282 24.0267 12.4348 24.3067 13.0082 24.3067C13.5548 24.3067 14.0748 24.0267 14.3682 23.5734C14.8482 22.9467 24.0082 12.0267 24.0082 12.0267C25.2082 10.8 23.7548 9.72003 22.7948 10.6534V10.6667Z" fill="#313C8B"/>
-              </svg>
-            </div>
             <div class="details-container">
+              <div class="icon-container">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="33" viewBox="0 0 32 33" fill="none">
+                  <rect y="0.813477" width="32" height="32" rx="16" fill="#F9FF88"/>
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M22.7948 10.6667L13.2482 19.88L10.7148 17.1734C10.2482 16.7334 9.51485 16.7067 8.98152 17.08C8.46152 17.4667 8.31485 18.1467 8.63485 18.6934L11.6348 23.5734C11.9282 24.0267 12.4348 24.3067 13.0082 24.3067C13.5548 24.3067 14.0748 24.0267 14.3682 23.5734C14.8482 22.9467 24.0082 12.0267 24.0082 12.0267C25.2082 10.8 23.7548 9.72003 22.7948 10.6534V10.6667Z" fill="#313C8B"/>
+                </svg>
+              </div>
               <div class="item-title" >{{ item.settings.title }}</div>
-              <div class="item-description">{{ item.settings.description }}</div>
             </div>
+            <div class="item-description">{{ item.settings.description }}</div>
           </div>
         {% endfor %}
       </div>
