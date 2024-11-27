@@ -1,5 +1,8 @@
 {% assign section_title = "text-large-image" %}
 {%- style -%}
+  .border {
+    display: block !important
+  }
   .section-{{ section.id }} {
     height: auto;
     justify-content: flex-start;
@@ -74,12 +77,19 @@
     }
   }
   @media screen and (max-width: 965px) {
+    .{{ section_title }} .divider-line {
+      width: 51.43px; /* Adjust as needed */
+      height: 3.43px;
+      background: #A8DDFF; /* Color of the divider */
+      margin: 16px 0; /* Add spacing around the divider */
+    }
+
     .{{ section_title }} .container {
       width: 100%;
-      padding: 3.125rem 2rem;
+      padding: 50px 32px;
     }
     .{{ section_title }} .flex-container {
-      gap: 1.5rem;
+      gap: 24px;
     }
     .{{ section_title }} .quote-container svg {
       width: 18.75px;
@@ -142,7 +152,7 @@
         {{ 'icon-quote.svg' | inline_asset_content }}
       </div>
       <div class="text-title">The Doctor-Approved Party Hack!</div>
-      <div class="border" style="width: 51.43px; height: 0px; border: 3.43px #A8DDFF solid"></div>
+      <div class="border" style="width: 51.43px; height: 0px; border: 2px #A8DDFF solid"></div>
       <div class="text-description">“Revibe is a scientifically crafted supplement that helps reduce hangover symptoms by aiding alcohol metabolism and supporting liver detox. You can enjoy your time out with fewer worries about headaches and nausea. For best results, I recommend taking Revibe as directed before and after drinking.”</div>
       <div class="author-details">
         {{ section.settings.author }}
