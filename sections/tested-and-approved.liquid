@@ -87,6 +87,7 @@
   .{{ section_title }} .details-container {
     display: flex;
     gap: 24px; /* Add spacing between the icon and percentage */
+    flex-direction: column;
   }
   .{{ section_title }} .item-title {
     display: flex;
@@ -137,7 +138,6 @@
         gap: 1rem; /* Space between rows */
     }
     .{{ section_title }} .details-container {
-        flex-direction: row; /* Keep icon and percentage side by side */
         align-items: center; /* Center them vertically */
         justify-content: center; /* Center them horizontally */
         gap: 0.5rem; /* Space between checkbox and percentage */
