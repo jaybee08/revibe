@@ -28,7 +28,7 @@
   .{{ section_title }} .section-title {
     color: #3A3BDA;
     text-align: center;
-    font-size: 40px;
+    font-size: 36px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
@@ -60,25 +60,25 @@
   .{{ section_title }} .item-title {
     color: #3A3BDA;
     text-align: center;
-    font-size: 32px;
+    font-size: 28px;
     font-style: normal;
     font-weight: 600;
-    line-height: 40px;
+    line-height: 125%;
     margin: 0;
-    font-family: "Sofia Pro Regular"
-    max-width: 340px;
+    font-family: "Sofia Pro Regular";
+    max-width: 230px;
   }
   .{{ section_title }} .item-description,
   .{{ section_title }} .item-description * {
     color: #14154C;
     text-align: center;
-    font-size: 24px;
+    font-size: 20px;
     font-style: normal;
     font-weight: 500;
-    line-height: 30px;
+    line-height: 125%;
     margin: 0;
-    font-family: "Sofia Pro Regular"
-    max-width: 400px;
+    font-family: "Sofia Pro Regular";
+    max-width: 700px;
   }
   .{{ section_title }} .button-section {
     display: flex;
@@ -98,8 +98,8 @@
   }
   .{{ section_title }} .item-image {
     object-fit: contain;
-    width: 212px;
-    height: 170px;
+    width: 150px;
+    height: 130px;
   }
   @media screen and (max-width: 856px) {
     .section-{{ section.id }} {
@@ -304,9 +304,9 @@
           "label": "Select Image"
         },
         {
-          "type": "text",
+          "type": "richtext",
           "id": "title",
-          "default": "Protects Liver Health",
+          "default": "<p>Protects Liver Health</p>",
           "label": "Title"
         },
         {

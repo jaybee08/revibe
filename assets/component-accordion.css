@@ -2,11 +2,12 @@
   display: flex;
   position: relative;
   line-height: 1;
-  padding: 1.5rem 0;
+  padding: 32px 0;
 }
 
 .accordion summary h3 {
-  font-size: 2.4rem;
+  font-size: 24px;
+  color: #170F49;
 }
 
 .accordion .summary__title {
@@ -26,8 +27,10 @@
 .accordion {
   margin-top: 2.5rem;
   margin-bottom: 0;
-  border-top: 0.1rem solid rgba(var(--color-foreground), 0.08);
   border-bottom: 0.1rem solid rgba(var(--color-foreground), 0.08);
+}
+.accordion:last-of-type {
+  border-bottom: 0rem;
 }
 
 .accordion__title {
@@ -37,7 +40,6 @@
   margin: 0;
   word-break: break-word;
   font-weight: 600;
-  font-family: "Sofia Pro Bold";
 }
 
 .accordion .svg-wrapper {
@@ -52,6 +54,18 @@
   transform: rotate(180deg);
 }
 
+
+.accordion .icon-minus {
+  display: none;
+}
+
+.accordion details[open] > summary .icon-minus  {
+  display: block;
+}
+.accordion details[open] > summary .icon-plus {
+  display: none;
+}
+
 .accordion__content {
   margin-bottom: 1.5rem;
   word-break: break-word;
@@ -62,6 +76,7 @@
 .accordion__content p {
   font-family: "DM Sans", sans-serif!important;
   font-size: 1.8rem;
+  color:#14154C;
 }
 
 
