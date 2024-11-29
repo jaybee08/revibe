@@ -66,7 +66,7 @@
     line-height: 32px;
     margin: 0;
     font-family: "Sofia Pro Regular" !important;
-    max-width: 340px;
+    max-width: 230px;
   }
   .{{ section_title }} .item-description,
   .{{ section_title }} .item-description * {
@@ -77,8 +77,8 @@
     font-weight: 500;
     line-height: 22px;
     margin: 0;
-    font-family: "Sofia Pro Regular"
-    max-width: 400px;
+    font-family: "Sofia Pro Regular";
+    max-width: 700px;
   }
   .{{ section_title }} .button-section {
     display: flex;
@@ -99,8 +99,8 @@
   }
   .{{ section_title }} .item-image {
     object-fit: contain;
-    width: 212px;
-    height: 170px;
+    width: 150px;
+    height: 130px;
   }
   @media screen and (max-width: 856px) {
     .section-{{ section.id }} {
@@ -305,9 +305,9 @@
           "label": "Select Image"
         },
         {
-          "type": "text",
+          "type": "richtext",
           "id": "title",
-          "default": "Protects Liver Health",
+          "default": "<p>Protects Liver Health</p>",
           "label": "Title"
         },
         {

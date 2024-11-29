@@ -110,6 +110,8 @@
 
   .multicolumn .button {
     margin-top: 32px;
+    padding-left: 0rem;
+    padding-right: 0rem;
   }
 }
 

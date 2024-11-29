@@ -235,6 +235,7 @@ cart-drawer {
 cart-drawer-items {
   overflow: auto;
   flex: 1;
+  min-height: 210px;
 }
 
 @media screen and (max-height: 650px) {

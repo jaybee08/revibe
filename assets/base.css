@@ -652,10 +652,16 @@ summary {
   list-style: none;
   position: relative;
 }
-
 summary .icon-caret {
   position: absolute;
   height: 0.6rem;
+  right: 1.5rem;
+  top: calc(50% - 0.2rem);
+}
+
+summary .icon-plus,
+summary .icon-minus {
+  position: absolute;
   right: 1.5rem;
   top: calc(50% - 0.2rem);
 }
@@ -3608,6 +3614,10 @@ details-disclosure > details {
   justify-self: center;
   text-decoration: none;
   font-family: 'Nord Regular' !important
+}
+.cta-button button:hover,
+.cta-button a:hover {
+  background: #494bd4;
 }
 
 @media screen and (max-width: 749px) {
