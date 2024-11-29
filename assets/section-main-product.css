@@ -1554,20 +1554,19 @@ a.product__text {
 }
 
 .product__info-container .Vtl-VolumeDiscountRadio__TotalSave {
-  top: 0.5rem;
-  left: 55%;
-  max-height: 20px;
-  border-radius: 4px;
-  background: #4361ff1a;
-  color: #3758f9;
-  font-family: Sofia Pro Bold;
-  font-size: 12px;
-  font-style: normal;
-  font-weight: 700;
-  padding: 3px 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  text-transform: capitalize;
+    padding: 2px 14px;
+    font-size: 17px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    white-space: nowrap;
+    background: #4361ff1a;
+    color: #3758f9;
+    font-family: 'Sofia Pro Bold' !important;
+    border-radius: 4px;
+    z-index: 9999;
 }
 .product__info-container .Vtl-VolumeDiscountRadio__TierItem--Highlighted {
   border-radius: 14px;

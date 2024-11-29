@@ -103,6 +103,13 @@
   }
 
   .multicolumn-list:not(.slider) {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    gap: 24px;
+  }
+
+  .multicolumn .button {
+    margin-top: 32px;
     padding-left: 0rem;
     padding-right: 0rem;
   }
