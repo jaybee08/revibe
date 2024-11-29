@@ -148,7 +148,7 @@
         "column_RMgm49": {
           "type": "column",
           "settings": {
-            "title": "CANT'GO WITHOUT IT",
+            "title": "CAN'T GO WITHOUT IT",
             "comments": "<p>Took 2 Revibe pills before and after partying, and I couldn’t believe how well they worked. I was up the next morning with no headache—efficient and effective! 😎💪</p>",
             "customer_name": "Dave G.",
             "link_label": "",
@@ -200,7 +200,7 @@
           "type": "column",
           "settings": {
             "item_image": "shopify://shop_images/liver.png",
-            "title": "Protects Liver Health",
+            "title": "<p>Protects Liver Health</p>",
             "description": "<p>Natural ingredients help detoxify and protect your liver from alcohol’s effects.</p>"
           }
         },
@@ -208,7 +208,7 @@
           "type": "column",
           "settings": {
             "item_image": "shopify://shop_images/drinks.png",
-            "title": "Reduces Negative Side Effects of Alcohol",
+            "title": "<p>Reduces Negative Side Effects of Alcohol</p>",
             "description": "<p>Relieves flush, headache, and nausea while keeping the alcohol high.</p>"
           }
         },
@@ -216,7 +216,7 @@
           "type": "column",
           "settings": {
             "item_image": "shopify://shop_images/person.png",
-            "title": "Prevents Hangovers",
+            "title": "<p>Prevents Hangovers</p>",
             "description": "<p>Boosts alcohol metabolism to cut hangover symptoms and help you  wake up refreshed.</p>"
           }
         }
@@ -454,7 +454,7 @@
         "column_kMgtw3"
       ],
       "settings": {
-        "title": "<p>Life's best adventures start after dark!</p>",
+        "title": "<p><strong>Life's best adventures start after dark!</strong></p>",
         "title_color": "#3a3bda",
         "subtitle": "<p>Bring Revibe along for limitless fun and zero hangovers— anytime, anywhere.</p>",
         "subtitle_color": "#3a3bda",
