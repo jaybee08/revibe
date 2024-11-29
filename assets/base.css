@@ -1324,6 +1324,23 @@ shopify-accelerated-checkout-cart {
   opacity: 0.5;
 }
 
+@media screen and (max-width: 749px) {
+  .quantity {
+    width: 116.294px !important;
+    align-self: stretch;
+  }
+  .quantity__input {
+    width: 10px !important;
+    flex-shrink: 0 !important;
+    color: #3A4980 !important;
+    font-size: 22px !important;
+    font-style: normal !important;
+    line-height: normal !important;
+    font-family: 'Sofia Pro Bold' !important;
+  }
+}
+
+
 .button--full-width {
   display: flex;
   width: 100%;
@@ -3590,6 +3607,7 @@ details-disclosure > details {
   width: fit-content;
   justify-self: center;
   text-decoration: none;
+  font-family: 'Nord Regular' !important
 }
 
 @media screen and (max-width: 749px) {

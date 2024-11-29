@@ -45,6 +45,9 @@
     font-family: "Sofia Pro Regular";
     margin: 0;
   }
+  .section-{{ section.id }} .{{ prefix }}__title strong {
+    font-family: "Sofia Pro Bold" !important;
+  }
   .section-{{ section.id }} .{{ prefix }}__subtitle,
   .section-{{ section.id }} .{{ prefix }}__subtitle * {
     color: {{ section.settings.subtitle_color }};
@@ -63,6 +66,7 @@
     font-weight: 400;
     line-height: normal;
     margin: 0;
+    font-family: 'Sofia Pro Bold' !important;
   }
   @media screen and (max-width: 749px) {
     .section-{{ section.id }} {

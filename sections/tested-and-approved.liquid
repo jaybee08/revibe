@@ -10,7 +10,7 @@
     justify-content: center;
   }
   .{{ section_title }} .container {
-    width: 750px;
+    width: 690px;
     padding-top: 100px;
     padding-bottom: 100px;
     padding-left: 120px;
@@ -43,7 +43,7 @@
   }
   .{{ section_title }} .header-title {
     color: {{ section.settings.title_color }};
-    font-size: 40px;
+    font-size: 32px;
     font-weight: 700;
     word-wrap: break-word;
     font-family: 'Nord Regular';
@@ -51,7 +51,7 @@
   .{{ section_title }} .header-subtitle {
     align-self: stretch;
     color: {{ section.settings.subtitle_color }};
-    font-size: 32px;
+    font-size: 24px;
     font-weight: 600;
     word-wrap: break-word;
     line-height: normal;
@@ -93,7 +93,7 @@
   .{{ section_title }} .item-title * {
     color: #F9FF88;
     text-align: left; /* Align percentage to the left for desktop */
-    font-size: 40px;
+    font-size: 32px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
@@ -102,7 +102,7 @@
   .{{ section_title }} .item-description,
   .{{ section_title }} .item-description * {
     color: #F9FF88;
-    font-size: 24px;
+    font-size: 16px;
     font-style: normal;
     font-weight: 500;
     line-height: 25.25px;
@@ -148,6 +148,18 @@
   @media screen and (max-width: 1305px) {
     .{{ section_title }} .image-banner {
       width: 600px;
+    }
+  }
+  @media screen and (max-width: 749px) {
+    .{{ section_title }} .header-title {
+      font-size: 32px !important;
+    }
+    .{{ section_title }} .header-subtitle {
+      font-size: 20px !important;
+    }
+
+    .{{  section_title  }} .item-description, .{{  section_title  }} .item-description * {
+      font-size: 16px !important;
     }
   }
   @media screen and (max-width: 1165px) {

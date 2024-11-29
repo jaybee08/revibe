@@ -28,6 +28,14 @@
   font-size: 3.4rem;
 }
 
+@media screen and (max-width: 749px) {
+  .price__regular .price-item--regular {
+    font-size: 34px;
+    color: #3A4980;
+    font-family: 'Sofia Pro Bold'
+  }
+}
+
 .price:not(.price--show-badge) .price-item--last:last-of-type {
   margin: 0;
 }
