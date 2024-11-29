@@ -64,10 +64,11 @@
 }
 
 .banner__box .overlay__image .image_wrap img {
-  width: 266.56px;
-  height: 286.37px;
+  width: 226.56px;
+  height: 240px;
   flex-shrink: 0;
   object-fit: cover;
+  padding-bottom: 1rem;
 }
 
 
@@ -298,7 +299,7 @@
 
 @media screen and (min-width: 750px) {
   .banner__content {
-    padding: 5rem;
+    padding: 3.5rem 5rem 3rem;
   }
 
   .banner__content--top-left {
@@ -394,21 +395,22 @@
   }
 }
 .banner__box > * + .banner__text {
-  margin-top: 1.5rem;
+  margin-top: 1rem;
 }
 
 @media screen and (min-width: 750px) {
   .banner__box > * + .banner__text {
-    margin-top: 2rem;
+    margin-top: 1rem;
   }
 }
 
 .banner__box > * + * {
-  margin-top: 1rem;
+  margin-top: 1.5rem;
 }
 
 .banner__box > *:first-child {
   margin-top: 0;
+  margin-bottom: 2rem;
 }
 
 @media screen and (max-width: 749px) {
@@ -513,7 +515,7 @@
 }
 
 .banner__box > * + .banner__buttons {
-  margin-top: 2rem;
+  margin-top: 0rem;
 }
 
 @media screen and (max-width: 749px) {
