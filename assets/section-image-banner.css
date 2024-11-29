@@ -252,7 +252,9 @@
 
   .banner:not(.banner--mobile-bottom):not(.email-signup-banner) .banner__box {
     background: transparent;
-  }
+    flex-direction: column;
+    display: flex;
+}
 
   .banner:not(.banner--mobile-bottom) .banner__box {
     border: none;
@@ -442,11 +444,12 @@
 .banner__heading,
 .banner__heading * {
   text-align: center;
-  font-size: 40px;
+  font-size: 32px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
   color: #3A3BDA;
+  font-family: 'Nord Bold' !important;
 }
 .banner__heading {
   max-width: 90%;

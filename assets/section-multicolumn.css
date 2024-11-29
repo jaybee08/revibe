@@ -43,6 +43,13 @@
   margin-top: 1.5rem;
 }
 
+@media screen and (min-width: 2560px) {
+  .multicolumn-list {
+    max-width: 1176px;
+    margin: auto;
+  }
+}
+
 @media screen and (min-width: 750px) {
   .multicolumn .button {
     margin-top: 4rem;
@@ -110,8 +117,6 @@
 
   .multicolumn .button {
     margin-top: 32px;
-    padding-left: 0rem;
-    padding-right: 0rem;
   }
 }
 

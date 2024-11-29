@@ -1922,7 +1922,7 @@ input[type='checkbox'] {
 }
 
 .quantity__input {
-  color: currentColor;
+  color: #3A4980 !important;
   font-family: var(--font-body-family);
   font-style: var(--font-body-style);
   font-weight: var(--font-body-weight);
@@ -1937,6 +1937,7 @@ input[type='checkbox'] {
   flex-grow: 1;
   -webkit-appearance: none;
   appearance: none;
+  font-family: 'Sofia Pro Bold' !important;
 }
 
 .quantity__button {
@@ -3624,7 +3625,7 @@ details-disclosure > details {
   width: fit-content;
   justify-self: center;
   text-decoration: none;
-  font-family: 'Nord Regular' !important
+  font-family: 'Nord Bold' !important;
 }
 .cta-button button:hover,
 .cta-button a:hover {
@@ -3637,6 +3638,7 @@ details-disclosure > details {
     font-size: 14px;
   }
   .cta-button {
+    display: flex;
     justify-content: center;
   }
 }
