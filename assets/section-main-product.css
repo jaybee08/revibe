@@ -1562,7 +1562,7 @@ a.product__text {
     left: 50%;
     transform: translate(-50%, 50%);
     white-space: nowrap;
-    background: #4361ff1a;
+    background: #ECEFFF;
     color: #3758f9;
     font-family: 'Sofia Pro Bold' !important;
     border-radius: 4px;
@@ -1646,7 +1646,7 @@ a.product__text {
   min-height: calc((var(--inputs-border-width)* 2) + 5.7rem);
   font-size: 1.6rem;
   text-transform: uppercase;
-  font-family: 'Nord Regular';
+  font-family: 'Nord Bold' !important;
   font-weight: 700;
 }
 .product__info-container .button .key-icon {

@@ -32,11 +32,12 @@
     font-size: 23px;
     max-width: 60%;
     font-weight: 700;
+    font-family: 'Nord Bold' !important;
   }
   .customer-review .user-info {
     color: #5E5ED3;
     font-weight: bold;
-    font-size: 24.4741px;
+    font-size: 16px;
     margin-top: 15px;
     display: flex;
     align-items: center;
@@ -70,7 +71,7 @@
     /* font-family: 'Sofia Pro'; */
     font-style: normal;
     font-weight: 500;
-    font-size: 24.4736px;
+    font-size: 16px;
     line-height: 33px;
     color: #14154C;
   }
@@ -92,6 +93,19 @@
       flex-shrink: 1;
       width: 108px;
     }
+  }
+  @media screen and (min-width: 2560px) {
+    .customer-review .comments {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 33px;
+    color: #14154C;
+    max-width: 588px; /* Restricts the width of the comments */
+    word-wrap: break-word; /* Ensures long words break to fit within the width */
+    white-space: normal; /* Allows the text to wrap to a new line */
+    overflow-wrap: break-word; /* Provides better support for breaking long words */
+}
   }
   @media screen and (max-width: 749px) {
     .section-{{ section.id }}-padding {
@@ -115,6 +129,11 @@
     .customer-review .comments * {
       font-size: 16px;
       line-height: 20px;
+    }
+
+    .customer-review .user-info svg {
+      width: 1.2em;
+      height: 1.2em;
     }
   }
 {%- endstyle -%}

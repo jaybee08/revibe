@@ -36,12 +36,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    {% if section.settings.container_background_image %}
-      background-image: url("{{ section.settings.container_background_image | image_url }}");
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: center;
-    {% endif %}
   }
   .{{ section_title }} .flex-container {
     gap: 40px;
@@ -60,16 +54,16 @@
   }
   .{{ section_title }} .header-title {
     color: #429221;
-    font-size: 48px;
+    font-size: 32px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-    font-family: "Nord Regular";
+    font-family: 'Nord Bold' !important;
   }
   .{{ section_title }} .header-description,
   .{{ section_title }} .header-description * {
     color: #14154C;
-    font-size: 24px;
+    font-size: 20px;
     font-style: normal;
     font-weight: 500;
     line-height: 32px;
@@ -82,7 +76,7 @@
     display: flex;
     align-items: flex-start;
     gap: 30px;
-    font-family: 'Sofia Pro Bold' !important;
+    font-family: 'Nord Medium' !important;
   }
   .{{ section_title }} .column-items {
     display: flex;
@@ -100,7 +94,7 @@
   .{{ section_title }} .item-title,
   .{{ section_title }} .item-title * {
     color: #14154C;
-    font-size: 22.3701px;
+    font-size: 16px;
     font-style: normal;
     font-weight: 500;
     line-height: 27.697px; 

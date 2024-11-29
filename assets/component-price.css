@@ -26,6 +26,7 @@
 .price__regular .price-item--regular {
   margin-right: 0;
   font-size: 3.4rem;
+  font-family: 'Sofia Pro Bold' !important;
 }
 
 @media screen and (max-width: 749px) {
