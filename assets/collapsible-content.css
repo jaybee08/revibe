@@ -44,6 +44,18 @@
   }
 }
 
+@media screen and (min-width: 768px) {
+  .collapsible-content-wrapper-narrow {
+    max-width: 90%;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .collapsible-content-wrapper-narrow {
+    max-width: 1080px;
+  }
+}
+
 .collapsible-content-wrapper-narrow {
   margin: 0 auto;
   padding: 32px 48px;
