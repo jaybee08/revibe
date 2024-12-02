@@ -47,7 +47,7 @@
   }
   .{{ section_title }} .text-title {
     text-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
-    font-family: "Nord Regular";
+    font-family: 'Nord Bold' !important;
     font-size: 32px;
     font-style: normal;
     font-weight: 700;
@@ -71,6 +71,7 @@
     font-weight: 600;
     line-height: 32px;
     color: {{ section.settings.author_details_color }};
+    font-family: 'Sofia Pro SemiBold' !important;
   }
   @media screen and (max-width: 1305px) {
     .{{ section_title }} .image-banner {
@@ -118,9 +119,35 @@
   @media screen and (max-width: 749px) {
     .{{ section_title }} .text-title {
       text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.10);
+      margin-bottom: 0px;
     }
     .{{ section_title }} .author-details {
       text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.10);
+      margin-bottom: 0px;
+    }
+
+    .border {
+      margin-bottom: 0px !important;
+    }
+
+    .{{ section_title }} .text-description {
+      margin-bottom: 0px;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .{{ section_title }} .text-title {
+      margin-bottom: 0px;
+    }
+    .{{ section_title }} .author-details {
+      margin-bottom: 0px;
+    }
+
+    .border {
+      margin-bottom: 0px !important;
+    }
+
+    .{{ section_title }} .text-description {
+      margin-bottom: 0px;
     }
   }
 {%- endstyle -%}

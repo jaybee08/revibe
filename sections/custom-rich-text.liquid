@@ -18,6 +18,7 @@
     {% else %}
       background: {{ section.settings.background_color }};;
     {% endif %}
+    margin-bottom: -80px;
   }
   .section-{{ section.id }} .{{ prefix }}__title {
     max-width: 952px;
@@ -57,21 +58,27 @@
     font-weight: 500;
     line-height: 26px;
     margin: 0;
+    font-family: 'Sofia Pro Medium' !important;
   }
   .section-{{ section.id }} .text-content,
   .section-{{ section.id }} .text-content * {
     color: #3A3BDA;
-    font-size: 36px;
+    font-size: 28px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
     margin: 0;
-    font-family: 'Sofia Pro Bold' !important;
+    font-family: 'Sofia Pro Regular';
+  }
+  
+  .section-{{ section.id }} .text-content strong {
+    font-family: 'Nord Medium' !important;
   }
   @media screen and (max-width: 749px) {
     .section-{{ section.id }} {
       padding: 50px 32px;
       gap: 24px;
+      margin-bottom: -25px;
     }
     .section-{{ section.id }} .{{ prefix }}__title,
     .section-{{ section.id }} .{{ prefix }}__title * {
