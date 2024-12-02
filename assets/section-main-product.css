@@ -177,6 +177,25 @@ product-info {
   border: none;
 }
 
+@media screen and (max-width: 749px) {
+  .product-form__input {
+    flex: 0 0 50%;
+    max-width: 1rem;
+  }
+  .product__info-container .button {
+    font-size: 14px !important;
+    min-height: calc((var(--inputs-border-width)* 2) + 4.7rem) !important;
+  }
+
+  .button {
+    padding: 0;
+  }
+
+  .flexi {
+    gap: 10px;
+  }
+}
+
 .product-form__input .form__label {
   padding-left: 0;
 }
@@ -1653,6 +1672,8 @@ a.product__text {
   margin: 0 0.5rem;
   position: relative;
   top: -1px;
+  height: 14px;
+  width: 14px;
 }
 .product__info-container .vtl-ub-vd-widget__content {
   border-top: 1px solid #ececec;
