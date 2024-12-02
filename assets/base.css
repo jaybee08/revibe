@@ -1334,6 +1334,7 @@ shopify-accelerated-checkout-cart {
   .quantity {
     width: 116.294px !important;
     align-self: stretch;
+    min-height: calc((var(--inputs-border-width)* 2) + 4.7rem) !important;
   }
   .quantity__input {
     width: 10px !important;
