@@ -43,7 +43,7 @@
   margin-top: 1.5rem;
 }
 
-@media screen and (min-width: 2560px) {
+@media screen and (min-width: 1441px) {
   .multicolumn-list {
     max-width: 1176px;
     margin: auto;
