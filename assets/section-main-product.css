@@ -1668,6 +1668,14 @@ a.product__text {
   font-family: 'Nord Bold' !important;
   font-weight: 700;
 }
+.product__info-container .button:hover {
+  background-color: #494bd4;
+  color: #F9FF88
+}
+.product__info-container .button:focus {
+  background-color: #F9FF88;
+  color: #494bd4
+}
 .product__info-container .button .key-icon {
   margin: 0 0.5rem;
   position: relative;
@@ -1680,4 +1688,8 @@ a.product__text {
 }
 .buy-buttons:not(.flexi).product-form {
   margin-top: 0;
+}
+
+.jdgm-write-rev-link.jdgm-write-rev-link:hover {
+  background-color: red;
 }
