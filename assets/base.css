@@ -3637,6 +3637,12 @@ details-disclosure > details {
   background: #494bd4;
 }
 
+.cta-button button:focus,
+.cta-button a:focus {
+  background: #F9FF88;
+  color: #494bd4;
+}
+
 @media screen and (max-width: 749px) {
   .cta-button a {
     padding: 10px 24px;
