@@ -208,6 +208,27 @@
   .footer-block.footer-block--menu:only-child {
     text-align: left;
   }
+
+  .vertical-line {
+    margin: 0;
+  }
+
+  .fotter .footer-links {
+    margin-top: 24px;
+  }
+
+  .footer__copyright {
+    margin-top: 32px !important;
+  }
+
+  .footer-links .links,
+  .footer-links .sm {
+    margin: 0
+  }
+
+  .footer-links .links {
+    gap: 24px !important;
+  }
 }
 
 @media screen and (min-width: 750px) {

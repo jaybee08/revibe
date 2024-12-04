@@ -18,7 +18,9 @@
     {% else %}
       background: {{ section.settings.background_color }};;
     {% endif %}
-    margin-bottom: -80px;
+    {%  if section.id == 'template--17042679169135__custom_rich_text_Ge3Vy7' %}
+      margin-bottom: -80px;
+    {%  endif %}
   }
   .section-{{ section.id }} .{{ prefix }}__title {
     max-width: 952px;
