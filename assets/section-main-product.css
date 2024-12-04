@@ -1679,6 +1679,13 @@ a.product__text {
   height: 14px;
   width: 14px;
 }
+
+.product__info-container:hover .key-icon path {
+  stroke: #494bd4
+}
+.product__info-container:active .key-icon path {
+  stroke: #494bd4
+}
 .product__info-container .vtl-ub-vd-widget__content {
   border-top: 1px solid #ececec;
 }
