@@ -167,6 +167,16 @@ cart-items {
   font-family: 'Nord Bold' !important;
 }
 
+.cart__ctas button:hover,
+.cart__ctas button:active {
+  background: #F9FF88;
+  color: #494bd4;
+}
+
+.cart__checkout-button:hover svg path {
+  stroke: #494bd4;
+}
+
 .cart__ctas > * + * {
   margin-top: 1rem;
 }
