@@ -24,6 +24,12 @@
     }
   }
 
+  @media screen and (max-width: 749px) {
+    .banner__media img {
+      object-position: center 50px !important;
+    }
+  }
+
   {%- if section.settings.sticky_header_type == 'reduce-logo-size' -%}
     .scrolled-past-header .header__heading-logo-wrapper {
       width: 75%;

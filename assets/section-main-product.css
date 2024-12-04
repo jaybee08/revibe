@@ -187,10 +187,6 @@ product-info {
     min-height: calc((var(--inputs-border-width)* 2) + 4.7rem) !important;
   }
 
-  .button {
-    padding: 0;
-  }
-
   .flexi {
     gap: 10px;
   }
@@ -1669,8 +1665,8 @@ a.product__text {
   font-weight: 700;
 }
 .product__info-container .button:hover {
-  background-color: #494bd4;
-  color: #F9FF88
+  background-color: #F9FF88;
+  color: #494bd4
 }
 .product__info-container .button:focus {
   background-color: #F9FF88;
@@ -1688,8 +1684,4 @@ a.product__text {
 }
 .buy-buttons:not(.flexi).product-form {
   margin-top: 0;
-}
-
-.jdgm-write-rev-link.jdgm-write-rev-link:hover {
-  background-color: red;
 }

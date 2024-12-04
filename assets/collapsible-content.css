@@ -44,15 +44,35 @@
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 767px) {
+  .accordion summary h3 {
+    font-size: 16px;
+  }
+
+  .accordion__title {
+    max-width: 95%;
+  }
+
+  .accordion__content p {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
   .collapsible-content-wrapper-narrow {
-    max-width: 90%;
+    max-width: 90% !important;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .collapsible-content-wrapper-narrow {
+    max-width: 95% !important;
   }
 }
 
 @media screen and (min-width: 1440px) {
   .collapsible-content-wrapper-narrow {
-    max-width: 1080px;
+    max-width: 1080px !important;
   }
 }
 

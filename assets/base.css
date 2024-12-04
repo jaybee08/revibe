@@ -430,10 +430,6 @@ table:not([class]) th {
   .small-hide {
     display: none !important;
   }
-
-  .media > img {
-    object-position: center 50px !important;
-  }
 }
 
 @media screen and (min-width: 750px) and (max-width: 989px) {
@@ -2806,8 +2802,8 @@ details[open] > .header__submenu {
   text-decoration: none;
   color: #14154C;
   font-style: normal;
-  font-weight: 600;
   line-height: 1.5rem;
+  font-family: 'Sofia Pro Regular' !important;
 }
 
 .header__menu-item:hover {
@@ -3614,6 +3610,16 @@ details-disclosure > details {
   font-weight: 700;
 }
 
+.cart__empty-button:hover {
+  background: #F9FF88;
+  color: #494bd4;
+}
+
+.cart__empty-button:focus {
+  background: #F9FF88;
+  color: #494bd4;
+}
+
 .cta-button button,
 .cta-button a {
   display: flex;
@@ -3634,7 +3640,8 @@ details-disclosure > details {
 }
 .cta-button button:hover,
 .cta-button a:hover {
-  background: #494bd4;
+  background: #F9FF88;
+  color: #494bd4;
 }
 
 .cta-button button:focus,
