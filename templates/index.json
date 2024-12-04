@@ -299,7 +299,7 @@
     "text_and_large_image_JdUxEA": {
       "type": "text-and-large-image",
       "settings": {
-        "image": "shopify://shop_images/DALL_E_2024-12-01_22.38.35_-_A_confident_Asian_female_doctor_around_30_years_old_smiling_brightly_and_giving_a_thumbs-up_pose_in_a_modern_clinical_environment._She_wears_a_clean.webp",
+        "image": "shopify://shop_images/dr_resized.jpg",
         "bg_color": "#ffffff",
         "title": "Nutritionist",
         "title_color": "#ffffff",
