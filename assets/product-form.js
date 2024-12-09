@@ -9,6 +9,7 @@ if (!customElements.get('product-form')) {
         this.variantIdInput.disabled = false;
         this.form.addEventListener('submit', this.onSubmitHandler.bind(this));
         this.cart = document.querySelector('cart-notification') || document.querySelector('cart-drawer');
+        this.cartDrawer = document.querySelector('cart-drawer-items');
         this.submitButton = this.querySelector('[type="submit"]');
         this.submitButtonText = this.submitButton.querySelector('span');
 
@@ -20,7 +21,14 @@ if (!customElements.get('product-form')) {
       onSubmitHandler(evt) {
         evt.preventDefault();
         if (this.submitButton.getAttribute('aria-disabled') === 'true') return;
-
+        const inputTarget = document.querySelector('.product-form__quantity .quantity__input');
+        const inputValue = parseInt(inputTarget.value);
+        this.cartDrawer.updateQuantity(
+          1,
+          inputValue,
+          'plus',
+          this.variantIdInput.value
+        );
         this.handleErrorMessage();
 
         this.submitButton.setAttribute('aria-disabled', true);
