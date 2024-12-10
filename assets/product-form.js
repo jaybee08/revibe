@@ -21,14 +21,6 @@ if (!customElements.get('product-form')) {
       onSubmitHandler(evt) {
         evt.preventDefault();
         if (this.submitButton.getAttribute('aria-disabled') === 'true') return;
-        const inputTarget = document.querySelector('.product-form__quantity .quantity__input');
-        const inputValue = parseInt(inputTarget.value);
-        this.cartDrawer.updateQuantity(
-          1,
-          inputValue,
-          'plus',
-          this.variantIdInput.value
-        );
         this.handleErrorMessage();
 
         this.submitButton.setAttribute('aria-disabled', true);
@@ -46,6 +38,11 @@ if (!customElements.get('product-form')) {
             this.cart.getSectionsToRender().map((section) => section.id)
           );
           formData.append('sections_url', window.location.pathname);
+          const inputTarget = document.querySelector('.Vtl-VolumeDiscountRadio__TierList .Vtl-VolumeDiscountRadio__TierItem--Selected input');
+          if (inputTarget) {
+            const updatedQuantity = parseInt(inputTarget.value)
+            formData.append('quantity', updatedQuantity);
+          }
           this.cart.setActiveElement(document.activeElement);
         }
         config.body = formData;
