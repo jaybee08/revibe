@@ -11,6 +11,7 @@
   "sections": {
     "main": {
       "type": "main-page",
+      "disabled": true,
       "settings": {
         "padding_top": 36,
         "padding_bottom": 36
@@ -19,7 +20,9 @@
     "form": {
       "type": "contact-form",
       "settings": {
-        "heading": "",
+        "image_banner": "shopify://shop_images/Revibe_Model_with_Pill_and_Sachet_-_Landscape2.png",
+        "text_banner": "CONTACT US",
+        "heading": "Questions? Send us an email",
         "heading_size": "h1",
         "color_scheme": "scheme-1",
         "padding_top": 36,
