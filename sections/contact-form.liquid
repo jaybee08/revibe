@@ -5,7 +5,26 @@
     padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
     padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
   }
-
+  {% if section.settings.image_banner %}
+    .section-container-{{ section.id }} .contact-banner {
+      background: linear-gradient(180deg, rgba(22, 16, 44, 0.14) 0%, rgba(22, 16, 44, 0.37) 100%), url("{{ section.settings.image_banner | image_url }}"), lightgray 50% / cover no-repeat;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      height: 500px;
+      justify-content: center;
+      display: flex;
+      align-items: center;
+    }
+    .section-container-{{ section.id }} h1 {
+      font-size: 62px;
+      color: white;
+    }
+  {% endif %}
+  .section-container-{{ section.id }} .title {
+    font-size: 32px;
+    text-align: center;
+  }
   @media screen and (min-width: 750px) {
     .section-{{ section.id }}-padding {
       padding-top: {{ section.settings.padding_top }}px;
@@ -14,7 +33,13 @@
   }
 {%- endstyle -%}
 
-<div class="color-{{ section.settings.color_scheme }} gradient">
+<div class="color-{{ section.settings.color_scheme }} gradient section-container-{{ section.id }}">
+  {% if section.settings.image_banner %}
+    <div class="contact-banner">
+      <h1> {{ section.settings.text_banner }} </h1>
+    </div>
+  {% endif %}
+
   <div class="contact page-width page-width--narrow section-{{ section.id }}-padding">
     {%- if section.settings.heading != blank -%}
       <h2 class="title title-wrapper--no-top-margin inline-richtext {{ section.settings.heading_size }}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
@@ -118,12 +143,12 @@
           id="ContactForm-body"
           class="text-area field__input"
           name="contact[{{ 'templates.contact.form.comment' | t }}]"
-          placeholder="{{ 'templates.contact.form.comment' | t }}"
+          placeholder="Message"
         >
           {{- form.body -}}
         </textarea>
         <label class="form__label field__label" for="ContactForm-body">
-          {{- 'templates.contact.form.comment' | t -}}
+          {{ 'Message' }}
         </label>
       </div>
       <div class="contact__button cta-button">
@@ -144,6 +169,17 @@
     "groups": ["header", "footer"]
   },
   "settings": [
+    {
+      "type": "image_picker",
+      "id": "image_banner",
+      "label": "Set image banner"
+    },
+    {
+      "type": "text",
+      "id": "text_banner",
+      "label": "Set text banner",
+      "default": "CONTACT US",
+    },
     {
       "type": "inline_richtext",
       "id": "heading",
