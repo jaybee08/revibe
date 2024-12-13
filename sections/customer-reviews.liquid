@@ -40,11 +40,12 @@
     margin-top: 15px;
     display: flex;
     align-items: center;
-    gap: 2rem;
+    gap: 0.5rem;
   }
   .customer-review .user-info svg {
-    width: 26px;
-    height: 32px;
+    width: 24px;
+    height: 24px;
+    margin-bottom: 3px;
   }
   .customer-review .user-status {
     display: flex;
@@ -56,9 +57,10 @@
   .customer-review .user-name {
     font-weight: 400 !important;
     font-family: 'Sofia Pro Regular' !important;
+    height: 23px;
   }
   .customer-review .multicolumn-card__info {
-   padding: 32px 40px;
+   padding: 24px 28px;
   }
   .customer-review .user-status {
     display: flex;
@@ -73,7 +75,6 @@
   }
   .customer-review .comments,
   .customer-review .comments * {
-    font-family: 'Instrument Sans';
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
@@ -218,13 +219,15 @@
                 {%- endif -%}
                 {%- if block.settings.customer_name != blank -%}
                   <div class="user-info">
-                    <span class="user-name">{{- block.settings.customer_name | escape -}}</span>
+                    <div class="user-status">
+                      <span class="user-name">{{- block.settings.customer_name | escape -}}</span>
+                    </div>
                     <div class="user-status">
                       <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 31" fill="none">
                         <path d="M0.65058 4.70362C0.65058 4.70362 7.46323 7.21324 12.9844 0.84314C17.2197 6.43874 24.3989 5.18994 24.3989 5.18994C24.3989 5.18994 26.6068 26.8969 12.5262 30.3701C-1.5573 26.8969 0.65058 4.70362 0.65058 4.70362Z" fill="#3A3BDA"/>
                         <path d="M8.6333 17.4079L12.3131 21.0342L18.9425 11.2329" stroke="#FDE6E6" stroke-width="3.71235" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
                       </svg>
-                      <span>Verified Buyer</span>
+                      <span class="user-status">Verified Buyer</span>
                     </div>
                   </div>
                 {%- endif -%}
