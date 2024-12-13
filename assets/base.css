@@ -3151,9 +3151,9 @@ details-disclosure > details {
   margin-top: 0;
 }
 
-.rte > *:last-child {
+/* .rte > *:last-child {
   margin-bottom: 0;
-}
+} */
 
 .rte table {
   table-layout: fixed;
@@ -3606,7 +3606,7 @@ details-disclosure > details {
   border-radius: 50px;
   font-size: 1.6rem;
   text-transform: uppercase;
-  font-family: 'Nord Regular';
+  font-family: 'Nord Medium' !important;
   font-weight: 700;
 }
 
@@ -3648,6 +3648,13 @@ details-disclosure > details {
 .cta-button a:focus {
   background: #F9FF88;
   color: #494bd4;
+}
+
+.shopify-policy__body h2,
+.shopify-policy__body h3,
+.shopify-policy__body h2 *,
+.shopify-policy__body h3 * {
+  font-family: 'Sofia Pro Regular' !important;
 }
 
 @media screen and (max-width: 749px) {

@@ -3,24 +3,12 @@
   #shopify-section-{{ section.id }} {
     line-height: 0;
   }
-  .border {
-    display: block !important
-  }
+
   .section-{{ section.id }} {
     height: auto;
     justify-content: flex-start;
     display: inline-flex;
     width: 100%;
-    justify-content: center;
-  }
-  .{{ section_title }} .container {
-    width: 750px;
-    padding: 100px 120px 150px 60px;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 56px;
-    display: inline-flex;
     {% if section.settings.background_image %}
       background-image: url("{{ section.settings.background_image | image_url }}");
       background-size: cover;
@@ -30,10 +18,20 @@
       background: linear-gradient(180deg, #354199 32%, #232A5F 100%);
     {% endif %}
   }
+  .{{ section_title }} .container {
+    width: 750px;
+    padding: 100px 120px 150px 60px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 56px;
+    display: inline-flex;
+  }
   .{{ section_title }} .image-banner {
     object-fit: cover;
     align-self: stretch;
     height: auto;
+    width: 50%;
   }
   .{{ section_title }} .flex-container {
     flex-direction: column;
@@ -58,6 +56,13 @@
     color: {{ section.settings.title_color }};
     margin-bottom: -32px;
   }
+  .{{ section_title }} .border {
+    display: block !important;
+    width: 51.43px;
+    height: 0px;
+    border: 2px #A8DDFF solid;
+    margin-bottom: -32px;
+  }
   .{{ section_title }} .text-description {
     text-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
     font-size: 16px;
@@ -76,18 +81,13 @@
     color: {{ section.settings.author_details_color }};
     font-family: 'Sofia Pro SemiBold' !important;
   }
-  @media screen and (max-width: 1305px) {
-    .{{ section_title }} .image-banner {
-      width: 500px;
-    }
-  }
   @media screen and (max-width: 965px) {
     .{{ section_title }} .container {
       width: 100%;
       padding: 50px 32px;
     }
-    .{{ section_title }} .flex-container {
-      gap: 24px;
+    .{{ section_title }} .border {
+      margin-bottom: 0px !important;
     }
     .{{ section_title }} .quote-container svg {
       width: 18.75px;
@@ -129,10 +129,12 @@
       margin-bottom: 0px;
     }
 
-    .border {
+    .{{ section_title }} .border {
       margin-bottom: 0px !important;
     }
-
+    .{{ section_title }} .flex-container {
+      gap: 24px;
+    }
     .{{ section_title }} .text-description {
       margin-bottom: 0px;
       font-weight: 400;
@@ -145,10 +147,6 @@
     }
     .{{ section_title }} .author-details {
       margin-bottom: 0px;
-    }
-
-    .border {
-      margin-bottom: 0px !important;
     }
 
     .{{ section_title }} .text-description {
@@ -186,7 +184,7 @@
         {{ 'icon-quote.svg' | inline_asset_content }}
       </div>
       <div class="text-title">The Doctor-Approved Party Hack!</div>
-      <div class="border" style="width: 51.43px; height: 0px; border: 2px #A8DDFF solid; margin-bottom: -32px;"></div>
+      <div class="border" style=""></div>
       <div class="text-description">“Revibe is a scientifically crafted supplement that helps reduce hangover symptoms by aiding alcohol metabolism and supporting liver detox. You can enjoy your time out with fewer worries about headaches and nausea. For best results, I recommend taking Revibe as directed before and after drinking.”</div>
       <div class="author-details">
         {{ section.settings.author }}
