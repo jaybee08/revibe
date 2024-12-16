@@ -296,7 +296,9 @@ a.product__text {
 }
 
 .product .price .badge {
-  margin-bottom: 0.5rem;
+  text-align: center;
+  align-content: center;
+  margin: 8px 0px;
 }
 
 .product .price__container {
@@ -318,7 +320,7 @@ a.product__text {
   }
 
   .product__info-container .price--on-sale .price-item--regular {
-    font-size: 1.6rem;
+    font-size: 24px;
   }
 
   .product__info-container > *:first-child {
@@ -1661,7 +1663,7 @@ a.product__text {
   min-height: calc((var(--inputs-border-width)* 2) + 5.7rem);
   font-size: 1.6rem;
   text-transform: uppercase;
-  font-family: 'Nord Bold' !important;
+  font-family: 'Nord Medium' !important;
   font-weight: 700;
 }
 .product__info-container .button:hover {

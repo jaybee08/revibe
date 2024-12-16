@@ -398,6 +398,10 @@
   .banner--mobile-bottom .banner__media::after {
     display: none;
   }
+  .banner__box .overlay__image {
+    margin-bottom: 12px;
+    margin-top: 28px;
+  }
 }
 .banner__box > * + .banner__text {
   margin-top: 1rem;
@@ -478,9 +482,13 @@
 }
 
 @media screen and (max-width: 749px) {
+  .banner__heading {
+    max-width: 100%;
+  }
   .banner__heading,
   .banner__heading * {
     font-size: 24px;
+    font-family: 'Nord Medium' !important;
   }
   .banner__text,
   .banner__text * {

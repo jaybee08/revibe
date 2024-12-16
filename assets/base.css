@@ -2487,6 +2487,12 @@ input[type='checkbox'] {
     grid-template-columns: auto 2fr 1fr;
   }
 }
+@media screen and (max-width: 749px) {
+  .header__heading-logo {
+    width: 88px;
+    height: 32px;
+  }
+}
 
 @media screen and (min-width: 990px) {
   .header--middle-left .header__heading-link,
@@ -2517,7 +2523,8 @@ input[type='checkbox'] {
   display: flex;
   grid-area: icons;
   justify-self: end;
-  padding-right: 0.8rem;
+  padding-right: 12px;
+  padding-left: 8px;
 }
 
 .header__icons .shopify-app-block {
@@ -3650,17 +3657,22 @@ details-disclosure > details {
   color: #494bd4;
 }
 
+.fs-bar-price {
+  margin: 0 !important;
+}
+
 .shopify-policy__body h2,
 .shopify-policy__body h3,
 .shopify-policy__body h2 *,
 .shopify-policy__body h3 * {
-  font-family: 'Sofia Pro Regular' !important;
+  font-family: 'Sofia Pro Medium' !important;
 }
 
 @media screen and (max-width: 749px) {
   .cta-button a {
     padding: 10px 24px;
     font-size: 14px;
+    font-family: 'Nord Medium' !important;
   }
   .cta-button {
     display: flex;

@@ -18,11 +18,6 @@
   text-align: right;
 }
 
-.price .price-item {
-  display: inline-block;
-  margin: 0 1rem 0 0;
-}
-
 .price__regular .price-item--regular {
   margin-right: 0;
   font-size: 3.4rem;
@@ -51,6 +46,8 @@
   font-size: 1.6rem;
   line-height: calc(1 + 0.5 / var(--font-body-scale));
   letter-spacing: 0.13rem;
+  justify-content: center;
+  display: inline-flex;
 }
 
 @media screen and (min-width: 750px) {
@@ -108,4 +105,15 @@
   margin-top: 0.2rem;
   text-transform: uppercase;
   color: rgba(var(--color-foreground), 0.7);
+}
+
+.price .price-item {
+  display: inline-block;
+  margin: 0 1rem 0 0;
+  color: #3A4980;
+  font-family: "Sofia Pro Bold";
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
 }

@@ -88,7 +88,7 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 8px;
+    gap: 12px;
   }
   .{{ section_title }} .item {
     display: flex;
@@ -140,6 +140,7 @@
     .{{ section_title }} .header-title {
       font-size: 24px;
       line-height: normal;
+      font-family: 'Nord Medium' !important;
     }
     .{{ section_title }} .header-description,
     .{{ section_title }} .header-description * {
@@ -152,16 +153,18 @@
       font-size: 16px;
     }
   }
-  @media screen and (max-width: 589px) {
-    .{{ section_title }} .items-container {
-      flex-direction: column;
-      gap: 8px;
-    }
-  }
 
   @media screen and (max-width: 749px) {
     .{{ section_title }} .header-description {
       line-height: 20px;
+    }
+    .{{ section_title }} .column-items {
+      gap: 16px;
+    }
+    .{{ section_title }} .items-container {
+      flex-direction: column;
+      gap: 16px;
+      font-family: 'Nord Regular' !important;
     }
   }
 
