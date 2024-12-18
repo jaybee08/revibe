@@ -215,7 +215,7 @@
         "column_VhG9KE": {
           "type": "column",
           "settings": {
-            "item_image": "shopify://shop_images/person.png",
+            "item_image": "shopify://shop_images/Person_f2c3e358-e46d-4eac-9af2-6bf04d64db9f.png",
             "title": "<p>Prevents Hangovers</p>",
             "description": "<p>Boosts alcohol metabolism to cut hangover symptoms and help you  wake up refreshed.</p>"
           }
@@ -535,6 +535,7 @@
             "margin_bottom": 0,
             "margin_sides": 0,
             "background_color": "",
+            "feed_id": "",
             "html_area": ""
           }
         }
