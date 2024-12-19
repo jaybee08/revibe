@@ -3682,7 +3682,6 @@ details-disclosure > details {
   .cta-button a {
     padding: 10px 24px;
     font-size: 14px;
-    font-family: 'Nord Medium' !important;
   }
   .cta-button {
     display: flex;
