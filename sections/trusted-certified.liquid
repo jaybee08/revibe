@@ -27,7 +27,7 @@
     gap: 33px;
     align-self: stretch;
   }
-  .{{ section_title }} .section-title {
+  .{{ section_title }} .section-header {
     color: {{  section.settings.title_color }};
     text-align: center;
     text-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
@@ -35,10 +35,9 @@
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-    font-family: 'Nord Bold' !important;
   }
-  .{{ section_title }} .subtitle,
-  .{{ section_title }} .subtitle * {
+  .{{ section_title }} .section-subheader,
+  .{{ section_title }} .section-subheader * {
     color: {{ section.settings.subtitle_color }};
     text-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
     font-size: 24px;
@@ -46,7 +45,6 @@
     font-weight: 500;
     line-height: 29.444px;
     text-align: center;
-    font-family: 'Sofia Pro Medium' !important;
   }
   .{{ section_title }} .items-container {
     display: flex;
@@ -77,11 +75,11 @@
       gap: 24px;
       padding: 0;
     }
-    .{{ section_title }} .section-title {
+    .{{ section_title }} .section-header {
       font-size: 22px;
     }
-    .{{ section_title }} .subtitle,
-    .{{ section_title }} .subtitle * {
+    .{{ section_title }} .section-subheader,
+    .{{ section_title }} .section-subheader * {
       font-size: 16px;
       line-height: 20px;
     }
@@ -100,7 +98,7 @@
       font-size: 14px;
     }
 
-    .{{ section_title }} .section-title {
+    .{{ section_title }} .section-header {
       font-family: 'Nord Medium' !important;
       text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.10);
       font-size: 24px;
@@ -114,12 +112,12 @@
 <div class="section-{{ section.id }} {{ section_title }}">
   <div class="container">
     {%- unless section.settings.title == blank -%}
-      <h2 class="section-title">
+      <h2 class="section-header">
         {{ section.settings.title }}
       </h2>
     {%- endunless -%}
     {%- unless section.settings.subtitle == blank -%}
-      <div class="subtitle">
+      <div class="section-subheader">
         {{ section.settings.subtitle }}
       </div>
     {%- endunless -%}

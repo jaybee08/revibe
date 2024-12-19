@@ -25,7 +25,7 @@
     align-self: stretch;
     padding: 0;
   }
-  .{{ section_title }} .section-title {
+  .{{ section_title }} .section-header {
     color: #3A3BDA;
     text-align: center;
     font-size: 32px;
@@ -33,10 +33,9 @@
     font-weight: 700;
     line-height: normal;
     margin: 0;
-    font-family: 'Nord Bold' !important;
   }
-  .{{ section_title }} .subtitle,
-  .{{ section_title }} .subtitle * {
+  .{{ section_title }} .section-subheader,
+  .{{ section_title }} .section-subheader * {
     color: #14154C;
     text-align: center;
     font-size: 24px;
@@ -44,7 +43,6 @@
     font-weight: 500;
     line-height: normal;
     margin: 0;
-    font-family: 'Sofia Pro Medium' !important;
   }
   .{{ section_title }} .items-container {
     display: flex;
@@ -69,9 +67,6 @@
     margin: 0;
     max-width: 300px;
   }
-  .{{  section_title  }} .item-title p {
-    font-family: 'Sofia Pro SemiBold' !important;
-  }
   .{{ section_title }} .item-description,
   .{{ section_title }} .item-description * {
     color: #14154C;
@@ -84,31 +79,6 @@
     font-family: "Sofia Pro Regular";
     max-width: 700px;
     margin-top: -14px;
-  }
-  .{{ section_title }} .button-section {
-    display: flex;
-    padding: 16px 32px;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    border-radius: 100px;
-    background: #3A3CDA;
-    color: #F9FF88;
-    text-align: center;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    text-decoration: none; 
-    font-family: 'Nord Bold' !important;
-  }
-  .{{ section_title }} .button-section:focus {
-    background: #F9FF88;
-    color: #494bd4;
-  }
-  .{{ section_title }} .button-section:hover {
-    background: #F9FF88;
-    color: #494bd4;
   }
   .{{ section_title }} .item-image {
     object-fit: contain;
@@ -125,13 +95,13 @@
       flex-direction: column;
       align-items: center;
     }
-    .{{ section_title }} .section-title {
+    .{{ section_title }} .section-header {
       font-size: 24px;
       max-width: 300px;
       font-family: 'Nord Medium' !important;
     }
-    .{{ section_title }} .subtitle,
-    .{{ section_title }} .subtitle * {
+    .{{ section_title }} .section-subheader,
+    .{{ section_title }} .section-subheader * {
       font-size: 16px;
       line-height: 20px; 
     }
@@ -146,13 +116,6 @@
       color: #14154C;
       font-size: 16px;
       line-height: 20px;
-    }
-    .{{ section_title }} .button-section {
-      display: flex;
-      height: 40px;
-      padding: 10px 24px;
-      gap: 10px;
-      font-size: 14px;
     }
     .{{ section_title }} .item-image {
       width: 86.8221px;
@@ -173,10 +136,10 @@
 <section class="section-{{ section.id }} {{ section_title }}">
   {%- unless section.settings.title == blank -%}
     <div class="header">
-      <h2 class="section-title">
+      <h2 class="section-header section-header">
         {{ section.settings.title }}
       </h2>
-      <div class="subtitle">
+      <div class="section-subheader">
         {{ section.settings.subtitle }}
       </div>
     </div>
@@ -208,7 +171,7 @@
     </div>
   {% endif %}
 
-  <div class="center">
+  <div class="cta-button">
     {%- if section.settings.button_label != blank -%}
       <a
         class="button-section"

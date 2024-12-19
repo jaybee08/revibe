@@ -34,7 +34,7 @@
     gap: 56px;
     display: flex;
   }
-  .{{ section_title }} .section-title {
+  .{{ section_title }} .section-header {
     max-width: 649px;
     text-align: center;
     color: #3A3BDA;
@@ -43,7 +43,6 @@
     word-wrap: break-word;
     margin: 0;
     color: {{ section.settings.title_color }};
-    font-family: 'Nord Bold' !important;
   }
   .{{ section_title }} .product-container {
     align-self: stretch;
@@ -88,7 +87,7 @@
     max-width: 386px;
     margin: 0;
     color: {{ section.settings.title_color }};
-    font-family: 'Nord Bold' !important;
+    font-family: 'Nord Regular' !important;
   }
   .{{ section_title }} .details {
     text-align: center;
@@ -101,7 +100,6 @@
     line-height: normal;
     font-family: "Nord Regular" !important;
     color: {{ section.settings.details_color }};
-    font-family: 'Nord Medium' !important;
   }
   .{{ section_title }} . {
   }
@@ -118,7 +116,7 @@
     .{{ section_title }} .container {
       padding: 50px 31px;
     }
-    .{{ section_title }} .section-title {
+    .{{ section_title }} .section-header {
       font-size: 24px;
       font-style: normal;
       line-height: normal;
@@ -154,7 +152,7 @@
 <div class="section-{{ section.id }} {{ section_title }}"> 
   <div class="container">
     <div class="flex-container">
-      <h2 class="section-title">
+      <h2 class="section-header">
         {{ section.settings.title }}
       </h2>
       <div class="product-container">

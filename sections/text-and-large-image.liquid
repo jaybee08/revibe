@@ -46,9 +46,8 @@
     gap: 8px;
     display: inline-flex;
   }
-  .{{ section_title }} .text-title {
+  .{{ section_title }} .section-header {
     text-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
-    font-family: 'Nord Bold' !important;
     font-size: 32px;
     font-style: normal;
     font-weight: 700;
@@ -93,7 +92,7 @@
       width: 18.75px;
       height: 32px;
     }
-    .{{ section_title }} .text-title {
+    .{{ section_title }} .section-header {
       font-size: 24px;
     }
     .{{ section_title }} .text-description {
@@ -120,7 +119,7 @@
     }
   }
   @media screen and (max-width: 749px) {
-    .{{ section_title }} .text-title {
+    .{{ section_title }} .section-header {
       text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.10);
       margin-bottom: 0px;
       font-family: 'Nord Medium' !important;
@@ -143,7 +142,7 @@
     }
   }
   @media screen and (max-width: 768px) {
-    .{{ section_title }} .text-title {
+    .{{ section_title }} .section-header {
       margin-bottom: 0px;
     }
     .{{ section_title }} .author-details {
@@ -184,7 +183,7 @@
         {{ 'icon-quote.svg' | inline_asset_content }}
         {{ 'icon-quote.svg' | inline_asset_content }}
       </div>
-      <div class="text-title">The Doctor-Approved Party Hack!</div>
+      <div class="section-header">The Doctor-Approved Party Hack!</div>
       <div class="border" style=""></div>
       <div class="text-description">“Revibe is a scientifically crafted supplement that helps reduce hangover symptoms by aiding alcohol metabolism and supporting liver detox. You can enjoy your time out with fewer worries about headaches and nausea. For best results, I recommend taking Revibe as directed before and after drinking.”</div>
       <div class="author-details">

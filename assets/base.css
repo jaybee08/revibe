@@ -3643,7 +3643,7 @@ details-disclosure > details {
   width: fit-content;
   justify-self: center;
   text-decoration: none;
-  font-family: 'Nord Bold' !important;
+  font-family: 'Nord Regular' !important;
 }
 .cta-button button:hover,
 .cta-button a:hover {
@@ -3667,6 +3667,16 @@ details-disclosure > details {
 .shopify-policy__body h3 * {
   font-family: 'Sofia Pro Medium' !important;
 }
+
+.section-header {
+  font-family: 'Nord Regular' !important;
+}
+.section-subheader,
+.section-item-title,
+.section-item-title p {
+  font-family: 'Sofia Pro Regular' !important;
+}
+
 
 @media screen and (max-width: 749px) {
   .cta-button a {
