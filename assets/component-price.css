@@ -21,14 +21,14 @@
 .price__regular .price-item--regular {
   margin-right: 0;
   font-size: 3.4rem;
-  font-family: 'Sofia Pro Bold' !important;
+  font-family: 'Instrument Sans Bold' !important;
 }
 
 @media screen and (max-width: 749px) {
   .price__regular .price-item--regular {
     font-size: 34px;
     color: #3A4980;
-    font-family: 'Sofia Pro Bold'
+    font-family: 'Instrument Sans Bold'
   }
 }
 
@@ -111,7 +111,7 @@
   display: inline-block;
   margin: 0 1rem 0 0;
   color: #3A4980;
-  font-family: "Sofia Pro Bold";
+  font-family: "Instrument Sans Bold";
   font-size: 30px;
   font-style: normal;
   font-weight: 700;
