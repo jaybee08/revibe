@@ -124,9 +124,9 @@
       "settings": {
         "background_image": "shopify://shop_images/Green-Gradient.png",
         "title_color": "#f56c43",
-        "title": "<strong>Live It Up & Bounce Back</strong>",
+        "title": "Live It Up & Bounce Back",
         "title_alignment": "center",
-        "subtitle": "<strong>Revibe</strong> turns <strong>hangover mornings</strong> into productive starts –  every single time!",
+        "subtitle": "Revibe turns hangover mornings into productive starts – every single time!",
         "image_width": "full",
         "image_ratio": "adapt",
         "columns_desktop": 2,
