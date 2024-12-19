@@ -79,7 +79,7 @@ cart-drawer:not(.is-empty) .cart-drawer__collection {
 .drawer__heading {
   margin: unset;
   color: var(--Light-Colors-Black---Light, #000);
-  font-family: "Sofia Pro Regular";
+  font-family: "Instrument Sans Regular";
   font-size: 24px;
   font-style: normal;
   font-weight: 600;

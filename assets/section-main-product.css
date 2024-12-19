@@ -269,7 +269,7 @@ a.product__text {
 
 .product__title h1 {
   color: #14154C;
-  font-family: 'Sofia Pro Regular';
+  font-family: 'Instrument Sans Regular';
   border-bottom: 1px solid #E4E4E4;
   padding-bottom: 1.5rem;
 }
@@ -1548,7 +1548,7 @@ a.product__text {
   color: #2C2CA4;
   text-transform: capitalize;
   font-weight: 700;
-  font-family: 'Sofia Pro Bold';
+  font-family: 'Instrument Sans Bold';
 }
 .payment-info {
   background-color: #F8F8F8;
@@ -1581,7 +1581,7 @@ a.product__text {
     white-space: nowrap;
     background: #ECEFFF;
     color: #3758f9;
-    font-family: 'Sofia Pro Bold' !important;
+    font-family: 'Instrument Sans Bold' !important;
     border-radius: 4px;
     z-index: 9999;
 }
@@ -1593,7 +1593,7 @@ a.product__text {
 }
 .product__info-container .Vtl-VolumeDiscountRadio__Name {
   color: var(--Foundation-Blue-Dark, #2C2CA4);
-  font-family: "Sofia Pro Bold";
+  font-family: "Instrument Sans Bold";
   font-size: 24px;
   font-style: normal;
   font-weight: 700;
@@ -1606,7 +1606,7 @@ a.product__text {
 }
 .product__info-container .Vtl-VolumeDiscountRadio__LabelHeader {
   color: #1D364D;
-  font-family: "Sofia Pro Bold";
+  font-family: "Instrument Sans Bold";
   font-size: 17px;
   font-style: normal;
   font-weight: 700;
@@ -1635,18 +1635,18 @@ a.product__text {
 }
 .product__info-container .Vtl-VolumeDiscountRadio__LabelName {
   color: var(--Foundation-Blue-Darker, #14154C);
-  font-family: "Sofia Pro Regular";
+  font-family: "Instrument Sans Regular";
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
 }
 .product__info-container .Vtl-VolumeDiscountRadio__ItemPriceWithoutDiscount {
-  font-family: "Sofia Pro Regular";
+  font-family: "Instrument Sans Regular";
 }
 .product__info-container .Vtl-VolumeDiscountRadio__TotalPrice, .product__info-container .Vtl-VolumeDiscountRadio__ItemPriceWithDiscount {
   color: var(--Foundation-Blue-Darker, #14154C);
-  font-family: "Sofia Pro Bold";
+  font-family: "Instrument Sans Bold";
   font-size: 16px;
   font-style: normal;
   font-weight: 700;

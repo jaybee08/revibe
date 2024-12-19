@@ -43,14 +43,15 @@
     text-align: center;
     font-size: 32px;
     font-style: normal;
-    font-weight: 500;
+    font-weight: normal;
     line-height: normal;
-    font-family: "Sofia Pro Regular";
+    font-family: "Instrument Sans Regular";
     margin: 0;
     max-width: 650px;
   }
   .section-{{ section.id }} .{{ prefix }}__title strong {
-    font-family: "Sofia Pro Semibold" !important;
+    font-family: "Instrument Sans Semibold" !important;
+    font-weight: 500;
   }
   .section-{{ section.id }} .{{ prefix }}__subtitle,
   .section-{{ section.id }} .{{ prefix }}__subtitle * {
@@ -70,11 +71,12 @@
     font-weight: 400;
     line-height: normal;
     margin: 0;
-    font-family: 'Sofia Pro Regular';
+    font-family: 'Instrument Sans Regular';
   }
   
   .section-{{ section.id }} .text-content strong {
-    font-family: 'Nord Medium' !important;
+    font-family: 'Nord Regular' !important;
+    font-weight: 500;
   }
   @media screen and (max-width: 749px) {
     .section-{{ section.id }} {
@@ -94,7 +96,7 @@
       line-height: 24px;
     }
     .section-{{ section.id }} .{{ prefix }}__title strong {
-      font-family: "Sofia Pro SemiBold" !important;
+      font-family: "Instrument Sans SemiBold" !important;
     }
     .section-{{ section.id }} .text-content,
     .section-{{ section.id }} .text-content * {

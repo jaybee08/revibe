@@ -1343,7 +1343,7 @@ shopify-accelerated-checkout-cart {
     font-size: 22px !important;
     font-style: normal !important;
     line-height: normal !important;
-    font-family: 'Sofia Pro Bold' !important;
+    font-family: 'Instrument Sans Bold' !important;
   }
 }
 
@@ -1938,7 +1938,7 @@ input[type='checkbox'] {
   flex-grow: 1;
   -webkit-appearance: none;
   appearance: none;
-  font-family: 'Sofia Pro Bold' !important;
+  font-family: 'Instrument Sans Bold' !important;
 }
 
 .quantity__button {
@@ -2810,7 +2810,7 @@ details[open] > .header__submenu {
   color: #14154C;
   font-style: normal;
   line-height: 1.5rem;
-  font-family: 'Sofia Pro Regular' !important;
+  font-family: 'Instrument Sans Regular' !important;
 }
 
 .header__menu-item:hover {
@@ -3665,7 +3665,7 @@ details-disclosure > details {
 .shopify-policy__body h3,
 .shopify-policy__body h2 *,
 .shopify-policy__body h3 * {
-  font-family: 'Sofia Pro Medium' !important;
+  font-family: 'Instrument Sans Medium' !important;
 }
 
 .section-header {
@@ -3674,7 +3674,7 @@ details-disclosure > details {
 .section-subheader,
 .section-item-title,
 .section-item-title p {
-  font-family: 'Sofia Pro Regular' !important;
+  font-family: 'Instrument Sans Regular' !important;
 }
 
 
@@ -3682,7 +3682,6 @@ details-disclosure > details {
   .cta-button a {
     padding: 10px 24px;
     font-size: 14px;
-    font-family: 'Nord Medium' !important;
   }
   .cta-button {
     display: flex;
