@@ -58,13 +58,12 @@
     display: flex;
     flex-direction: column;
   }
-  .{{ section_title }} .header-title {
+  .{{ section_title }} .section-header {
     color: #429221;
     font-size: 32px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-    font-family: 'Nord Bold' !important;
   }
   .{{ section_title }} .header-description,
   .{{ section_title }} .header-description * {
@@ -137,7 +136,7 @@
     .{{ section_title }} .flex-container {
       gap: 24px;
     }
-    .{{ section_title }} .header-title {
+    .{{ section_title }} .section-header {
       font-size: 24px;
       line-height: normal;
       font-family: 'Nord Medium' !important;
@@ -185,7 +184,7 @@
     <div class="text-container">
       <div class="flex-container">
         <div class="header-container">
-          <div class="header-title">{{ section.settings.title }}</div>
+          <div class="section-header">{{ section.settings.title }}</div>
           <div class="header-description">{{ section.settings.description }}</div>
         </div>
         <hr class="line-separator">

@@ -50,7 +50,7 @@
     max-width: 650px;
   }
   .section-{{ section.id }} .{{ prefix }}__title strong {
-    font-family: "Sofia Pro Bold" !important;
+    font-family: "Sofia Pro Semibold" !important;
   }
   .section-{{ section.id }} .{{ prefix }}__subtitle,
   .section-{{ section.id }} .{{ prefix }}__subtitle * {
@@ -61,7 +61,6 @@
     font-weight: 500;
     line-height: 26px;
     margin: 0;
-    font-family: 'Sofia Pro Medium' !important;
   }
   .section-{{ section.id }} .text-content,
   .section-{{ section.id }} .text-content * {
@@ -118,7 +117,7 @@
     <div class="{{ prefix }}__title">
       {{ section.settings.title }}
     </div>
-    <div class="{{ prefix }}__subtitle">
+    <div class="{{ prefix }}__subtitle section-subheader">
       {{ section.settings.subtitle }}
     </div>
   </div>

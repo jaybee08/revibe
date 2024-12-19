@@ -456,7 +456,6 @@
   font-weight: 700;
   line-height: normal;
   color: #3A3BDA;
-  font-family: 'Nord Bold' !important;
 }
 .banner__heading {
   max-width: 90%;
@@ -470,7 +469,6 @@
   font-style: normal;
   font-weight: 500;
   line-height: normal;
-  font-family: 'Sofia Pro Medium' !important;
 }
 
 .banner__buttons {
