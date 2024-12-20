@@ -659,11 +659,14 @@ summary .icon-caret {
   top: calc(50% - 0.2rem);
 }
 
-summary .icon-plus,
 summary .icon-minus {
   position: absolute;
   right: 1.5rem;
   top: calc(50% - 0.2rem);
+}
+summary .icon-plus {
+  position: absolute;
+  right: 1.5rem;
 }
 
 summary::-webkit-details-marker {
@@ -702,6 +705,10 @@ summary::-webkit-details-marker {
 
   .facets .disclosure-has-popup[open] > summary + * {
     z-index: 2;
+  }
+
+  summary .icon-plus {
+    top: calc(50% - 0.2rem);
   }
 }
 
@@ -3677,6 +3684,9 @@ details-disclosure > details {
   font-family: 'Instrument Sans Regular' !important;
 }
 
+.jdgm-write-rev-link {
+  font-weight: 500 !important;
+}
 
 @media screen and (max-width: 749px) {
   .cta-button a {
@@ -3720,4 +3730,5 @@ details-disclosure > details {
   background-color: transparent!important;
   color: #F9FF88!important;
   padding: 0!important;
+  font-weight: normal!important;
 }
