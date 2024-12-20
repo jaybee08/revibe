@@ -57,10 +57,6 @@
     font-size: 16px;
   }
 
-  .accordion__title {
-    max-width: 95%;
-  }
-
   .accordion__content p {
     font-size: 14px;
     padding: 0px 16px 16px;
