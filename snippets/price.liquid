@@ -184,21 +184,4 @@
     </div>
   </div>
 
-  <script> 
-    document.addEventListener('DOMContentLoaded', () => {
-      const ratingContainer = document.querySelector('.jdgm-rev-widg__summary-average')?.textContent || "";
-      const noOfReviewsContainer = document.querySelector('.jdgm-rev-widg__summary-text')?.textContent || "";
-      const reviewRatingContainer = document.querySelector('.review-rating-container');
-      const customRating = document.querySelector('.custom-product-rating');
-      const customReviews = document.querySelector('.custom-product-reviews');
-      if (ratingContainer) {
-        const rating = ratingContainer.split(' ')[0] || 0;
-        const reviews = noOfReviewsContainer.match(/\d+/g)?.[0] || 0;
-  
-        customRating.textContent = rating;
-        customReviews.textContent = `${reviews} Reviews`;
-        reviewRatingContainer.style.display = 'inline-flex';
-      }
-    })
-  </script>
 {% endunless %}
