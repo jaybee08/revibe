@@ -3722,7 +3722,7 @@ details-disclosure > details {
   font-family: "Nord Regular"!important;
   font-size: 12px!important;
   font-style: normal;
-  font-weight: 700!important;
+  font-weight: normal!important;
   line-height: normal;
   text-transform: uppercase;
 }
